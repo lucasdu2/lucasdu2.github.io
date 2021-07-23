@@ -1,0 +1,27 @@
+/* || GENERAL STYLES */
+p {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
+
+a {
+   /* add default link underlining and color */ 
+}
+
+a:hover {
+    /* add default link hover color and behavior */
+}
+
+a:visited {
+    /* make visited same as unvisited */
+}
+
+h1 {
+    font-size: 72px;
+    font-family: "Roboto Mono", monospace;
+}
+
+h2 {
+    font-size: 72px;
+    font-family: "Roboto Mono", monospace;
+}
