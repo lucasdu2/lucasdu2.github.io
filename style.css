@@ -2,6 +2,7 @@
 p {
     font-size: 18px;
     font-family: "Lato", sans-serif;
+    font-weight: regular; /* TODO: idk if this works */
     line-height: 30px;
 }
 
@@ -19,10 +20,12 @@ a:visited {
 
 h1 {
     font-size: 72px;
+    font-weight: bold;
     font-family: "Roboto Mono", monospace;
 }
 
 h2 {
     font-size: 72px;
+    font-weight: bold;
     font-family: "Roboto Mono", monospace;
 }
