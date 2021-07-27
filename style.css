@@ -13,6 +13,7 @@ html {
 
 p {
     line-height: 1.7;
+    word-spacing: 0.25em;
 }
 
 /* default links */ 
@@ -150,7 +151,7 @@ h2 {
 #about h2 {
     position: relative;
     width: 30%;
-    top: 10%;
+    top: 15%;
     left: 51%;
     margin: 0;
 }
@@ -158,7 +159,7 @@ h2 {
 #about p {
     position: relative;
     width: 30%;
-    top: 10%;
+    top: 15%;
     left: 51%;
 }
 
@@ -180,7 +181,25 @@ h2 {
 
 #projects #projects-table {
     table-layout: fixed;
+    border-collapse: collapse;
     position: relative;
-    top: 10%;
+    width: 50%;
+    top: 15%;
     left: 5%;
+    line-height: 1.7;
+    word-spacing: 0.25em;
+}
+
+.p-head td {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.p-head td:nth-child(2), .p-misc td:nth-child(2) {
+    text-align: right;
+}
+
+.p-misc td {
+    font-family: "Roboto Mono", monospace;
+    border-bottom: #000000 solid 1px;
 }
