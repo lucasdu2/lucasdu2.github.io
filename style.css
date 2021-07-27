@@ -8,7 +8,7 @@ html {
 }
 
 ::selection {
-    background-color: #FFA69E;
+    background-color: #AA9FF3;
 }
 
 p {
@@ -76,6 +76,7 @@ h2 {
 #contact-button {
     /* visuals */
     background-color: #84DCC6;
+    outline: #000000 solid 1px;
     padding: 10px 10px;
     font-size: 20px;
     font-family: "Roboto Mono", monospace;
@@ -97,7 +98,6 @@ h2 {
 
 #contact-button:focus, #contact-button:hover {
     background-color: #A5FFD6;
-    outline: #000000 solid 1px;
 }
 
 /* || HOME PAGE */
@@ -143,10 +143,38 @@ h2 {
 /* ---------------------------------------------------------------------------*/
 #about {
     height: 100vh;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+#about h2 {
+    position: relative;
+    width: 30%;
+    left: 51%;
+}
+
+#about p {
+    position: relative;
+    width: 30%;
+    left: 51%;
 }
 
 /* || PROJECTS PAGE */
 /* ---------------------------------------------------------------------------*/
 #projects {
     height: 100vh;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+#projects h2 {
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+
+#projects #projects-table {
+    table-layout: fixed;
+    position: relative;
+    left: 5%;
 }
