@@ -150,12 +150,15 @@ h2 {
 #about h2 {
     position: relative;
     width: 30%;
+    top: 10%;
     left: 51%;
+    margin: 0;
 }
 
 #about p {
     position: relative;
     width: 30%;
+    top: 10%;
     left: 51%;
 }
 
@@ -170,11 +173,14 @@ h2 {
 #projects h2 {
     position: relative;
     width: 90%;
+    top: 10%;
     left: 5%;
+    margin: 0;
 }
 
 #projects #projects-table {
     table-layout: fixed;
     position: relative;
+    top: 10%;
     left: 5%;
 }
