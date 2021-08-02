@@ -44,7 +44,14 @@ h1 {
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 52px;
+}
+
+.text-box {
+    border: #020B23 solid 1px;
+    background-color: #FEF8EA;
+    padding: 25px;
+    position: relative;
 }
 
 /* || NAVBAR AND CONTACT BUTTON */
@@ -113,13 +120,17 @@ h2 {
 #home {
     height: 100vh;
     background-color: #FDF4DC;
+    background-image: url("L.svg");
+    background-repeat: no-repeat;
+    background-position: top -200px right -120px;
+    border-bottom: #020B23 dotted 1px;
     margin: 0;
 }
 
 #home h1 {
     position: relative;
     left: 15%;
-    top: 30%;
+    top: 35%;
     width: 70%;
     padding: 0;
     margin: 0;
@@ -137,7 +148,7 @@ h2 {
     letter-spacing: 0.01em;
     /* positioning */
     left: 15%;
-    top: 30%;
+    top: 35%;
     width: 70%;
     margin: 10px 0px 0px 0px;
     padding: 0;
@@ -149,7 +160,7 @@ h2 {
     line-height: 1.3;
     position: relative;
     left: 15%;
-    top: 30%;
+    top: 35%;
     width: 70%;
     list-style-type: none;
     margin: 20px 0px 0px 0px;
@@ -166,30 +177,33 @@ h2 {
     color: #020B23;
 }
 
-#L-svg {
+/* #L-svg {
     position: absolute;
     top: -200px; right: -120px;
-}
+} */
 
 /* || ABOUT PAGE */
 /* ---------------------------------------------------------------------------*/
 #about {
     height: 100vh;
-    background-color: #FDF4DC;
+    background-color: #CAC3B0;
+    background-image: url("Z.svg");
+    background-repeat: no-repeat;
+    background-position: top -190px left -130px;
+    border-bottom: #020B23 dotted 1px;
     margin: 0;
 }
 
-.text-box {
-    border: #020B23 solid 1px;
-    background-color: #FEF8EA;
-    padding: 25px;
-    position: relative;
+#about .text-box {
     width: 30%;
     top: 15%;
     left: 51%;
+    z-index: 1;
+    margin: 0;
 }
 
 #about h2 {
+    letter-spacing: 2.5px;
     width: 100%;
     margin: 0;
 }
@@ -201,24 +215,32 @@ h2 {
 
 }
 
-#Z-svg {
+/* #Z-svg {
     position: absolute;
-    top: 75vh; left: -150px;
-}
+    top: 95vh; left: -125px;
+} */
 
 /* || PROJECTS PAGE */
 /* ---------------------------------------------------------------------------*/
 #projects {
-    height: 100vh;
-    background-color: #FFFFFF;
+    height: 110vh;
+    background-color: #B1AB9A;
+    background-image: url("D.svg");
+    background-repeat: no-repeat;
+    background-position: top -220px right -175px;
+    border-bottom: #020B23 dotted 1px;
     margin: 0;
 }
 
-#projects h2 {
+#projects .text-box {
     position: relative;
-    width: 90%;
     top: 15%;
-    left: 5%;
+    left: 8%;
+    width: 45%;
+}
+
+#projects h2 {
+    width: 100%;
     margin: 0;
 }
 
@@ -226,17 +248,15 @@ h2 {
     table-layout: fixed;
     border-collapse: collapse;
     position: relative;
-    width: 50%;
-    top: 15%;
-    left: 5%;
+    width: 100%;
     line-height: 1.7;
     word-spacing: 0.2em;
 }
 
 .p-head td {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
-    padding-top: 1%;
+    padding-top: 2%;
 }
 
 .p-head td:nth-child(2), .p-misc td:nth-child(2) {
@@ -245,17 +265,24 @@ h2 {
 
 .p-misc td {
     font-family: "Roboto Mono", monospace;
-    border-bottom: #000000 solid 1px;
 }
 
 .p-misc td:nth-child(1) {
-    color: #808080;
+    color: #737477;
+}
+
+.p-desc {
+    border-bottom: #020B23 1px solid;
+}
+
+.p-desc td {
+    padding-bottom: 10px;
 }
 
 /* || FOOTER */
 footer {
     height: 20vh;
-    background-color: #FFFFFF;
+    background-color: #989284;
     margin: 0;
 }
 
