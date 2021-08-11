@@ -150,7 +150,7 @@ h2 {
 
 #home p {
     /* visual */
-    color: #737477;
+    color: #67696D;
     font-size: 48px;
     font-weight: bold;
     position: relative;
@@ -235,7 +235,7 @@ h2 {
 /* ---------------------------------------------------------------------------*/
 #projects {
     height: 110vh;
-    background-color: #B1AB9A;
+    background-color: #989284;
     background-image: url("D.svg");
     background-repeat: no-repeat;
     background-position: top -220px right -175px;
@@ -293,7 +293,7 @@ h2 {
 /* || FOOTER */
 footer {
     height: 20vh;
-    background-color: #989284;
+    background-color: #7F7A6E;
     margin: 0;
 }
 
