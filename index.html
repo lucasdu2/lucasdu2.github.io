@@ -4,30 +4,28 @@
     <meta charset="utf-8">
     <title>Lucas Du</title>
     <meta name="author" content="Lucas Du">
-    <meta name="description" content="Lucas Du is a software engineer.">
+    <meta name="description" content="Computer Engineer">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@700&display=swap" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- navbar -->
-    <div id="navbar">
-        <nav class="menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
+    <nav class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
 
-        <!-- contact button -->
-        <div id="contact-button">
-            <a href="mailto:lucaszdu@gmail.com">Contact</a>
-        </div>
+    <!-- contact button -->
+    <div id="contact-button" onclick="window.location='mailto:lucaszdu@gmail.com'">
+        <p>Contact</p>
     </div>
 
 
@@ -36,20 +34,19 @@
         <h1>Lucas Du</h1>
         <p>Software Engineer</p>
         <ul id="home-links">
-            <li><a href="https://github.com/lucasdu2">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/lucaszdu/">LinkedIn</a></li>
-            <li><a href="https://medium.com/@lucaszdu">Devlogs</a></li>   
-            <li><a href="LucasDu_Resume_Online.pdf">Resume</a></li>      
+            <li onclick="window.open('https://github.com/lucasdu2', '_blank', 'noopener,noreferrer')">Github</li> 
+            <li onclick="window.open('https://www.linkedin.com/in/lucaszdu/', '_blank', 'noopener,noreferrer')">LinkedIn</li>
+            <li onclick="window.open('https://medium.com/@lucaszdu', '_blank', 'noopener,noreferrer')">Devlogs</li>   
+            <li onclick="window.open('LucasDu_Resume_Online.pdf', '_blank', 'noopener,noreferrer')">Resume</li>      
         </ul> 
-        <!-- L svg -->
-        <!-- <img id="L-svg" src="L.svg"> -->
     </div>
 
     <!-- about section -->
     <div id="about">
-        <div class="text-box">
+        <section>
             <h2>About</h2>
-            <p>I'm a computer science graduate from the University of Chicago (BS '21) currently looking for a software 
+            <p>I'm a computer science graduate from the 
+                <a href="https://www.uchicago.edu/">University of Chicago</a> (BS '21) currently looking for a software 
                 engineering role.</p>
             <p>I love making things that are fast, robust, and fun to use. I'm particularly interested in the guts of 
                 software—the parts of code that run behind the scenes and make things tick. I'm also interested in 
@@ -61,28 +58,29 @@
                 <a href="https://www.youtube.com/watch?v=_mDxcDjg9P4">Step</a> by Vampire Weekend. My second 
                 favorite song of all time is <a href="https://www.youtube.com/watch?v=L7_jYl8A73g">Runaway</a> by 
                 Kanye West.</p>
-        </div>
-        <!-- Z svg -->
-        <!-- <img id="Z-svg" src="Z.svg"> -->
+        </section>
+
     </div>
 
     <!-- projects section-->
     <div id="projects">
-        <div class="text-box">
+        <section>
             <h2>Projects</h2>
-            <table id="projects-table">
+            <table>
                 <tbody>
                     <!-- first project -->
                     <tr class="p-head"> <!-- overview -->
-                        <td>Personal Site v1</td>
+                        <td>lucasdu.com</td>
                         <td>2021</td>
                     </tr>
                     <tr class="p-misc"> <!-- languages and links -->
                         <td>html, css, javascript</td>
-                        <td><a href="https://github.com/lucasdu2/lucasdu2.github.io">Github</a></td>
+                        <td><span class="table-link" 
+                                onclick="window.open('https://github.com/lucasdu2/lucasdu2.github.io', 
+                                '_blank', 'noopener,noreferrer')">Github</span></td>
                     </tr>
                     <tr class="p-desc"> <!-- description -->
-                        <td colspan="2">Personal website designed in Figma and built with HTML and CSS. 
+                        <td colspan="2">Personal website designed in Figma and built with raw HTML and CSS. 
                             Care taken to ensure responsiveness across range of screen sizes. 
                             Hosted on Github Pages.</td>
                     </tr>
@@ -107,12 +105,14 @@
                 <tbody>
                     <!-- third project -->
                     <tr class="p-head"> <!-- overview -->
-                        <td>scraper-VALERIE</td>
+                        <td>8-K Filing Scraper</td>
                         <td>2020</td>
                     </tr>
                     <tr class="p-misc"> <!-- languages and links -->
                         <td>python</td>
-                        <td><a href="https://github.com/lucasdu2/scraper-VALERIE">Github</a></td>
+                        <td><span class="table-link"
+                                onclick="window.open('https://github.com/lucasdu2/scraper-VALERIE',
+                                '_blank', 'noopener,noreferrer')">Github</span></td>
                     </tr>
                     <tr class="p-desc"> <!-- description -->
                         <td colspan="2">Web scraper built with Python/Scrapy for a financial documents research project. 
@@ -121,7 +121,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </section>
     </div>
 
     <!-- footer -->
@@ -132,7 +132,7 @@
             <li><a href="https://medium.com/@lucaszdu">Devlogs</a></li>    
             <li><a href="LucasDu_Resume_Online.pdf">Resume</a></li> 
         </ul> 
-        <p>© 2021 lucas du</p>
+        <p>© 2021 Lucas Du</p>
     </footer>
   </body>
 </html>
