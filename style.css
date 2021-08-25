@@ -650,7 +650,11 @@ footer p {
     .menu {
         font-size: 18px;
         width: 280px;
+        min-height: 38px
     }
 
+    .menu ul {
+        min-height: 38px;
+    }
 }
 
