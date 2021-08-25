@@ -75,27 +75,53 @@ h2 {
     margin: 7px 0px 8px 0px;
     padding: 0;
 }
- 
+
 .menu a:link, .menu a:visited {
     color: #333333;
     padding: 6px 20px 8px 18px;
+    transition: background-color 0.5s ease;
+    border-radius: 6px;
 }
 
 .menu a:focus, .menu a:hover {
     border: none;
     background-color: #CFD0D1;
     border-radius: 6px;
-    animation-duration: 0.25s;
-    animation-name: menuFade;
+    animation-duration: 0.2s;
+    animation-name: menuFade1;
 }
 
-@keyframes menuFade {
+@keyframes menuFade1 {
     from {
         background-color: #E8E9EA;
     }
     to {
         background-color:#CFD0D1;
     }
+}
+
+@keyframes menuFade2 {
+    from {
+        background-color: #A5B0FA;
+    }
+    to {
+        background-color: #CFD0D1;
+    }
+}
+
+/* menu highlighting when active */
+.active a:link, .active a:visited {
+    background-color: #A5B0FA;
+    border-radius: 6px;
+    transition: background-color 0.5s ease;
+}
+
+.active a:focus, .active a:hover {
+    border: none;
+    background-color: #CFD0D1;
+    border-radius: 6px;
+    animation-duration: 0.2s;
+    animation-name: menuFade2;
 }
 
 /* Contact Button */
