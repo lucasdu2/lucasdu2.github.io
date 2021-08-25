@@ -65,6 +65,7 @@ h2 {
     top: 27px;
     margin: 0;
     z-index: 2;
+    min-height: 42px;
 }
 
 .menu ul {
@@ -74,11 +75,18 @@ h2 {
     width: 100%;
     margin: 7px 0px 8px 0px;
     padding: 0;
+    margin: 0;
+    min-height: 42px;
+}
+
+.menu a {
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 8px;
 }
 
 .menu a:link, .menu a:visited {
     color: #333333;
-    padding: 6px 20px 8px 18px;
     transition: background-color 0.5s ease;
     border-radius: 6px;
 }
@@ -110,18 +118,18 @@ h2 {
 }
 
 /* menu highlighting when active */
-.active a:link, .active a:visited {
+.menu .active {
     background-color: #A5B0FA;
     border-radius: 6px;
     transition: background-color 0.5s ease;
 }
 
-.active a:focus, .active a:hover {
+.menu .active:focus, .menu .active:hover {
     border: none;
     background-color: #CFD0D1;
     border-radius: 6px;
     animation-duration: 0.2s;
-    animation-name: menuFade2;
+    animation-name: menuFade2; 
 }
 
 /* Contact Button */
