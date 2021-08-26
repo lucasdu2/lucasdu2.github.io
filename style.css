@@ -680,13 +680,13 @@ footer #icon-link {
 @media screen and (hover: none) {
     .menu a:focus, .menu a:hover {
         border: none;
-        background-color: rgba(247,248,249,0);
+        background-color: initial;
         animation-name: none;
     }
 
     .menu .active:focus, .menu .active:hover {
         border: none;
-        background-color: rgba(247,248,249,0);
+        background-color: initial;
         animation-name: none;
     }
 
