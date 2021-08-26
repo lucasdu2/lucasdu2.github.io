@@ -676,23 +676,3 @@ footer #icon-link {
     }
 }
 
-/* remove menu hover for touchscreen devices */
-@media screen and (hover: none) {
-    .menu a:focus, .menu a:hover {
-        border: none;
-        background-color: initial;
-        animation-name: none;
-    }
-
-    .menu .active:focus, .menu .active:hover {
-        border: none;
-        background-color: initial;
-        animation-name: none;
-    }
-
-    /* TODO: test code */
-    #home h1 {
-        background-color: #000000;
-    }
-}
-
