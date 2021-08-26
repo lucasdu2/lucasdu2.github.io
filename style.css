@@ -680,19 +680,19 @@ footer #icon-link {
 @media screen and (hover: none) {
     .menu a:focus, .menu a:hover {
         border: none;
-        background-color: none;
+        background-color: rgba(247,248,249,0);
         animation-name: none;
     }
 
     .menu .active:focus, .menu .active:hover {
         border: none;
-        background-color: none;
+        background-color: rgba(247,248,249,0));
         animation-name: none;
     }
 
     /* TODO: test code */
     #home h1 {
-        background-color: #A5E9E0;
+        background-color: #A5E;
     }
 }
 
