@@ -681,11 +681,18 @@ footer #icon-link {
     .menu a:focus, .menu a:hover {
         border: none;
         background-color: none;
+        animation-name: none;
     }
 
     .menu .active:focus, .menu .active:hover {
         border: none;
         background-color: none;
+        animation-name: none;
+    }
+
+    /* TODO: test code */
+    #home h1 {
+        background-color: #A5E9E0;
     }
 }
 
