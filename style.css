@@ -658,3 +658,16 @@ footer p {
     }
 }
 
+/* remove menu hover for touchscreen devices */
+@media (hover: none) {
+    .menu a:focus, .menu a:hover {
+        border: none;
+        background-color: none;
+    }
+
+    .menu .active:focus, .menu .active:hover {
+        border: none;
+        background-color: none;
+    }
+}
+
