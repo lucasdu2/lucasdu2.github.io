@@ -677,7 +677,12 @@ footer #icon-link {
 }
 
 /* remove menu hover for touchscreen devices */
-@media (hover: none) {
+@media screen and (hover: none) {
+    /* TODO: test */
+    footer {
+        background-color: #456910;
+    }
+    
     .menu a:focus, .menu a:hover {
         border: none;
         background-color: none;
