@@ -451,11 +451,22 @@ footer {
     border-bottom: #333333 solid 1px;
 }
 
-footer p {
+footer #foot-name {
     color: #5B5B5B;
     max-width: 155px;
     position: absolute;
     top: 36px;
+    right: 6.67%;
+    text-align: right;
+    margin: 0;
+}
+
+footer #icon-link {
+    font-size: 14px;
+    color: #5B5B5B;
+    max-width: 155px;
+    position: absolute;
+    top: 60px;
     right: 6.67%;
     text-align: right;
     margin: 0;
@@ -556,11 +567,18 @@ footer p {
         padding-top: 20px;
     }
 
-    footer p {
+    footer #foot-name {
         position: static;
         margin: auto;
         text-align: center;
         margin-top: 20px;
+    }
+
+    footer #icon-link {
+        position: static;
+        margin: auto;
+        text-align: center;
+        margin-top: 12px;
         padding-bottom: 20px;
     }
 }
