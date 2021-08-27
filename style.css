@@ -160,7 +160,7 @@ h2 {
 }
 
 #contact-button:focus, #contact-button:hover {
-    background-color: #A5F4DB; 
+    background-color: #AA9FF3; 
     cursor: pointer;
     animation-duration: 0.25s;
     animation-name: contactFade;
@@ -171,7 +171,7 @@ h2 {
         background-color: #A5B0FA;
     }
     to {
-        background-color: #A5F4DB;
+        background-color: #AA9FF3;
     }
 }
 
@@ -675,4 +675,3 @@ footer #icon-link {
         min-height: 38px;
     }
 }
-
