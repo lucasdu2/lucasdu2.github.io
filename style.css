@@ -1,0 +1,168 @@
+/* base styling */
+html {
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #5A5959;
+}
+
+a {
+  outline: none;
+  text-decoration: underline;
+}
+
+a:link, a:visited {
+  color: #000000;
+}
+
+a:active {
+  color: #000000;
+}
+
+/* content positioning */
+#container {
+  position: relative;
+  top: 60px;
+  max-width: 840px;
+  margin: auto;
+  padding-bottom: 40px;
+  /* flex properties */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+#image {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  max-width: 320px;
+}
+
+#img-astro {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#text {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  max-width: 440px;
+}
+
+/* text spacing and styling */
+#text h1 {
+  margin-bottom: 5px;
+}
+
+#text h2 {
+  margin-top: 5px;
+}
+
+#links {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#links a {
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+
+#links a:link, #links a:visited {
+  color: #972EBC;
+}
+
+#links a:active {
+  color: #2EBC83;
+}
+
+footer #nametag {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer #last-tag, footer #icons8-tag {
+  font-size: 12px;
+}
+
+/* responsiveness */ 
+@media (max-width: 830px), (orientation: portrait) {
+  #container {
+    top: 40px;
+    padding: 0px 30px;
+    /* flex properties */
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  #image {
+    max-width: 240px;
+  }
+
+  #text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  #container {
+    top: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+
+  #image {
+    max-width: 200px;
+  }
+
+  #links {
+    font-size: 16px;
+  }
+
+  footer #nametag {
+    font-size: 12px;
+  }
+
+  footer #last-tag, footer #icons8-tag {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  #links {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 305px) {
+  #links {
+    font-size: 12px;
+  }
+  footer #nametag {
+    font-size: 10px;
+  }
+
+  footer #last-tag, footer #icons8-tag {
+    font-size: 10px;
+  }
+}
