@@ -101,6 +101,43 @@ footer #last-tag, footer #icons8-tag {
 }
 
 /* responsiveness */ 
+/* --- bigger horizontal layouts --- */
+@media (min-width: 1441px) and (orientation: landscape) {
+  html {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  #container {
+    top: 10vh;
+    max-width: 920px;
+  }
+
+  #image {
+    max-width: 400px;
+  }
+
+  #links {
+    font-size: 20px;
+  }
+
+  footer #nametag {
+    font-size: 16px;
+  }
+
+  footer #last-tag, footer #icons8-tag {
+    font-size: 14px;
+  }
+}
+
+/* --- vertical layouts --- */
 @media (max-width: 830px), (orientation: portrait) {
   #container {
     top: 40px;
