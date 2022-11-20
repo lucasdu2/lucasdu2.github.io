@@ -6,13 +6,12 @@ html {
 
 h1 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 20px;
-  color: #5A5959;
+  font-size: 24px;
 }
 
 a {
@@ -24,29 +23,33 @@ a:link, a:visited {
   color: #000000;
 }
 
+a:hover {
+  background-color: mediumspringgreen;
+}
+
 a:active {
   color: #000000;
 }
 
-/* content positioning */
-#container {
+/* home page positioning */
+#home {
   position: relative;
   top: 60px;
-  max-width: 840px;
-  margin: auto;
-  padding-bottom: 40px;
+  max-width: 720px;
+  margin: auto; 
+  padding-left: 80px;
+  padding-right: 80px;
   /* flex properties */
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 30px;
 }
 
-#image {
+#home-image {
   padding: 0;
   margin: 0;
   display: inline-block;
-  max-width: 330px;
+  max-width: 370px;
 }
 
 #img-astro {
@@ -56,42 +59,89 @@ a:active {
   max-height: 100%;
 }
 
-#text {
+#home-text {
   padding: 0;
   margin: 0;
   display: inline-block;
-  max-width: 440px;
+  max-width: 350px;
 }
 
-/* text spacing and styling */
-#text h1 {
-  margin-bottom: 5px;
+/* home page spacing and styling */
+#home-text h1 {
+  margin-bottom: 8px;
 }
 
-#text h2 {
-  margin-top: 5px;
-}
-
-#links {
-  margin-top: 30px;
-  font-size: 18px;
+#home-links {
+  font-size: 28px;
   font-weight: bold;
 }
 
-#links a {
+#home-links a {
   text-decoration: none;
-  border-bottom: 2px solid;
+  margin-right: 8px
 }
 
-#links a:link, #links a:visited {
-  color: #972EBC;
+#home-links a:hover {
+  color: red;
+  background-color: transparent;
 }
 
-#links a:active {
-  color: #2EBC83;
+/* projects page */
+#projects {
+  position: relative;
+  top: 60px;
+  max-width: 720px;
+  margin: auto;
+  padding-right: 80px;
+  padding-left: 80px;
+  /* flex properties */
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+
+}
+
+#projects h2 {
+  border-top: 5px solid;
+  padding-top: 8px;
+  margin-bottom: 5px;
+}
+
+/* about page */
+#about {
+  position: relative;
+  top: 60px;
+  max-width: 720px;
+  margin: auto;
+  padding-right: 80px;
+  padding-left: 80px;
+  /* flex properties */
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+}
+
+#about h2 {
+  border-top: 5px solid;
+  padding-top: 8px;
+  margin-bottom: 5px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  top: 30px;
+  max-width: 720px;
+  margin: auto;
+  padding: 80px;
+
 }
 
 footer #nametag {
+  border-top: 1px solid;
+  padding-top: 10px;
   font-size: 14px;
   font-weight: bold;
 }
@@ -108,24 +158,11 @@ footer #last-tag, footer #icons8-tag {
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 36px;
   }
 
   h2 {
-    font-size: 24px;
-  }
-
-  #container {
-    top: 10vh;
-    max-width: 920px;
-  }
-
-  #image {
-    max-width: 400px;
-  }
-
-  #links {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   footer #nametag {
@@ -138,8 +175,8 @@ footer #last-tag, footer #icons8-tag {
 }
 
 /* --- vertical layouts --- */
-@media (max-width: 830px), (orientation: portrait) {
-  #container {
+@media (max-width: 700px) {
+  #home {
     top: 40px;
     padding: 0px 30px;
     /* flex properties */
@@ -147,67 +184,27 @@ footer #last-tag, footer #icons8-tag {
     gap: 0px;
   }
 
-  #image {
-    max-width: 240px;
+  #projects {
+    top: 40px;
+    padding: 0px 30px;
+    max-width: 350px;
   }
 
-  #text {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-}
-
-@media (min-width: 831px) and (orientation: portrait) {
-  html {
-    font-size: 18px;
+  #about {
+    top: 40px;
+    padding: 0px 30px;
+    max-width: 350px;
   }
 
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  #container {
-    top: 5vh;
-  }
-
-  #image {
-    max-width: 260px;
-  }
-
-  #links {
-    font-size: 20px;
-  }
-
-  footer #nametag {
-    font-size: 16px;
-  }
-
-  footer #last-tag, footer #icons8-tag {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 440px) {
-  #container {
-    top: 25px;
+  footer {
+    padding: 30px;
+    max-width: 350px;
   }
 }
 
 @media (max-width: 375px) {
   html {
     font-size: 14px;
-  }
-
-  #image {
-    max-width: 200px;
-  }
-
-  #links {
-    font-size: 16px;
   }
 
   footer #nametag {
@@ -219,16 +216,7 @@ footer #last-tag, footer #icons8-tag {
   }
 }
 
-@media (max-width: 340px) {
-  #links {
-    font-size: 14px;
-  }
-}
-
 @media (max-width: 305px) {
-  #links {
-    font-size: 12px;
-  }
   footer #nametag {
     font-size: 10px;
   }

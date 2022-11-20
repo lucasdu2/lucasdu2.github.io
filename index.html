@@ -6,64 +6,106 @@
     <meta name="author" content="Lucas Du">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="favicon-L.ico" rel="icon" type="image/x-icon">
+    <link href="assets/tiger.ico" rel="icon" type="image/x-icon">
   </head>
   <body>
-    <div id="container">
-      <div id="image">
+    <div id="home">
+      <div id="home-text">
+        <h1>Lucas Du</h1>
+          <div id="home-links">
+            <a href="https://github.com/lucasdu2"
+              target="_blank"
+              rel="noopener noreferrer">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/lucaszdu"
+              target="_blank"
+              rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:lucaszdu@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        <p>I'm currently employed by 
+        <a href="https://www.hitachivantara.com/en-us/home.html"
+           target="_blank"
+           rel="noopener noreferrer">Hitachi Vantara</a> as a Technical 
+        Consultant. I work on the Software Defined Storage (SDS) team at 
+        <a href="https://www.ebay.com/" 
+           target="_blank" 
+           rel="noopener noreferrer">eBay</a>. We are implementing cloud-native 
+        storage systems for eBay's internal cloud.</p>
+      </div>
+      <div id="home-image">
         <img 
           id="img-astro" 
-          src="astronaut-window.svg"
-          alt="Astronaut looking out a window." />
+          src="assets/pixeltrue-space-discovery-1.svg"
+          alt="Astronaut with a cat." />
       </div>
-      <div id="text">
-        <h1>Hi, I'm Lucas.</h1>
-        <h2>I'm a software engineer at eBay.</h2>
-        <p>I graduated from the University of Chicago (BS ‘21) with a degree in 
-  computer science and a minor in creative writing. Currently, I am employed as 
-  a Technical Consultant by Hitachi Vantara. I work on the Software Defined 
-  Storage team at eBay.</p>
-        <p>I love making things that are fast, robust, and fun to use. I'm 
-  particularly interested in the guts of software—the parts of code that run 
-  behind the scenes and make things tick. I'm also interested in software for 
-  social and environmental good.</p>
-        <p>My other interests include listening to music, reading, and, at 
-  times, writing. Sometimes I wish I could be 
-          <a href="https://en.wikipedia.org/wiki/Ken_Liu"
+    </div>
+
+    <div id="projects">
+      <h2>Projects</h2>
+      <p><a href="https://github.com/lucasdu2/go-mapreduce"
+            target="_blank"
+            rel="noopener noreferrer">go-mapreduce</a>: A toy implementation of 
+      MapReduce in Golang. Concurrency is simulated on a single local machine
+      using goroutines.
+
+    </div>
+
+    <div id="about">
+      <h2>About</h2>
+      <p> I graduated from the 
+          <a href="https://www.uchicago.edu/"
              target="_blank"
-             rel="noopener noreferrer">Ken Liu</a>. My favorite song of all 
-  time is 
+             rel="noopener noreferrer">University of Chicago</a> 
+      (BS ‘21) with a degree in
+      computer science and a minor in creative writing. I love making things 
+      that are fast, robust, and fun to use. I'm particularly fascinated by the 
+      guts of software—the parts of code that run behind the scenes and make 
+      things tick. I'm also passionate about software for social and 
+      environmental good.
+      </p>
+      <p> Within computer science, I'm primarily interested in distributed 
+      systems, networks, computer privacy/security (especially within large 
+      distributed systems), and parallel computing. I'm also interested in the 
+      mathematical provability of algorithms, such as provable correctness in 
+      distributed systems and provable privacy. I hope to do work that makes 
+      distributed systems more usable, more secure, and more positively impactful. 
+      </p>
+      <p>My other interests include listening to music, reading, and, at 
+      times, writing. My favorite song of all time is 
           <a href="https://www.youtube.com/watch?v=_mDxcDjg9P4"
              target="_blank"
              rel="noopener noreferrer">Step</a> by Vampire Weekend. My second 
-  favorite song of all time is 
+      favorite song of all time is 
           <a href="https://www.youtube.com/watch?v=L7_jYl8A73g"
              target="_blank"
-             rel="noopener noreferrer">Runaway</a> by Kanye West.</p>
-        <p id="links"> 
-          <a href="https://github.com/lucasdu2"
+             rel="noopener noreferrer">Runaway</a> by Kanye West. One story 
+      I've read that has probably stuck with me the most (in the past 3 to 4 
+      years) is 
+          <a href="https://en.wikipedia.org/wiki/Triumph_Over_the_Grave"
              target="_blank"
-             rel="noopener noreferrer">Github</a> / 
-          <a href="https://linkedin.com/in/lucaszdu"
-             target="_blank"
-             rel="noopner noreferrer">LinkedIn</a> / 
-          <a href="LucasDu_Resume_Online_21.pdf"
-             target="_blank"
-             rel="noopener noreferrer">Resume</a> /
-          <a href="mailto:lucaszdu@gmail.com">Contact</a> </p>
-        <footer>
+             rel="noopener noreferrer">Triumph Over the Grave</a> by Denis Johnson.
+      </p>
+    </div>
+
+    <footer>
           <span id="nametag">© 2022 Lucas Du</span>
           <br><span id="last-tag">This page is (mostly) 
                 <a href="https://jeffhuang.com/designed_to_last/"
                    target="_blank"
                    rel="noopener noreferrer">designed to last</a>.</span>
-          <br><span id="icons8-tag">favicon by 
+          <br><span id="icons8-tag">favicon and illustration from
                 <a href="https://icons8.com/"
                    target="_blank"
                    rel="noopener noreferrer">icons8.com</a></span>
-        </footer>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
