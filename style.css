@@ -89,9 +89,10 @@ a:active {
 }
 
 #about h2 {
-  border-top: 5px solid;
-  padding-top: 8px;
-  margin-bottom: 5px;
+  /* border-top: 5px solid; */
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+  margin-bottom: 0px;
 }
 
 /* projects page */
@@ -109,9 +110,10 @@ a:active {
 }
 
 #projects h2 {
-  border-top: 5px solid;
-  padding-top: 8px;
-  margin-bottom: 5px;
+  /* border-top: 5px solid; */
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+  margin-bottom: 0px;
 }
 
 #projects li {
