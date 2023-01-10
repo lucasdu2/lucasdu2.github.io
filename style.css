@@ -46,7 +46,6 @@ a:active {
 /*  box-shadow: 3px 3px; */
 /*  background: rgb(135, 206, 235); */
 /*  background: linear-gradient(0deg, rgb(135, 206, 235) 0%, rgba(152,251,152,1) 100%); */
-  border-top: 4px ridge;
 
   /* flex properties */
   display: flex;
@@ -72,7 +71,7 @@ a:active {
 }
 
 #home-links a:hover {
-  color: orangered;
+  color: orange;
   background-color: transparent;
 }
 
@@ -84,7 +83,6 @@ a:active {
   margin: auto;
   padding: 0px 50px;
   background: #f5f5f5;
-  border-top: 2px ridge;
   /* flex properties */
   display: flex;
   justify-content: flex-start;
@@ -134,7 +132,6 @@ a:active {
   margin-bottom: 100px;
   padding: 30px 50px;
   background: #f5f5f5;
-  border-bottom: 4px ridge;
   /* flex properties */
   display: flex;
   justify-content: flex-start;
