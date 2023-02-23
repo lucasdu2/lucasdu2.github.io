@@ -1,18 +1,20 @@
 /* base styling */
 html {
   font-size: 16px;
-  font-family: "Arial", sans-serif;
+  font-family: "Georgia", serif;
+  letter-spacing: 0.1px;
 }
 
 h1 {
   font-weight: bold;
   font-size: 36px;
-
+  font-family: "Arial", sans-serif;
 }
 
 h2 {
   font-weight: bold;
   font-size: 24px;
+  font-family: "Arial", sans-serif;
 }
 
 a {
@@ -26,7 +28,7 @@ a:link, a:visited {
 }
 
 a:hover {
-  background-color: orange;
+  background-color: #98fb98;
 }
 
 a:active {
@@ -41,8 +43,10 @@ a:active {
   margin: auto; 
   padding: 0px 50px;
   padding-bottom: 30px;
-  background: rgb(131,58,180);
-  background: linear-gradient(70deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background: #f5f5f5;
+  border-top: 10px solid #3f5efb;
+/*  background: rgb(131,58,180); */
+/*  background: linear-gradient(70deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
 /*  box-shadow: 3px 3px; */
 /*  background: rgb(135, 206, 235); */
 /*  background: linear-gradient(0deg, rgb(135, 206, 235) 0%, rgba(152,251,152,1) 100%); */
@@ -71,14 +75,14 @@ a:active {
 }
 
 #home-links a:hover {
-  color: orange;
+  color: #5A5A5A;
   background-color: transparent;
 }
 
 /* about page */
 #about {
   position: relative;
-  top: 60px;
+  top: 20px;
   max-width: 500px;
   margin: auto;
   padding: 0px 50px;
@@ -100,7 +104,7 @@ a:active {
 /* projects page */
 #projects {
   position: relative;
-  top: 60px;
+  top: 30px;
   max-width: 500px;
   margin: auto;
   padding: 0px 50px;
@@ -126,7 +130,7 @@ a:active {
 /* footer */
 #footer {
   position: relative;
-  top: 60px;
+  top: 20px;
   max-width: 500px;
   margin: auto;
   margin-bottom: 100px;
@@ -140,6 +144,7 @@ a:active {
 }
 
 footer #nametag {
+  font-family: "Arial", sans-serif;
   border-top: 1px solid;
   padding-top: 10px;
   font-size: 14px;
@@ -187,19 +192,19 @@ footer #last-tag, footer #icons8-tag {
   }
 
   #projects {
-    top: 40px;
+    top: 25px;
     padding: 0px 30px;
     max-width: 350px;
   }
 
   #about {
-    top: 40px;
+    top: 20px;
     padding: 0px 30px;
     max-width: 350px;
   }
 
   #footer {
-    top: 40px;
+    top: 20px;
     padding: 30px;
     max-width: 350px;
   }
