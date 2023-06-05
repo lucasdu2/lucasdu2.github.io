@@ -202,6 +202,10 @@ footer #last-tag, footer #icons8-tag, footer #image-tag {
     gap: 0px;
   }
 
+  #home-image {
+    padding-top: 0px;
+  }
+
   #projects {
     top: 25px;
     padding: 0px 30px;
