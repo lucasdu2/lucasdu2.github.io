@@ -3,6 +3,7 @@ html {
   font-size: 16px;
   font-family: "Georgia", serif;
   letter-spacing: 0.1px;
+  background: #f5f5f5;
 }
 
 h1 {
@@ -13,7 +14,7 @@ h1 {
 
 h2 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
   font-family: "Arial", sans-serif;
 }
 
@@ -35,37 +36,55 @@ a:active {
   color: #000000;
 }
 
+table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D3D3D3;
+}
 /* home page positioning */
 #home {
   position: relative;
   top: 60px;
   max-width: 500px;
   margin: auto; 
-  padding: 0px 50px;
+  padding: 0px 30px;
   padding-bottom: 30px;
-  background: #f5f5f5;
-  border-top: 10px solid #3f5efb;
+  border-top: 8px solid;
   /* flex properties */
+  gap: 5%;
   display: flex;
-  gap: 10%;
   justify-content: flex-start;
   align-items: start;
-  flex-direction: column;
 }
 
 /* home page spacing and styling */
 #home h1 {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
+#home-text {
+  display: inline-block;
+}
+
+#home-image {
+  padding-top: 35px;
+  display: inline-block;
+}
 #home-links {
   font-size: 20px;
-  font-family: "Roboto Mono", monospace;  
+  font-family: "Arial", sans-serif;  
   font-weight: bold;
-}
-
-#home-links a {
-  text-decoration: none;
 }
 
 #home-links a:link, a:visited {
@@ -83,8 +102,7 @@ a:active {
   top: 20px;
   max-width: 500px;
   margin: auto;
-  padding: 0px 50px;
-  background: #f5f5f5;
+  padding: 0px 30px;
   /* flex properties */
   display: flex;
   justify-content: flex-start;
@@ -102,11 +120,10 @@ a:active {
 /* projects page */
 #projects {
   position: relative;
-  top: 30px;
+  top: 20px;
   max-width: 500px;
   margin: auto;
-  padding: 0px 50px;
-  background: #f5f5f5;
+  padding: 0px 30px;
   /* flex properties */
   display: flex;
   justify-content: flex-start;
@@ -121,10 +138,6 @@ a:active {
   margin-bottom: 0px;
 }
 
-#projects li {
-    margin-bottom: 8px;
-}
-
 /* footer */
 #footer {
   position: relative;
@@ -132,8 +145,7 @@ a:active {
   max-width: 500px;
   margin: auto;
   margin-bottom: 100px;
-  padding: 30px 50px;
-  background: #f5f5f5;
+  padding: 30px 30px;
   /* flex properties */
   display: flex;
   justify-content: flex-start;
@@ -149,7 +161,7 @@ footer #nametag {
   font-weight: bold;
 }
 
-footer #last-tag, footer #icons8-tag {
+footer #last-tag, footer #icons8-tag, footer #image-tag {
   font-size: 12px;
 }
 
@@ -186,6 +198,7 @@ footer #last-tag, footer #icons8-tag {
     max-width: 350px;
     /* flex properties */
     flex-direction: column;
+    align-items: center;
     gap: 0px;
   }
 
