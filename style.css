@@ -81,6 +81,7 @@ tr:nth-child(even) {
   padding-top: 35px;
   display: inline-block;
 }
+
 #home-links {
   font-size: 20px;
   font-family: "Arial", sans-serif;  
@@ -89,11 +90,6 @@ tr:nth-child(even) {
 
 #home-links a:link, a:visited {
   font-style: normal;
-}
-
-#home-links a:hover {
-  color: #5A5A5A;
-  background-color: transparent;
 }
 
 /* about page */
