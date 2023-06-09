@@ -24,7 +24,7 @@ a {
 }
 
 a:link, a:visited {
-  color: #000000;
+  color: #A6192E;
   font-style: italic;
 }
 
@@ -33,7 +33,7 @@ a:hover {
 }
 
 a:active {
-  color: #000000;
+  color: #A6192E;
 }
 
 table {
