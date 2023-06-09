@@ -176,6 +176,10 @@ footer #last-tag, footer #icons8-tag, footer #image-tag {
     font-size: 28px;
   }
 
+  #home-image #fun-img {
+    height: 250px;
+  }
+
   footer #nametag {
     font-size: 16px;
   }
