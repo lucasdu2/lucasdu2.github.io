@@ -71,6 +71,8 @@ tr:nth-child(even) {
   margin-bottom: 8px;
 }
 
+
+
 #heading-links {
   display: flex;
   gap: 5%;
@@ -102,4 +104,10 @@ tr:nth-child(even) {
   border-radius: 20px;
   box-shadow: 7px 7px #DA70D6;
   margin-bottom: 40px;
+}
+
+#home-text h2 {
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: #800080;
 }
