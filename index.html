@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Lucas Du</title>
-    <meta name="description" content="Lucas's personal site for things involving 
-computers"
+    <meta name="description" content="Lucas's personal site"
     <meta name="author" content="Lucas Du">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="normalize.css" rel="stylesheet" type="text/css">
@@ -12,112 +11,56 @@ computers"
     <link href="assets/tiger.ico" rel="icon" type="image/x-icon">
   </head>
   <body>
-    <div id="home">
+
+    <div id="heading">
+      <h1>Lucas Du</h1>
+      <div id="heading-links">
+        <a href="https://github.com/lucasdu2"
+          target="_blank"
+          rel="noopener noreferrer">
+          Github</a>
+        <a href="https://linkedin.com/in/lucaszdu"
+          target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn</a> 
+        <a href="mailto:lucaszdu@gmail.com">
+          Email</a>
+      </div>
+    </div>
+    <div id="content">
       <div id="home-text">
-        <h1>Lucas Du</h1>
-          <div id="home-links">
-            <a href="https://github.com/lucasdu2"
-              target="_blank"
-              rel="noopener noreferrer">
-              Github</a> ｜
-            <a href="https://linkedin.com/in/lucaszdu"
-              target="_blank"
-              rel="noopener noreferrer">
-              LinkedIn</a> ｜
-            <a href="mailto:lucaszdu@gmail.com">
-              Email</a>
-          </div>
-        <p>I work as a software engineer on the Software Defined Storage (SDS) 
-        team at 
-        <a href="https://www.ebay.com/" 
-           target="_blank" 
-           rel="noopener noreferrer">eBay</a>. 
-        Officially, I'm employed by
-        <a href="https://www.hitachivantara.com/en-us/home.html"
-           target="_blank"
-           rel="noopener noreferrer">Hitachi Vantara</a> as a Technical 
-        Consultant.  We are implementing cloud-native storage systems for use
-        within eBay.</p>
+        <p>Currently, I'm employed as a Technical Consultant at
+        <a href="https://www.hitachivantara.com/en-us/home.html" target="_blank"
+           rel="noopener noreferrer">Hitachi Vantara</a>. I work on cloud storage 
+           at <a href="https://www.ebay.com/" target="_blank" 
+           rel="noopener noreferrer">eBay</a>. I'm highly interested in abstractions
+           and techniques that make it easier to write correct and efficient 
+           distributed software. More generally, I'm interested in ways to make
+           developing software less painful and using software more empowering. I
+           also like reading short stories, writing fiction, and listening to music, 
+           although those interests, unfortunately, are not as profitable.</p>
+        <h2>About</h2>
+        <p> I graduated from the 
+            <a href="https://www.uchicago.edu/"
+               target="_blank"
+               rel="noopener noreferrer">University of Chicago</a> 
+        (BS ‘21) with a degree in
+        computer science and a minor in creative writing. I love both these things
+        (computer science/programming, reading/writing/literature) and I believe 
+        that, in many ways, they are not so different.</p>
+
+        <p>As a software engineer, I want to make things that are fast, robust, and 
+        fun to use. I'm particularly fascinated by the guts of software—the parts 
+        of code that run behind the scenes and make things tick. I'm also passionate 
+        about software for social and environmental good.
+        </p>
+
+        <p> Within computer science, I'm broadly interested in distributed 
+        systems. I hope to do work that makes distributed systems more reliable, 
+        more secure, more empowering to the user, and generally more positively 
+        impactful. 
+        </p>
       </div>
-      <div id="home-image">
-        <img 
-          src="assets/Tigre-dans-les-jungles.svg"
-          id="fun-img" 
-          alt="Stylized tiger in the jungle illustration."
-          height=200
-          width=200 />
-      </div>
-    </div>
-
-    <div id="projects">
-      <h2>Projects</h2>
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/lucasdu2/compsci-readings"
-            target="_blank"
-            rel="noopener noreferrer">compsci&#8209;readings</a></td>
-          <td>A running collection of miscellaneous computer science related 
-        papers, articles, etc. that I think are cool.</td>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/lucasdu2/go-mapreduce"
-            target="_blank"
-            rel="noopener noreferrer">go&#8209;mapreduce</a></td>
-          <td>A toy implementation of MapReduce in Go. (2022-2023)</td>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/lucasdu2/scraper-VALERIE"
-            target="_blank"
-            rel="noopener noreferrer">scraper&#8209;VALERIE</a></td>
-          <td>A Python web scraper for HTML-formatted financial documents. (2018)</td>
-        </tr>
-      </table>
-    </div>
-
-    <div id="about">
-      <h2>About</h2>
-      <p> I graduated from the 
-          <a href="https://www.uchicago.edu/"
-             target="_blank"
-             rel="noopener noreferrer">University of Chicago</a> 
-      (BS ‘21) with a degree in
-      computer science and a minor in creative writing. I love both these things
-      (computer science/programming, reading/writing/literature) and I do believe 
-      that, in some ways, they are not so different.</p>
-
-      <p>As a software engineer, I want to make things that are fast, robust, and 
-      fun to use. I'm particularly fascinated by the guts of software—the parts 
-      of code that run behind the scenes and make things tick. I'm also passionate 
-      about software for social and environmental good.
-      </p>
-
-      <p> Within computer science, I'm broadly interested in distributed 
-      systems. I hope to do work that makes distributed systems more reliable, 
-      more secure, more empowering to the user, and generally more positively 
-      impactful. 
-      </p>
-    </div>
-
-    <div id="footer">
-    <footer>
-          <span id="nametag">© 2023 Lucas Du</span>
-          <br><span id="last-tag">This page is (mostly) 
-                <a href="https://jeffhuang.com/designed_to_last/"
-                   target="_blank"
-                   rel="noopener noreferrer">designed to last</a>.</span>
-          <br><span id="icons8-tag">favicon from
-                <a href="https://icons8.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">icons8.com</a></span>          
-          <br><span id="image-tag">image from
-                <a href="https://freesvg.org/"
-                   target="_blank"
-                   rel="noopener noreferrer">freesvg.org</a></span>
-    </footer>
     </div>
   </body>
 </html>
