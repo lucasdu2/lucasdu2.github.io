@@ -107,7 +107,7 @@ tr:nth-child(even) {
 }
 
 #home-text h2 {
-  text-decoration-style: wavy;
+  text-decoration-style: dashed;
   text-decoration-line: underline;
   text-decoration-color: #800080;
 }
