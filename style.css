@@ -71,8 +71,6 @@ tr:nth-child(even) {
   margin-bottom: 8px;
 }
 
-
-
 #heading-links {
   display: flex;
   gap: 5%;
@@ -107,7 +105,5 @@ tr:nth-child(even) {
 }
 
 #home-text h2 {
-  text-decoration-style: dashed;
-  text-decoration-line: underline;
-  text-decoration-color: #800080;
+  border-bottom: 2px dashed #800080;
 }
