@@ -106,3 +106,36 @@ tr:nth-child(even) {
 #home-text h2 {
   border-bottom: 2px dashed #800080;
 }
+
+/* --- narrow layout adjustments --- */
+@media (max-width: 450px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 46px;
+    font-family: "Arial", sans-serif;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+  }
+  #heading {
+    padding: 0px 10px;  
+  }
+  #heading-links {
+    font-size: 20px;
+  }
+  #content {
+    padding: 0px 10px;
+  }
+  #home-text {
+    box-shadow: 4px 4px #DA70D6;
+    border-radius: 10px;
+    padding: 1px 10px;
+  }
+}
