@@ -16,6 +16,7 @@ h2 {
   font-weight: bold;
   font-size: 32px;
   font-family: "Arial", sans-serif;
+  background: linear-gradient(90deg, rgba(195, 177, 225,1) 0%, rgba(195, 177, 225,0.2) 100%);
 }
 
 a {
