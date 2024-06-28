@@ -20,7 +20,7 @@ I'm primarily interested in ◊strong{applying techniques from programming langu
   ◊item{◊strong{better programming models for the cloud}, particularly related to distributed storage and stream processing.}
 }
 
-I'm also generally interested in compilers, type systems, web browsers, scientific and high performance computing, databases, security and cryptography, peer-to-peer and decentralized systems, data privacy, program synthesis, and so on. But life is finite. I do hope that anything I do with computers centers on some subset of these interests.
+I'm also generally interested in functional programming, compilers, type systems, web browsers, scientific and high performance computing, databases, security and cryptography, peer-to-peer and decentralized systems, data privacy, program synthesis, and so on. But life is finite. I do hope that anything I do with computers centers on some subset of these interests.
 
 ◊headline{Personal}
 I like reading short stories, writing fiction, and listening to music. I also like long form journalism and literary criticism. At one point, I wanted to be a journalist. At another point, I wanted to be a writer. I like a lot of humanities-related things and it's unfortunate that market forces have deemed most of them to be strictly less valuable than producing software.
