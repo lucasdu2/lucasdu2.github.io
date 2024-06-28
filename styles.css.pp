@@ -6,6 +6,7 @@
 ◊(define bgcolor "#FEFBEA")
 ◊(define highlightcolor "#fcf1b6")
 ◊(define calloutcolor "#8b0000")
+◊(define dividercolor "#D3D3D3")
 ◊(define bodywidth 40)
 ◊(define h1-ratio 2)
 ◊(define h2-ratio 1.5)
@@ -42,7 +43,7 @@ html {
 }
 
 header {
-  border-bottom: 2px solid #D3D3D3;
+  border-bottom: 2px solid ◊|dividercolor|;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -76,7 +77,7 @@ a:link, a:visited {
   border-radius: 50%;
   float: right;
   margin: 0.7em;
-  border: 3px solid #D3D3D3;
+  border: 3px solid ◊|dividercolor|;
 }
 
 body {
@@ -103,7 +104,7 @@ h2 {
 }
 
 footer {
-  border-top: 2px solid #D3D3D3;
+  border-top: 2px solid ◊|dividercolor|;
   font-size: ◊|footer-ratio|em;
 }
 
