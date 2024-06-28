@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊header{◊title{Lucas Du} ◊link["index.html"]{Home} ◊link["writing.html"]{Writing}}
-◊email{◊em{lucaszdu} [at] ◊em{gmail}} / ◊link["https://github.com/lucasdu2"]{github} / ◊link["https://linkedin.com/in/lucaszdu"]{linkedin}
+◊email{◊em{lucaszdu} [at] ◊em{gmail}} | ◊link["https://github.com/lucasdu2"]{github} / ◊link["https://linkedin.com/in/lucaszdu"]{linkedin}
 
 ◊headline{About}
 
