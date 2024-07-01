@@ -8,7 +8,7 @@
 ◊(define calloutcolor "#8b0000")
 ◊(define dividercolor "#D3D3D3")
 ◊(define bodywidth 40)
-◊(define h1-ratio 2)
+◊(define h1-ratio 2.3)
 ◊(define h2-ratio 1.5)
 ◊(define footer-ratio 0.7)
 ◊(define multiplier 1.3)
@@ -47,23 +47,25 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
   gap: 10%;
 }
 
-header p {
-  margin: 0;
-  padding: 0;
-  font-size: 1.2em;
-  font-weight: bold;
+header nav {
+  display: flex;
+  align-content: end;
+  align-items: end;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+  gap: 1em;
 }
 
-header p a {
+header nav a {
   text-decoration: none;
-  padding: 0em 0.2em;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
 }
 
-header p a:hover {
+header nav a:hover {
   text-decoration: none;
   background-color: ◊|highlightcolor|;
 }
@@ -115,5 +117,11 @@ footer {
       display: block;
       margin-left: auto;
       margin-right: auto;
+  }
+  header nav {
+    gap: 0.5em;
+  }
+  header nav a {
+    padding: 0;
   }
 }

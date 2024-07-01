@@ -1,6 +1,6 @@
 #lang pollen
 
-◊header{◊title{Lucas Du} ◊link["index.html"]{Home} ◊link["writing.html"]{Writing}}
+◊header{◊title{Lucas Du}◊nav{◊link["index.html"]{Home}◊link["writing.html"]{Writing}}}
 
 ◊headline{Writing}
 
