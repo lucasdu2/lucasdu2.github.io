@@ -56,7 +56,7 @@ header nav {
   align-items: end;
   font-size: 1.3em;
   margin-bottom: 5px;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 header nav a {
@@ -117,9 +117,6 @@ footer {
       display: block;
       margin-left: auto;
       margin-right: auto;
-  }
-  header nav {
-    gap: 0.5em;
   }
   header nav a {
     padding: 0;
