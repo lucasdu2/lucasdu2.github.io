@@ -21,6 +21,8 @@ I'm primarily interested in ◊strong{applying techniques from programming langu
   ◊item{◊strong{better programming models for the cloud}, particularly related to distributed storage and stream processing.}
 }
 
+One formulation of my larger goal is to develop ◊strong{tools and abstractions} that ◊em{ease the tension between doing things "right" and doing things fast}. I want to make it more practical to create high-quality software --- particularly, software with strong formal guarantees about correctness, security, privacy, and performance --- without precluding (and perhaps even enabling) the velocity and innovation that drives real-world impact.
+
 ◊headline{Personal}
 I like reading short stories, writing fiction, and listening to music. I also like long form journalism and literary criticism. At one point, I wanted to be a journalist. At another point, I wanted to be a writer. I generally like a lot of humanities-related things and it's unfortunate that market forces have deemed most of them to be strictly less valuable than producing software.
 
