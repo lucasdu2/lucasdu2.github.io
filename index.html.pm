@@ -21,8 +21,6 @@ I'm primarily interested in ◊strong{applying techniques from programming langu
   ◊item{◊strong{better programming models for the cloud}, particularly related to distributed storage and stream processing.}
 }
 
-My main goal is to improve the quality of practically usable software artifacts through stronger formal guarantees, preferably through machine-checked proofs and preferably by-construction. Another overarching goal is to work on better programming tools and abstractions that help produce simpler and more flexible software. There are many ways to approach these goals --- I'm not yet sure what, specifically, I want to focus on.
-
 ◊headline{Personal}
 I like reading short stories, writing fiction, and listening to music. I also like long form journalism and literary criticism. At one point, I wanted to be a journalist. At another point, I wanted to be a writer. I generally like a lot of humanities-related things and it's unfortunate that market forces have deemed most of them to be strictly less valuable than producing software.
 
