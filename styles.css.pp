@@ -54,8 +54,8 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   background: linear-gradient(90deg, RGBA(185, 189, 134, 1), RGBA(185, 189, 134, 0.5));
-  border-top: 2px solid #535724;
-  border-bottom: 2px solid #535724;
+  border-top: 3px solid #535724;
+  border-bottom: 1px solid #535724;
   gap: 10%;
 }
 
