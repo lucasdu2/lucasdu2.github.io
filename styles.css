@@ -26,6 +26,10 @@ html {
   margin: auto;
 }
 
+mark {
+  background-color: #fffcbf;
+}
+
 header {
   border-bottom: 2px solid #D3D3D3;
   display: flex;

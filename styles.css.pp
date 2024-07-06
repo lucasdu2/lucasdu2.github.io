@@ -4,7 +4,7 @@
 ◊(define edge (* inner 2))
 ◊(define fontsize 16)
 ◊(define bgcolor "#FAF9F6")
-◊(define highlightcolor "#FEFBEA")
+◊(define highlightcolor "#fffcbf")
 ◊(define calloutcolor "#8b0000")
 ◊(define dividercolor "#D3D3D3")
 ◊(define bodywidth 40)
@@ -39,6 +39,10 @@ html {
   font-family: "Inria Sans", sans-serif;
   display: table;
   margin: auto;
+}
+
+mark {
+  background-color: ◊|highlightcolor|;
 }
 
 header {

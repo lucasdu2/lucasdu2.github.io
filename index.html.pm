@@ -12,6 +12,8 @@ I'm interested in ◊strong{programming languages} and ◊strong{formal methods 
 
 More broadly, I'm interested in moving software away from heuristics and hacks and onto more solid, elegant, and principled ground. I think there is a lot of room for mathematical abstractions to give us much better results across the computing stack. And as software worms its way into more of our lives, we need better results.
 
+You can reach me at ◊email{lzdu (at) ucdavis}. I am also on ◊link["https://github.com/lucasdu2"]{Github} and ◊link["https://linkedin.com/in/lucaszdu"]{LinkedIn}.
+
 ◊headline{Research Interests}
 I'm primarily interested in ◊strong{applying techniques from programming languages and formal methods to software systems}. I'm currently excited about:
 ◊items{
