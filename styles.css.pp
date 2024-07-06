@@ -45,8 +45,11 @@ mark {
   background-color: ◊|highlightcolor|;
 }
 
+a {
+  color: ◊|calloutcolor|;
+}
+
 header {
-  border-bottom: 2px solid ◊|dividercolor|;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -73,9 +76,6 @@ header nav a {
 
 header nav a:hover {
   text-decoration: underline;
-}
-
-a:link, a:visited {
 }
 
 .portrait {
