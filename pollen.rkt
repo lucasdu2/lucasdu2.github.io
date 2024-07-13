@@ -17,7 +17,6 @@
 (define title (default-tag-function 'h1))
 (define headline (default-tag-function 'h2))
 
-(define email (default-tag-function 'mark 'em))
 (define (portrait source alt-text) `(img ((src ,source)(alt ,alt-text)(class "portrait"))))
 
 ;; some post-specific tags

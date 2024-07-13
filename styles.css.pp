@@ -75,6 +75,10 @@ date-marker {
   font-style: italic;
 }
 
+email {
+  text-decoration: underline;
+}
+
 header {
   display: flex;
   flex-flow: row wrap;
