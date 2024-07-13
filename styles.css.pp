@@ -109,11 +109,11 @@ header nav a:hover {
 }
 
 .portrait {
-  width: 15em;
-  border-radius: 20%;
+  width: 10em;
+  border-radius: 10%;
   float: right;
   margin-left: 0.8em;
-  border: 5px solid ◊|dividercolor|;
+  border: 4px solid ◊|dividercolor|;
 }
 
 body {
@@ -158,5 +158,6 @@ footer {
       display: block;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 0.8em;
   }
 }

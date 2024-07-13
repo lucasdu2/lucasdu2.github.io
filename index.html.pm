@@ -4,7 +4,7 @@
 
 ◊portrait["assets/myface.jpg" "a picture of my face"] I am an ◊strong{incoming computer science MS student at UC Davis}. I'm currently taking a brief break between working full-time and starting school.
 
-Previously, I worked on cloud storage at eBay. I have a BS in computer science from UChicago.
+Previously, I worked on cloud storage at eBay. As an undergraduate, I studied computer science at UChicago.
 
 I'm interested in ◊strong{programming languages} and ◊strong{formal methods research} to ◊em{improve} the quality of software systems and ◊em{make it easier} to develop higher quality software. Software should be more empowering and less frustrating for both developers and users.
 
