@@ -1,4 +1,6 @@
 #lang pollen
 
 index.html
-writing.html
+◊posts.html{
+  ◊(dynamic-require "posts.ptree" 'doc)
+}

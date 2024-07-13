@@ -34,6 +34,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url('fonts/JetBrainsMono-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   font-size: ◊|fontsize|px;
   font-family: "Inria Sans", sans-serif;
@@ -45,8 +52,27 @@ mark {
   background-color: ◊|highlightcolor|;
 }
 
+.highlight {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.highlight pre {
+  font-size: 0.8em;
+  font-family: "JetBrainsMono", monospace;
+}
+
 a {
   color: ◊|calloutcolor|;
+}
+
+.post-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+date-marker {
+  font-style: italic;
 }
 
 header {
@@ -80,10 +106,10 @@ header nav a:hover {
 
 .portrait {
   width: 15em;
-  border-radius: 30%;
+  border-radius: 20%;
   float: right;
-  margin: 1em;
-  border: 3px solid ◊|dividercolor|;
+  margin-left: 0.8em;
+  border: 5px solid ◊|dividercolor|;
 }
 
 body {
@@ -109,6 +135,11 @@ h2 {
   background: linear-gradient(90deg, rgba(195, 177, 225,1) 0%, rgba(195, 177, 225,0.2) 100%);
   border-left: 1px solid #800080;
   border-bottom: 1px solid #800080;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid ◊|dividercolor|;
 }
 
 footer {
