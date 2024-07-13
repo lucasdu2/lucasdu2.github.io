@@ -19,7 +19,5 @@
         (apply post-list (map node-link plist))
         ""))
 
-◊; TODO: Write script to automatically create a new post with the
-◊; proper date and name -- add to posts.ptree, or automatically create posts.ptree.
 ◊headline{Posts}
 ◊(construct-posts-toc posts-list)
