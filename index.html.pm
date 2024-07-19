@@ -11,11 +11,15 @@ I'm interested in ◊strong{programming languages} and ◊strong{formal methods 
 ◊email{lzdu ∊ ucdavis} ∨ ◊email{lucaszdu ∊ gmail} / ◊link["https://github.com/lucasdu2"]{GitHub} / ◊link["https://linkedin.com/in/lucaszdu"]{LinkedIn}
 
 ◊headline{Research Interests}
-I'm primarily interested in ◊strong{applying techniques from programming languages and formal methods to software systems}. It should be easier to create software that is more correct, performant, secure, private, and flexible. I'm currently excited about:
+I'm primarily interested in ◊strong{applying techniques from programming languages and formal methods to software systems}. ◊em{It should be easier to create software that is more correct, performant, secure, private, and flexible}. I'm currently excited about:
 ◊items{
   ◊item{◊strong{verification of concurrent/distributed systems} and}
   ◊item{◊strong{better programming models for the cloud}, particularly related to distributed storage and stream processing.}
 }
+
+◊|divider|
+
+One formulation of my larger goal is to take a mathematically principled approach in A) expanding and strengthening the kinds of formal guarantees we can practically get about our software and B) discovering simpler, more expressive programming tools and abstractions for contemporary computing needs.
 
 More broadly, I want to help move software ◊em{away from heuristics and hacks} and ◊em{onto more solid, elegant, and principled ground}. I believe there is a lot of room for mathematical abstractions to give us much better results across the computing stack. As software underpins more and more of our lives, we need better results.
 
