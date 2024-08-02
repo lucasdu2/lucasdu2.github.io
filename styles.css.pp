@@ -147,6 +147,7 @@ hr {
 }
 
 footer {
+  padding-top: 0.5em;
   border-top: 2px solid ◊|dividercolor|;
   font-size: ◊|footer-ratio|em;
 }

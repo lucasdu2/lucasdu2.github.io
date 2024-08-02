@@ -132,6 +132,7 @@ hr {
 }
 
 footer {
+  padding-top: 0.5em;
   border-top: 2px solid #D3D3D3;
   font-size: 0.7em;
 }
