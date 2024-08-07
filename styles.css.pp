@@ -75,8 +75,16 @@ date-marker {
   font-style: italic;
 }
 
+.link-block {
+  padding: 0.2em 0;
+  font-family: "JetBrainsMono", monospace;
+  font-size: 0.8em;
+  background-color: #EEE1C6;
+  text-align: center;
+}
+
 email {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 header {
@@ -109,8 +117,8 @@ header nav a:hover {
 }
 
 .portrait {
-  width: 10em;
-  border-radius: 10%;
+  width: 8.5em;
+  border-radius: 30%;
   float: right;
   margin-left: 0.8em;
   border: 4px solid ◊|dividercolor|;
@@ -143,7 +151,8 @@ h2 {
 
 hr {
   border: none;
-  border-top: 2px solid ◊|dividercolor|;
+  border-top: 4px solid ◊|dividercolor|;
+  border-bottom: 1px solid;
 }
 
 footer {

@@ -19,5 +19,6 @@
         (apply post-list (map node-link plist))
         ""))
 
-◊headline{Posts}
+Personal thoughts for an impersonal world! Take them unseriously.
+◊|divider|
 ◊(construct-posts-toc posts-list)
