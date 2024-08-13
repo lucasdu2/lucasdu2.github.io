@@ -11,5 +11,5 @@
 </head>
 <body>
   <header><nav><a href="../index.html">Home</a><a href="../posts.html">Posts</a></nav></header>
-  ◊(->html doc #:splice? #t)</body>
+  ◊(->html doc #:splice? #t)<footer>♦♦♦</footer></body>
 </html>

@@ -14,6 +14,12 @@ header {
   gap: 10%;
 }
 
+footer {
+  border-top: 1px solid;
+  text-align: center;
+  font-size: 1em;
+}
+
 h1 {
   font-size: ◊|titleratio|em;
   padding: 0.1em 0;

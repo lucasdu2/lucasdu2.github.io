@@ -7,7 +7,7 @@
 ◊(define highlightcolor "#fffcbf")
 ◊(define calloutcolor "#8b0000")
 ◊(define dividercolor "#D3D3D3")
-◊(define bodywidth 40)
+◊(define bodywidth 30)
 ◊(define h1-ratio 2)
 ◊(define h2-ratio 1.5)
 ◊(define footer-ratio 0.7)
@@ -84,7 +84,7 @@ date-marker {
 }
 
 email {
-  font-weight: bold;
+  text-decoration: underline dotted;
 }
 
 header {

@@ -19,6 +19,6 @@
         (apply post-list (map node-link plist))
         ""))
 
-Personal thoughts for an impersonal world! Take them unseriously.
+Personal thoughts for an impersonal world!
 ◊|divider|
 ◊(construct-posts-toc posts-list)
