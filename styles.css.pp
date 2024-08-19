@@ -87,6 +87,14 @@ email {
   text-decoration: underline dotted;
 }
 
+.aside {
+  padding: 1em;
+  font-size: 0.9em;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  background: #FFDBBB;
+}
+
 header {
   display: flex;
   flex-flow: row wrap;

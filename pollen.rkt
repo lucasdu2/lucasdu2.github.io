@@ -39,6 +39,7 @@
 (define item (default-tag-function 'li))
 (define (link url text) `(a ((href ,url)(target "_blank")(rel "noopener noreferrer")) ,text))
 (define divider '(hr))
+(define aside (default-tag-function 'div #:class "aside"))
 
 ;; ===
 (define (fn-id x) (string-append x "_fn"))
