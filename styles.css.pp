@@ -12,6 +12,7 @@
 ◊(define h2-ratio 1.5)
 ◊(define footer-ratio 0.7)
 ◊(define multiplier 1.3)
+◊(define padding-left-align 0.3)
 
 @font-face {
   font-family: "Inria Sans";
@@ -76,11 +77,13 @@ date-marker {
 }
 
 .link-block {
-  padding: 0.2em 0;
+  padding: 0.4em 0;
+  padding-bottom: 0.5em;
   font-family: "JetBrainsMono", monospace;
   font-size: 0.8em;
   background-color: #EEE1C6;
   text-align: center;
+  border-bottom: 1px solid #535724;
 }
 
 email {
@@ -145,13 +148,13 @@ body {
 h1 {
   font-size: ◊|h1-ratio|em;
   margin: 0em;
-  padding-left: 0.2em;
+  padding-left: ◊|padding-left-align|em;
 }
 
 h2 {
   font-size: ◊|h2-ratio|em;
-  padding-left: 0.2em;
-  padding-top: 0.1em;
+  padding: 0.1em;
+  padding-left: ◊|padding-left-align|em;
   background: linear-gradient(90deg, rgba(195, 177, 225,1) 0%, rgba(195, 177, 225,0.2) 100%);
   border-left: 1px solid #800080;
   border-bottom: 1px solid #800080;

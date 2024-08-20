@@ -70,6 +70,6 @@ Also, Hamming is obsessed with "success," but there's more to success than just 
 
 I'm going to try to hunker down and spend the next month or so continuing to learn more about SAT/SMT solvers and separation logic in hopes of doing some real verification work. Who knows how it's going to go, but I'm pretty excited about it all. It continues to astonish me that there's so much cool work being done, even in just a "niche" area like programming languages and verification.
 
-Making a software developer salary is great, but my time is simply the most valuable thing I have right now. At least that's how I feel at the moment. I guess this is sort of a privileged place to be in. I don't know.
+Making a software developer salary is great, but my time is simply the most valuable thing I have. At least that's how I feel at the moment. I guess this is sort of a privileged place to be in. I don't know.
 
-What I do know is that I'm really happy right now getting to spend my time learning about and working on all these things that I find fascinating and important. I'm incredibly grateful that I'm in a place to do this. There's not much else to say. I'm just really grateful.
+What I do know is that, right now, I'm really happy getting to spend my time learning about and working on all these things that I find fascinating and important. I'm incredibly grateful that I'm in a place to do this. There's not much else to say. I'm just really grateful.
