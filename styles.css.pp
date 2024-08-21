@@ -7,7 +7,7 @@
 ◊(define highlightcolor "#fffcbf")
 ◊(define calloutcolor "#8b0000")
 ◊(define dividercolor "#D3D3D3")
-◊(define bodywidth 30)
+◊(define bodywidth 32)
 ◊(define h1-ratio 2)
 ◊(define h2-ratio 1.5)
 ◊(define footer-ratio 0.7)
@@ -90,11 +90,11 @@ email {
   text-decoration: underline dotted;
 }
 
-.aside {
-  padding: 1em;
+aside {
+  padding: 1em 2em;
   font-size: 0.9em;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
+  border: 1px solid #535724;
+  border-left: 5px solid #535724;
   background: #FFDBBB;
 }
 
@@ -128,8 +128,8 @@ header nav a:hover {
 }
 
 .portrait {
-  width: 8.5em;
-  border-radius: 30%;
+  width: 7em;
+  border-radius: 50%;
   float: right;
   margin-left: 0.8em;
   border: 4px solid ◊|dividercolor|;
