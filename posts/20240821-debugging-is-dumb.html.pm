@@ -21,7 +21,7 @@ But most debugging in the real world, in my experience, is not like this. Many m
   ◊item{does not actually fix the actual problem and results in more bugs and increasing cruft down the line or}
   ◊item{is a result of a misaligned abstraction further down the stack, due to some unprincipled or ad hoc design decision in the system (that might be a bug fix for another, earlier, bug or just an arbitrary, best-guess choice by the system developers).}
 }
-Both these things suck. This kind of debugging is dumb and uninteresting. I want my solutions to actually solve the entire problem. I want my solutions to last. And I want the source of the bug to be something foundational, something fundamental that I misunderstood. I don't want to deal with some arbitrary hack---something that is entirely accidental (à la Fred Brooks, who I love to quote). 
+Both these things suck. This kind of debugging is dumb and uninteresting. I want my solutions to actually solve the entire problem. I want my solutions to last. And I want the source of the bug to be something foundational, something fundamental that I misunderstood. I don't want to deal with some arbitrary hack---something that is entirely accidental (à la Fred Brooks, whom I love to quote). 
 
 But how do we make this all better?
 
