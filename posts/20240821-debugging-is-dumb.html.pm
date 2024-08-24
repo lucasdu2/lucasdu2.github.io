@@ -31,7 +31,7 @@ But how do we make this all better?
 
 ◊callout{Bugs are ◊em{not} a natural, fundamental reality of software.}
 
-There are a number of assumptions in software engineering that I think a lot of practitioners, especially more experienced ones, hold. Some of these assumptions are, to me, a little frustrating. They constrict what people think is possible. They limit what people demand of their tools and their software. It's important, at least to me, to not conflate current reality with natural law.
+There are a number of assumptions in software engineering that I think a lot of practitioners, especially more experienced ones, hold. Some of these assumptions are, to me, a little frustrating. They constrict what people think is possible. They limit what people demand of their tools and their software. It's important, at least to me, to not conflate current reality with basic inevitability.
 
 One assumption I wish we would abolish is that bugs are some kind of inevitable, natural law of software artifacts. I think the industry is far too accomodating of bugs---or mistakes, really---especially when it is simultaneously trying to push software into more important parts of our lives. Software is, essentially, pure logic. There are no physical realities mandating the presence of bugs. Software can, in theory, be a perfect, perpetual motion machine. That's part of its appeal.
 
@@ -59,7 +59,7 @@ I just generally like proofs, rigor, and elegance (and yes, I do think those thi
 ◊post-section{Fin.}
 One way to sum up is this: debugging is a crucial part of writing software, but it needs to be much more effective. Developing simpler, more fitting abstractions at a systemic level, being able to more easily get formal proofs about our software, and surfacing more errors sooner in the development cycle (preferably at the time of construction) are important pieces of making debugging a more productive and useful endeavor.
 
-And we need something radically different than the status quo, or at least the status quo that I see. We need far fewer lines of code and far stronger guarantees, particularly about correctness and security, from our software. We're not going to get that from hacking at things with currently conventional tools.
+Generally, we need far fewer lines of code and far stronger guarantees, particularly about correctness and security, from our software. We're simply not going to get that from hacking at things with currently conventional tools.
 
 Some more food for thought on software quality and verification can be found in Hoare's ◊link["https://6826.csail.mit.edu/2020/papers/noproof.pdf"]{"How Did Software Get So Reliable Without Proof?"} and in some of Dijkstra's writing and lectures, particularly ◊link["https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html"]{"The Humble Programmer."}
 
