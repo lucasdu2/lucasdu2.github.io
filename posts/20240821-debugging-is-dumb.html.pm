@@ -1,0 +1,70 @@
+#lang pollen
+
+◊post-title{Debugging is dumb}
+◊post-date{Wednesday August 21, 2024}
+
+Let's put off doing more meaningful work and write down some quick thoughts I have about debugging, since they happen to be on my mind. All of this is just what I feel right now (and is subject to change). But it's also something I feel strongly about and that plays a substantial part in what I want to do with my life.
+
+◊post-section{Debugging isn't actually dumb}
+When you talk about debugging, anyone who's written any kind of computer program probably understands what you mean. It's likely the most relatable and most inevitable part of software development. Everyone debugs code. Most of software development is, in some sense, debugging. 
+
+Alright. You got me. Debugging isn't actually dumb! Not really. But it does depend on what you're talking about when you talk about debugging. I would argue that, while many people hold an idealized view of debugging that is actually quite useful and integral to the software development process, most real-world debugging is not that. The bug finding and bug fixing process in most software, particularly production software, ◊em{is} pretty dumb. The problem, isn't with the idea of debugging. The problem is that we need to make real-world debugging better.
+
+The ideal debugging process that people often talk about when discussing debugging involves a kind of bug where there is some essential misunderstanding about the program requirements, about some related system, or about the program itself that needs to be resolved. In these cases, there is something productive happening. You learn something, you get a bit better, perhaps, and the problem is, if you've properly understood things, fixed for good.
+
+This kind of debugging is usually helpful---it's part of the mistake-feedback-learning loop that can make learning programming so fun and interactive. And this kind of debugging ◊em{is} inevitable and integral to the software development process. No one, no matter how excellent, will produce error-free code within an unfamiliar system. There is always a learning curve.
+
+◊aside{There is a blog post by Allison Kaptur titled ◊link["https://akaptur.com/blog/2017/11/12/love-your-bugs/"]{"Love Your Bugs"} that I read a while back and that kicked off some thoughts on this general topic. I found the title of the post a little too saccharine (this probably says something about me). After reading it, I actually did agree with some of what was said, particularly about how bugs can help you learn. That is true, in the ideal (and, I would argue, uncommon) case. I still have issues with the general sentiment of the post---that you ◊em{should} love bugs, otherwise you aren't going to grow or be a good engineer. Bugs are often incredibly silly, wasteful, and lead to no tangible personal or intellectual growth (except maybe an increasing sense of resignation, which you could spin as "patience"). We don't have to love them. We should try to look for something better.}
+
+But most debugging in the real world, in my experience, is not like this. Many misunderstandings that lead to bugs are ◊em{not} about things that are essential, fundamental, or inevitable. Instead, they are results of historical accident. Debugging in real life either:
+◊items{
+  ◊item{does not actually fix the actual problem and results in more bugs and increasing cruft down the line or}
+  ◊item{is a result of a misaligned abstraction further down the stack, due to some unprincipled or ad hoc design decision in the system (that might be a bug fix for another, earlier, bug or just an arbitrary, best-guess choice by the system developers).}
+}
+Both these things suck. This kind of debugging is dumb and uninteresting. I want my solutions to actually solve the entire problem. I want my solutions to last. And I want the source of the bug to be something foundational, something fundamental that I misunderstood. I don't want to deal with some arbitrary hack---something that is entirely accidental (à la Fred Brooks, who I love to quote). 
+
+But how do we make this all better?
+
+◊aside{I saw a comment on HackerNews recently about the terrible mess that the Oracle Database codebase is in---a codebase that brings to mind a lot of the frustrations I have with debugging mentioned above---and a response that was essentially like, "OMG, what a great piece of engineering! I can't believe they can still add features and remain stable and underpin 90% of Fortune 500 companies." Uhh, no, that should not impress you. That should scare you. That should scare you a lot. You don't have to accept your terrible reality. You certainly don't have to celebrate it.}
+
+◊post-section{A brief note on assumptions}
+
+◊callout{Bugs are ◊em{not} a natural, fundamental reality of software.}
+
+There are a number of assumptions in software engineering that I think a lot of practitioners, especially more experienced ones, hold. Some of these assumptions are, to me, a little frustrating. They constrict what people think is possible. They limit what people demand of their tools and their software. It's important, at least to me, to not conflate current reality with natural law.
+
+One assumption I wish we would abolish is that bugs are some kind of inevitable, natural law of software artifacts. I think the industry is far too accomodating of bugs---or mistakes, really---especially when it is simultaneously trying to push software into more important parts of our lives. Software is, essentially, pure logic. There are no physical realities mandating the presence of bugs. Software can, in theory, be a perfect, perpetual motion machine. That's part of its appeal.
+
+◊post-section{What we (still) lack}
+
+But we also need to be practical. Humans will, inevitably, make mistakes. What we need are tools, abstractions, and techniques to help us make far fewer mistakes about things that matter---ideally, none at all. In a sense, ◊em{we need ways to make debugging more pleasant and far more effective.}
+
+There are multiple directions from which we can approach this. We should try and create as few bugs as possible (during development---i.e. by-construction), we should try and surface bugs as quickly as possible (especially if they make it into production), and we should make it much easier to fix bugs when they surface.
+
+I don't think I'm saying anything radical here, but I do believe that we need far more radical changes to the way we program in order to really accomplish these things in a way that is actually meaningful. We need to push forward both at a developer-facing level (with new products, startups, whatever) and at a deeper, more foundational research level. We need to stop pretending that we already know how best to program and that all we need are some superficial (and possibly LLM-based) tools to help us move faster in paradigms that we're already comfortable with. We don't need easier ways to make the same mistakes.
+
+In particular, I believe we need the following:
+◊items{
+  ◊item{better fitting abstractions---ideally, mathematically principled abstractions---at a systems level, i.e. in the programming languages, databases, file systems, operating systems, etc. that we use (in general, we should aim to solve problems at their essence instead of piling on ad-hoc fixes over the top)}
+  ◊item{stronger and broader ◊em{provable} guarantees about important program properties---program proofs should be far more common, starting with the foundational systems we use}
+  ◊item{more principled, formal, and automated approaches to testing---i.e. fuzzing, concolic testing, property-based testing, etc.---that are interactive parts of software construction itself (not just some post-facto thing you do when things go wrong in production)}
+}
+
+There are some things being done along these lines in industry that I do respect a lot. What ◊link["https://www.antithesis.com/"]{Antithesis} is doing with deterministic testing (which is an extension of the founders' previous work on FoundationDB's testing system) is extremely cool and pushes what's possible in automated testing and debuggability at scale. I like ◊link["https://www.instantdb.com/"]{InstantDBs} re-imagining of the database abstraction for client-side collaboration (and also their usage of Clojure!). But we can, and should, go much further. We should try to avoid ◊link["https://sourcegraph.com/blog/zig-programming-language-revisiting-design-approach"]{settling for local maxima}.
+
+I'm personally very interested in mathematical approaches to these things. I really like the promise of formal methods and type systems, both intellectually and practically---broadly, I think proofs and formal methods are the closest thing to a silver bullet that we have. I find a lot of satisfaction in correctness-by-construction. I like the idea of clean-slate abstractions and fundamental rethinking of our tools.
+
+I just generally like proofs, rigor, and elegance (and yes, I do think those things go together). Maybe that makes me a bad engineer. Maybe that makes me naive and impractical. I don't know. Honestly, I don't really care. I guess it does makes sense that I'm so drawn to research, particularly in programming languages and verification. It's probably a good thing that that's the direction I'm currently moving in.
+
+◊post-section{Fin.}
+One way to sum up is this: debugging is a crucial part of writing software, but it needs to be much more effective. Developing simpler, more fitting abstractions at a systemic level, being able to more easily get formal proofs about our software, and surfacing more errors sooner in the development cycle (preferably at the time of construction) are important pieces of making debugging a more productive and useful endeavor.
+
+And we need something radically different than the status quo, or at least the status quo that I see. We need far fewer lines of code and far stronger guarantees, particularly about correctness and security, from our software. We're not going to get that from hacking at things with currently conventional tools.
+
+Some more food for thought on software quality and verification can be found in Hoare's ◊link["https://6826.csail.mit.edu/2020/papers/noproof.pdf"]{"How Did Software Get So Reliable Without Proof?"} and in some of Dijkstra's writing and lectures, particularly ◊link["https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html"]{"The Humble Programmer."}
+
+◊aside{The Dijkstra lecture mentioned above---"The Humble Programmer"---uses "debugging" in a different sense than I do here, which lends weight to my point that there's no clear and common definition of debugging (making it difficult to discuss properly). I interpret Dijkstra's use of debugging to indicate post-facto bug fixing, i.e. fixing bugs in existing systems which have already been deployed in production. I've instead used debugging in the general sense of fixing errors in a program. In this sense, even programs that are ostensibly correct-by-construction involve debugging during construction, i.e. figuring out why a machine-checked proof is failing.}
+
+
+Alright, I've already spent far, far too long on this wall of text. Time to get back to work.
+

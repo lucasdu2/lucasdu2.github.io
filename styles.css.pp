@@ -6,6 +6,7 @@
 ◊(define bgcolor "#FAF9F6")
 ◊(define highlightcolor "#fffcbf")
 ◊(define calloutcolor "#8b0000")
+◊(define hovercolor "#E90017")
 ◊(define dividercolor "#D3D3D3")
 ◊(define bodywidth 32)
 ◊(define h1-ratio 2)
@@ -67,6 +68,10 @@ a {
   color: ◊|calloutcolor|;
 }
 
+a:hover {
+  color: ◊|hovercolor|;
+}
+
 .post-list {
   list-style-type: none;
   padding-left: 0;
@@ -91,10 +96,18 @@ email {
 }
 
 aside {
-  padding: 1em 2em;
+  padding: 1em;
   font-size: 0.9em;
   border: 1px solid #535724;
   border-left: 5px solid #535724;
+  background: #f2f2ed;
+}
+
+.callout {
+  padding: 1em;
+  font-size: 0.9em;
+  border: 1px solid ◊|calloutcolor|;
+  border-left: 5px solid ◊|calloutcolor|;
   background: #FFDBBB;
 }
 
@@ -124,6 +137,7 @@ header nav a {
 }
 
 header nav a:hover {
+  color: ◊|bgcolor|;
   text-decoration: underline;
 }
 
