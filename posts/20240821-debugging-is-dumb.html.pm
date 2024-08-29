@@ -18,10 +18,10 @@ This kind of debugging is usually helpful---it's part of the mistake-feedback-le
 
 But most debugging in the real world, in my experience, is not like this. Many misunderstandings that lead to bugs are ◊em{not} about things that are essential, fundamental, or inevitable. Instead, they are results of historical accident. Debugging in real life either:
 ◊items{
-  ◊item{does not actually fix the actual problem and results in more bugs and increasing cruft down the line or}
+  ◊item{does not actually fix the problem and results in more bugs and increasing cruft down the line or}
   ◊item{is a result of a misaligned abstraction further down the stack, due to some unprincipled or ad hoc design decision in the system (that might be a bug fix for another, earlier, bug or just an arbitrary, best-guess choice by the system developers).}
 }
-Both these things suck. This kind of debugging is dumb and uninteresting. I want my solutions to actually solve the entire problem. I want my solutions to last. And I want the source of the bug to be something foundational, something fundamental that I misunderstood. I don't want to deal with some arbitrary hack---something that is entirely accidental (à la Fred Brooks, whom I love to quote). 
+Both these things suck. This kind of debugging is dumb and uninteresting. I want my solutions to solve the entire problem, from the bottom up. I want my solutions to last. And I want the source of the bug to be something foundational, something fundamental that I misunderstood. I don't want to deal with arbitrary hacks based on unsound, best-effort assumptions.
 
 But how do we make this all better?
 
@@ -50,7 +50,7 @@ In particular, I believe we need the following:
   ◊item{more principled, formal, and automated approaches to testing---i.e. fuzzing, concolic testing, property-based testing, etc.---that are interactive parts of software construction itself (not just some post-facto thing you do when things go wrong in production)}
 }
 
-There are some things being done along these lines in industry that I do respect a lot. What ◊link["https://www.antithesis.com/"]{Antithesis} is doing with deterministic testing (which is an extension of the founders' previous work on FoundationDB's testing system) is extremely cool and pushes what's possible in automated testing and debuggability at scale. I like ◊link["https://www.instantdb.com/"]{InstantDBs} re-imagining of the database abstraction for client-side collaboration (and also their usage of Clojure!). But we can, and should, go much further. We should try to avoid ◊link["https://sourcegraph.com/blog/zig-programming-language-revisiting-design-approach"]{settling for local maxima}.
+There are some things being done along these lines in industry that I do respect a lot. What ◊link["https://www.antithesis.com/"]{Antithesis} is doing with deterministic testing (which is an extension of the founders' previous work on FoundationDB's testing system) is extremely cool and pushes what's possible in automated testing and debuggability at scale. I like ◊link["https://www.instantdb.com/"]{InstantDB's} re-imagining of the database abstraction for client-side collaboration (and also their usage of Clojure!). But we can, and should, go much further. We should try to avoid ◊link["https://sourcegraph.com/blog/zig-programming-language-revisiting-design-approach"]{settling for local maxima}.
 
 I'm personally very interested in mathematical approaches to these things. I really like the promise of formal methods and type systems, both intellectually and practically---broadly, I think proofs and formal methods are the closest thing to a silver bullet that we have. I find a lot of satisfaction in correctness-by-construction. I like the idea of clean-slate abstractions and fundamental rethinking of our tools.
 
