@@ -10,7 +10,11 @@ I'm interested in ◊strong{programming languages} and ◊strong{formal methods 
 
 ◊headline{Research Interests}
 
-I have interests in program logics, type theory, functional programming, and formal verification. I also have broader interests in distributed systems theory, security, cryptography, and high-performance parallel computing.
+My primary goal is to ◊em{put stronger provable guarantees about real-world software systems within reach of more programmers}. A secondary, related goal is to ◊em{drastically reduce the complexity of distributed applications} (while preserving or even increasing performance).
+
+To those ends, I have interests in program logics, type theory, functional programming, compilers, and formal verification. I also have broader interests in distributed systems theory, security, cryptography, and high-performance parallel computing.
+
+◊|divider|
 
 Currently, I'm interested in the ◊strong{formal verification of concurrent and distributed systems}. I want strong formal guarantees, specifically about correctness and security, from performance-sensitive foundational systems (i.e. databases, filesystems, browsers) and web-based applications.
 
