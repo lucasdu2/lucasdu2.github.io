@@ -16,8 +16,6 @@ To those ends, I have interests in program logics, type theory, functional progr
 
 ◊|divider|
 
-Currently, I'm interested in the ◊strong{formal verification of concurrent and distributed systems}. I want strong formal guarantees, specifically about correctness and security, from performance-sensitive foundational systems (i.e. databases, filesystems, browsers) and web-based applications.
-
-I'm also interested in ◊strong{better programming models for parallel and distributed computing}. We need better tools and abstractions to make building simple and efficient (and correct, secure, and private) parallel/concurrent/distributed software much easier.
+Currently, I'm looking at tools for verifying complex concurrent data structures using separation logic and automated solvers.
 
 ◊footer{made with robotic indifference by yours truly, with help from ◊link["https://docs.racket-lang.org/pollen/index.html"]{pollen}}
