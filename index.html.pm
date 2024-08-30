@@ -10,7 +10,7 @@ I'm interested in ◊strong{programming languages} and ◊strong{formal methods 
 
 ◊headline{Research Interests}
 
-My primary goal is to ◊em{put stronger and broader provable guarantees about real-world software systems within reach of more programmers}. A secondary, related goal is to ◊em{drastically reduce the complexity of concurrent and distributed applications} (while preserving or even increasing performance).
+My primary goal is to ◊em{put stronger and broader provable guarantees about real-world software systems within reach of more programmers}. A secondary, related goal is to ◊em{drastically reduce the complexity of reliable, secure concurrent and distributed applications} (while preserving or even increasing performance).
 
 To those ends, I have interests in program logics, type theory, functional programming, compilers, and formal verification. I also have broader interests in distributed systems theory, security, cryptography, and high-performance parallel computing.
 
