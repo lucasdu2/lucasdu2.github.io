@@ -8,7 +8,9 @@ Let's put off doing more meaningful work and write down some quick thoughts I ha
 ◊post-section{Debugging isn't actually dumb}
 When you talk about debugging, anyone who's written any kind of computer program probably understands what you mean. It's likely the most relatable and most inevitable part of software development. Everyone debugs code. Most of software development is, in some sense, debugging. 
 
-Alright. You got me. Debugging isn't actually dumb! Not really. But it does depend on what you're talking about when you talk about debugging. I would argue that, while many people hold an idealized view of debugging that is actually quite useful and integral to the software development process, most real-world debugging is not that. The bug finding and bug fixing process in most software, particularly production software, ◊em{is} pretty dumb. The problem, isn't with the idea of debugging. The problem is that we need to make real-world debugging better.
+Alright. You got me. Debugging isn't actually dumb! Not really. But it does depend on what you're talking about when you talk about debugging. I would argue that, while many people hold an idealized view of debugging that is actually quite useful and integral to the software development process, most real-world debugging is not that. The bug finding and bug fixing process in most software, particularly production software, ◊em{is} pretty dumb.
+
+The problem isn't with the idea of debugging. The problem is that we need to make real-world debugging better.
 
 The ideal debugging process that people often talk about when discussing debugging involves a kind of bug where there is some essential misunderstanding about the program requirements, about some related system, or about the program itself that needs to be resolved. In these cases, there is something productive happening. You learn something, you get a bit better, perhaps, and the problem is, if you've properly understood things, fixed for good.
 
