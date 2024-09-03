@@ -6,7 +6,7 @@
 
 Previously, I worked on cloud storage at eBay. As an undergraduate, I studied computer science at UChicago.
 
-I'm interested in ◊strong{programming languages} and ◊strong{formal methods research} to ◊em{improve} the quality of software systems and ◊em{make it easier} to develop higher quality software. Software should be more empowering and less frustrating for both developers and users.
+I'm interested in ◊strong{programming languages} and ◊strong{formal methods research} to ◊em{improve} the quality of software systems and ◊em{make it easier} to develop higher quality software. Software should be more empowering and less frustrating for both developers and users. 
 
 ◊headline{Research Interests}
 
@@ -14,7 +14,7 @@ My primary goal is to ◊em{put stronger and broader provable guarantees about r
 
 A secondary, related goal is to ◊em{drastically reduce the complexity of reliable, secure concurrent and distributed applications} (while preserving or even increasing performance).
 
-To those ends, I have interests in program logics, type theory, functional programming, compilers, and formal verification. I also have broader interests in distributed systems theory, security, cryptography, and high-performance parallel computing.
+I believe the best way forward is through mathematical abstraction and logical proof. To that end, I have interests in program logics, type theory, functional programming, and formal verification. I also have broader interests in distributed systems theory, compilers, security, cryptography, and high-performance parallel computing.
 
 ◊|divider|
 
