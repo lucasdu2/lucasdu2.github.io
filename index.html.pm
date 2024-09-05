@@ -10,7 +10,7 @@ I'm interested in ◊strong{programming languages} and ◊strong{formal methods 
 
 ◊headline{Research Interests}
 
-My primary goal is to ◊em{put stronger and broader provable guarantees about real-world software systems within reach of more programmers}.
+My primary goal is to ◊em{put stronger and broader provable guarantees about real-world software systems within reach of more programmers}. I'm particularly interested in areas where traditional, ad-hoc testing techniques fall painfully short, i.e. distributed/concurrent/parallel systems or software security.
 
 A secondary, related goal is to ◊em{drastically reduce the complexity of reliable, secure concurrent and distributed applications} (while preserving or even increasing performance).
 
