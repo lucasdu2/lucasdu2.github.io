@@ -2,7 +2,7 @@
 
 ◊(define bordercolor "#222021")
 ◊(define accentcolor "#E2522F")
-◊(define titleratio 1.7)
+◊(define titleratio 1.8)
 ◊(define sectionratio 1.3)
 
 header {
@@ -31,8 +31,7 @@ h2 {
   padding-left: 0;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
-  border-left: none;
-  border-bottom: 3px solid ◊|bordercolor|;
+  border-bottom: 2px solid ◊|bordercolor|;
   background: none;
 }
 

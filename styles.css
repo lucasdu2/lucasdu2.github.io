@@ -34,6 +34,20 @@
 }
 
 @font-face {
+  font-family: "Handjet";
+  src: url('fonts/Handjet/Handjet-Black.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Handjet";
+  src: url('fonts/Handjet/Handjet-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "JetBrainsMono";
   src: url('fonts/JetBrainsMono-Light.ttf');
   font-weight: normal;
@@ -49,7 +63,7 @@ html {
 }
 
 mark {
-  background-color: #fffcbf;
+  background-color: #A7FCEF;
 }
 
 .highlight {
@@ -70,13 +84,13 @@ a:hover {
   color: #E90017;
 }
 
-.post-list {
-  list-style-type: none;
-  padding-left: 0;
+.post-table {
+  width: 100%;
 }
 
-date-marker {
-  font-style: italic;
+.post-item {
+  font-size: 0.8em;
+  font-family: "JetBrains Mono", monospace;
 }
 
 aside {
@@ -125,7 +139,7 @@ header nav a:hover {
 }
 
 .portrait {
-  width: 10em;
+  width: 7em;
   float: left;
   margin-right: 1.5em;
   border: 1px solid #222021;
@@ -143,14 +157,15 @@ body {
 
 h1 {
   font-size: 2em;
+  font-family: "Handjet", "CrimsonPro", serif;
   margin: 0em;
-  font-style: italic;
 }
 
 h2 {
   font-size: 1.5em;
   padding: 0.1em;
-  padding-left: 0.3em;
+  font-family: "Handjet", "CrimsonPro", serif;
+  font-weight: 600;
 }
 
 hr {

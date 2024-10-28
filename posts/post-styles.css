@@ -15,7 +15,7 @@ footer {
 }
 
 h1 {
-  font-size: 1.7em;
+  font-size: 1.8em;
   padding: 0.1em 0;
 }
 
@@ -24,8 +24,7 @@ h2 {
   padding-left: 0;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
-  border-left: none;
-  border-bottom: 3px solid #222021;
+  border-bottom: 2px solid #222021;
   background: none;
 }
 

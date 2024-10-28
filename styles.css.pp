@@ -4,8 +4,8 @@
 ◊(define edge (* inner 2))
 ◊(define fontsize 18)
 ◊(define bgcolor "#FCD299")
-◊(define highlightcolor "#fffcbf")
-◊(define calloutcolor "#8b0000")
+◊(define highlightcolor "#A7FCEF")
+◊(define linkcolor "#8b0000")
 ◊(define hovercolor "#E90017")
 ◊(define bordercolor "#222021")
 ◊(define accentcolor "#E2522F")
@@ -14,7 +14,6 @@
 ◊(define h2-ratio 1.5)
 ◊(define footer-ratio 0.7)
 ◊(define multiplier 1.3)
-◊(define padding-left-align 0.3)
 
 @font-face {
   font-family: "CrimsonPro";
@@ -52,6 +51,20 @@
 }
 
 @font-face {
+  font-family: "Handjet";
+  src: url('fonts/Handjet/Handjet-Black.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Handjet";
+  src: url('fonts/Handjet/Handjet-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "JetBrainsMono";
   src: url('fonts/JetBrainsMono-Light.ttf');
   font-weight: normal;
@@ -81,20 +94,20 @@ mark {
 }
 
 a {
-  color: ◊|calloutcolor|;
+  color: ◊|linkcolor|;
 }
 
 a:hover {
   color: ◊|hovercolor|;
 }
 
-.post-list {
-  list-style-type: none;
-  padding-left: 0;
+.post-table {
+  width: 100%;
 }
 
-date-marker {
-  font-style: italic;
+.post-item {
+  font-size: 0.8em;
+  font-family: "JetBrains Mono", monospace;
 }
 
 aside {
@@ -108,8 +121,8 @@ aside {
 .callout {
   padding: 1em;
   font-size: 0.9em;
-  border: 1px solid ◊|calloutcolor|;
-  border-left: 5px solid ◊|calloutcolor|;
+  border: 1px solid ◊|linkcolor|;
+  border-left: 5px solid ◊|linkcolor|;
   background: #FEE68E;
 }
 
@@ -143,7 +156,7 @@ header nav a:hover {
 }
 
 .portrait {
-  width: 10em;
+  width: 7em;
   float: left;
   margin-right: 1.5em;
   border: 1px solid ◊|bordercolor|;
@@ -161,14 +174,15 @@ body {
 
 h1 {
   font-size: ◊|h1-ratio|em;
+  font-family: "Handjet", "CrimsonPro", serif;
   margin: 0em;
-  font-style: italic;
 }
 
 h2 {
   font-size: ◊|h2-ratio|em;
   padding: 0.1em;
-  padding-left: ◊|padding-left-align|em;
+  font-family: "Handjet", "CrimsonPro", serif;
+  font-weight: 600;
 }
 
 hr {

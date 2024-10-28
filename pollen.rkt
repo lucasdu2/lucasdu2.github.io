@@ -31,8 +31,8 @@
 (define post-title (default-tag-function 'h1))
 (define post-section (default-tag-function 'h2))
 (define post-date (default-tag-function 'p #:class "post-date" 'post-date))
-(define (post-item p-date url text) `(li ((class "post-item")) (date-marker "[",p-date "]") " " "—" " " (a ((href ,url)(class "post-link")) ,text)))
-(define post-list (default-tag-function 'ul #:class "post-list"))
+(define (post-item p-date url text) `(tr ((class "post-item")) (td (a ((href ,url)(class "post-link")) ,text)) (td ,p-date)))
+(define post-list (default-tag-function 'table #:class "post-table"))
 
 ;; general tags and functions
 (define items (default-tag-function 'ul))
