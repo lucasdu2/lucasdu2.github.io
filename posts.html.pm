@@ -20,5 +20,4 @@
         ""))
 
 Personal thoughts for an impersonal world!
-◊|divider|
 ◊(construct-posts-toc posts-list)

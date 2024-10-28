@@ -1,23 +1,11 @@
 #lang pollen
 
-◊link-block{◊email{lzdu ∊ ucdavis} / ◊link["https://github.com/lucasdu2"]{GitHub} / ◊link["https://linkedin.com/in/lucaszdu"]{LinkedIn}}
+◊portrait["assets/myface.jpg" "a picture of my face"] I am an incoming computer science MS student at ◊link["https://cs.ucdavis.edu/graduate/graduate-group"]{UC Davis}. Previously, I worked on cloud storage at ◊link["https://innovation.ebayinc.com/tech/engineering/"]{eBay}. As an undergraduate, I studied computer science at ◊link["https://cs.uchicago.edu/"]{UChicago}.
 
-◊portrait["assets/myface.jpg" "a picture of my face"] I am an ◊strong{incoming computer science MS student at UC Davis}. I'm currently taking a brief break between working full-time and starting up school again.
+I'm interested in ◊strong{programming languages} and ◊strong{formal verification}, with an eye to increasing the ◊em{correctness, security, privacy, and simplicity} of realistic software systems. I also have a particular interest in concurrent and distributed systems.
 
-Previously, I worked on cloud storage at eBay. As an undergraduate, I studied computer science at UChicago.
+More broadly, I want to help move software ◊em{away from heuristics and hacks} and ◊em{onto more solid, elegant, and principled ground}.  As software underpins more and more of our lives, we need better results. Formal, mathematical reasoning and abstraction can lead to meaningfully better results.
 
-I'm interested in ◊strong{programming languages} and ◊strong{formal methods research} to ◊em{improve} the quality of software systems and ◊em{make it easier} to develop higher quality software. Software should be more empowering and less frustrating for both developers and users. 
-
-◊headline{Research Interests}
-
-My primary goal is to ◊em{put stronger and broader provable guarantees about real-world software systems within reach of more programmers}. I'm particularly interested in areas where traditional, ad-hoc testing techniques fall painfully short, i.e. distributed/concurrent/parallel systems or software security/data privacy.
-
-A secondary, related goal is to ◊em{drastically reduce the complexity of reliable, secure concurrent and distributed applications} (while preserving or even increasing performance) through simpler and more effective programming paradigms.
-
-I believe the best way forward is through mathematical abstraction and logical proof. To that end, I have interests in program logics, type theory, functional programming, automated solvers, and proof assistants. I also have broader interests in distributed systems theory, compilers, security, cryptography, and high-performance parallel computing.
-
-◊|divider|
-
-Currently, I'm looking at tools for verifying complex concurrent data structures using separation logic and automated solvers.
-
-◊footer{made with robotic indifference by yours truly, with help from ◊link["https://docs.racket-lang.org/pollen/index.html"]{pollen}}
+◊footer{made with robotic indifference by yours truly, with help from ◊link["https://docs.racket-lang.org/pollen/index.html"]{pollen}
+lzdu ∊ ucdavis / ◊link["https://github.com/lucasdu2"]{GitHub} / ◊link["https://linkedin.com/in/lucaszdu"]{LinkedIn}
+}

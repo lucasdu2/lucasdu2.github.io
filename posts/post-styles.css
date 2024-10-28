@@ -4,12 +4,12 @@ header {
   justify-content: space-between;
   background: none;
   border-top: none;
-  border-bottom: 3px solid #535724;
+  border-bottom: 3px solid #222021;
   gap: 10%;
 }
 
 footer {
-  border-top: 1px solid;
+  border-top: none;
   text-align: center;
   font-size: 1em;
 }
@@ -25,11 +25,11 @@ h2 {
   padding-top: 0.1em;
   padding-bottom: 0.1em;
   border-left: none;
-  border-bottom: 3px solid #D3D3D3;
+  border-bottom: 3px solid #222021;
   background: none;
 }
 
 .post-date {
   margin: 0;
-  color: #858a7e;
+  font-style: italic;
 }

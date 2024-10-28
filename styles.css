@@ -1,22 +1,36 @@
 @font-face {
-  font-family: "Inria Sans";
-  src: url('fonts/inria-sans/InriaSans-Regular.ttf');
+  font-family: "CrimsonPro";
+  src: url('fonts/CrimsonPro/CrimsonPro-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Inria Sans";
-  src: url('fonts/inria-sans/InriaSans-Italic.ttf');
+  font-family: "CrimsonPro";
+  src: url('fonts/CrimsonPro/CrimsonPro-Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Inria Sans";
-  src: url('fonts/inria-sans/InriaSans-Bold.ttf');
+  font-family: "CrimsonPro";
+  src: url('fonts/CrimsonPro/CrimsonPro-Bold.ttf');
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro";
+  src: url('fonts/CrimsonPro/CrimsonPro-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro";
+  src: url('fonts/CrimsonPro/CrimsonPro-BlackItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
@@ -27,10 +41,11 @@
 }
 
 html {
-  font-size: 16px;
-  font-family: "Inria Sans", sans-serif;
+  font-size: 18px;
+  font-family: "CrimsonPro", serif;
   display: table;
   margin: auto;
+  background: #FCD299;
 }
 
 mark {
@@ -64,26 +79,12 @@ date-marker {
   font-style: italic;
 }
 
-.link-block {
-  padding: 0.4em 0;
-  padding-bottom: 0.5em;
-  font-family: "JetBrainsMono", monospace;
-  font-size: 0.8em;
-  background-color: #EEE1C6;
-  text-align: center;
-  border-bottom: 1px solid #535724;
-}
-
-email {
-  text-decoration: underline dotted;
-}
-
 aside {
   padding: 1em;
   font-size: 0.9em;
-  border: 1px solid #535724;
-  border-left: 5px solid #535724;
-  background: #f2f2ed;
+  border: 1px solid #5A61B0;
+  border-left: 5px solid #5A61B0;
+  background: #FCC981;
 }
 
 .callout {
@@ -91,49 +92,47 @@ aside {
   font-size: 0.9em;
   border: 1px solid #8b0000;
   border-left: 5px solid #8b0000;
-  background: #FFDBBB;
+  background: #FEE68E;
 }
 
 header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  background: linear-gradient(90deg, RGBA(185, 189, 134, 1), RGBA(185, 189, 134, 0.5));
-  border-top: 3px solid #535724;
-  border-bottom: 1px solid #535724;
   gap: 10%;
+  border-bottom: 4px solid #222021;
 }
 
 header nav {
   display: flex;
-  align-items: start;
+  align-items: end;
   font-size: 1em;
   gap: 0.5em;
   margin-right: 0.5em;
 }
 
 header nav a {
-  color: #FAF9F6;
+  color: #FCD299;
   text-decoration: none;
-  padding: 0.2em 0.4em;
-  background-color: #535724;
+  font-weight: 600;
+  padding: 0.1em 0.6em;
+  background-color: #222021;
 }
 
 header nav a:hover {
-  color: #FAF9F6;
+  color: #FCD299;
   text-decoration: underline;
 }
 
 .portrait {
-  width: 7em;
-  border-radius: 50%;
-  float: right;
-  margin-left: 0.8em;
-  border: 4px solid #D3D3D3;
+  width: 10em;
+  float: left;
+  margin-right: 1.5em;
+  border: 1px solid #222021;
 }
 
 body {
-  width: 32em;
+  width: 42em;
   display: table-cell;
   vertical-align: middle;
   margin: 4em;
@@ -145,27 +144,23 @@ body {
 h1 {
   font-size: 2em;
   margin: 0em;
-  padding-left: 0.3em;
+  font-style: italic;
 }
 
 h2 {
   font-size: 1.5em;
   padding: 0.1em;
   padding-left: 0.3em;
-  background: linear-gradient(90deg, rgba(195, 177, 225,1) 0%, rgba(195, 177, 225,0.2) 100%);
-  border-left: 1px solid #800080;
-  border-bottom: 1px solid #800080;
 }
 
 hr {
   border: none;
-  border-top: 4px solid #D3D3D3;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid #E2522F;
 }
 
 footer {
   padding-top: 0.5em;
-  border-top: 2px solid #D3D3D3;
+  border-top: 2px solid #222021;
   font-size: 0.7em;
 }
 

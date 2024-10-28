@@ -20,10 +20,10 @@
 ;; (define (root . elements)
 ;;   `(root ,@elements ,(footnote-block)))
 
-
 ;; tags for primary page
 (define title (default-tag-function 'h1))
-(define headline (default-tag-function 'h2))
+(define section (default-tag-function 'h2))
+(define subsection (default-tag-function 'h3))
 (define (portrait source alt-text) `(img ((src ,source)(alt ,alt-text)(class "portrait"))))
 (define link-block (default-tag-function 'div #:class "link-block"))
 

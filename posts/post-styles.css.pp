@@ -1,6 +1,7 @@
 #lang pollen
 
-◊(define dividercolor "#D3D3D3")
+◊(define bordercolor "#222021")
+◊(define accentcolor "#E2522F")
 ◊(define titleratio 1.7)
 ◊(define sectionratio 1.3)
 
@@ -10,12 +11,12 @@ header {
   justify-content: space-between;
   background: none;
   border-top: none;
-  border-bottom: 3px solid #535724;
+  border-bottom: 3px solid ◊|bordercolor|;
   gap: 10%;
 }
 
 footer {
-  border-top: 1px solid;
+  border-top: none;
   text-align: center;
   font-size: 1em;
 }
@@ -31,11 +32,11 @@ h2 {
   padding-top: 0.1em;
   padding-bottom: 0.1em;
   border-left: none;
-  border-bottom: 3px solid ◊|dividercolor|;
+  border-bottom: 3px solid ◊|bordercolor|;
   background: none;
 }
 
 .post-date {
   margin: 0;
-  color: #858a7e;
+  font-style: italic;
 }
