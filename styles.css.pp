@@ -121,9 +121,14 @@ aside {
 .callout {
   padding: 1em;
   font-size: 0.9em;
-  border: 1px solid ◊|linkcolor|;
-  border-left: 5px solid ◊|linkcolor|;
+  border: 1px solid #E2522F;
+  border-left: 5px solid #E2522F;
   background: #FEE68E;
+}
+
+section.footnotes {
+  font-size: 0.8em;
+  padding-right: 2em;
 }
 
 header {

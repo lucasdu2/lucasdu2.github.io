@@ -27,7 +27,9 @@ Both these things suck. This kind of debugging is dumb and uninteresting. I want
 
 But how do we make this all better?
 
-◊aside{I saw a comment on HackerNews recently about the terrible mess that the Oracle Database codebase is in---a codebase that brings to mind a lot of the frustrations I have with debugging mentioned above---and a response that was essentially like, "OMG, what a great piece of engineering! I can't believe they can still add features and remain stable and underpin 90% of Fortune 500 companies." Uhh, no, that should not impress you. That should scare you. That should scare you a lot. You don't have to accept your terrible reality. You certainly don't have to celebrate it.}
+◊aside{I saw a comment on HackerNews recently about the terrible mess that the Oracle Database codebase is in---a codebase that brings to mind a lot of the frustrations I have with debugging mentioned above---and a response that was essentially like, "OMG, what a great piece of engineering! I can't believe they can still add features and remain stable and underpin 90% of Fortune 500 companies." Uhh, no, that should not impress you. That should scare you. That should scare you a lot. You don't have to accept your terrible reality◊fn[1]. You certainly don't have to celebrate it.}
+
+◊fndef[1]{OK, maybe this is a little too strident. Sometimes you do need to accept your reality, no matter how terrible, if you want to remain sane. But I do stand by my point that you don't need to celebrate it. That just feels like blatant Stockholm syndrome.}
 
 ◊post-section{A brief note on assumptions}
 
@@ -35,7 +37,9 @@ But how do we make this all better?
 
 There are a number of assumptions in software engineering that I think a lot of practitioners, especially more experienced ones, hold. Some of these assumptions are, to me, a little frustrating. They constrict what people think is possible. They limit what people demand of their tools and their software. It's important, at least to me, to not conflate current reality with basic inevitability.
 
-One assumption I wish we would abolish is that bugs are some kind of inevitable, natural law of software artifacts. I think the industry is far too accomodating of bugs---or mistakes, really---especially when it is simultaneously trying to push software into more important parts of our lives. Software is, essentially, pure logic. There are no physical realities mandating the presence of bugs. Software can, in theory, be a perfect, perpetual motion machine. That's part of its appeal.
+One assumption I wish we would abolish is that bugs are some kind of inevitable, natural law of software artifacts. I think the industry is far too accomodating of bugs---or mistakes, really---especially when it is simultaneously trying to push software into more important parts of our lives◊fn[2]. Software is, essentially, pure logic. There are no physical realities mandating the presence of bugs. Software can, in theory, be a perfect, perpetual motion machine. That's part of its appeal.
+
+◊fndef[2]{To be totally fair though, humans intent and execution are both fundamentally imperfect. While we should be less accepting of software bugs, we should still always strive to be kind to ourselves (and more generally, the human part of the process). The answer to all of this is not to punish programmers more for making mistakes. Instead, it's to recognize that our tools should be helping us make fewer mistakes and to demand more of the software artifacts we produce and use.}
 
 ◊post-section{What we (still) lack}
 

@@ -1,7 +1,6 @@
 #lang pollen
 
 ◊(define bordercolor "#222021")
-◊(define accentcolor "#E2522F")
 ◊(define titleratio 1.8)
 ◊(define sectionratio 1.3)
 
