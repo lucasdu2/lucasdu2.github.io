@@ -134,7 +134,8 @@ header nav a {
   color: #FCD299;
   text-decoration: none;
   font-weight: 600;
-  padding: 0.1em 0.6em;
+  font-size: 20px;
+  padding: 0.1em 0.4em;
   background-color: #222021;
 }
 
@@ -161,7 +162,7 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: "Handjet", "CrimsonPro", serif;
   margin: 0em;
 }

@@ -10,7 +10,7 @@
 ◊(define bordercolor "#222021")
 ◊(define accentcolor "#E2522F")
 ◊(define bodywidth 42)
-◊(define h1-ratio 2)
+◊(define h1-ratio 2.5)
 ◊(define h2-ratio 1.5)
 ◊(define footer-ratio 0.7)
 ◊(define multiplier 1.3)
@@ -151,7 +151,8 @@ header nav a {
   color: ◊|bgcolor|;
   text-decoration: none;
   font-weight: 600;
-  padding: 0.1em 0.6em;
+  font-size: 20px;
+  padding: 0.1em 0.4em;
   background-color: ◊|bordercolor|;
 }
 
