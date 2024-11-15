@@ -1,8 +1,8 @@
 #lang pollen
 
 ◊(define bordercolor "#222021")
-◊(define titleratio 1.8)
-◊(define sectionratio 1.3)
+◊(define titleratio 2.0)
+◊(define sectionratio 1.5)
 
 header {
   display: flex;

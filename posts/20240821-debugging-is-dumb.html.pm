@@ -1,14 +1,14 @@
 #lang pollen
 
-◊post-title{Debugging is dumb}
+◊post-title{Tasteful debugging}
 ◊post-date{Wednesday August 21, 2024}
 
-Let's put off doing more meaningful work and write down some quick thoughts I have about debugging, since they happen to be on my mind. All of this is just what I feel right now (and is subject to change). But it's also something I feel strongly about and that plays a substantial part in what I want to do with my life.
+Let's put off doing more meaningful work and write down some quick thoughts I have about debugging, since they happen to be on my mind. All of this is just what I feel right now (and is subject to change). But it's also something I feel strongly about and that plays a substantial part in what I want to do with my life at the moment.
 
-◊post-section{Debugging isn't actually dumb}
+◊post-section{Debugging is useless}
 When you talk about debugging, anyone who's written any kind of computer program probably understands what you mean. It's likely the most relatable and most inevitable part of software development. Everyone debugs code. Most of software development is, in some sense, debugging. 
 
-Alright. You got me. Debugging isn't actually dumb! Not really. But it does depend on what you're talking about when you talk about debugging. I would argue that, while many people hold an idealized view of debugging that is actually quite useful and integral to the software development process, most real-world debugging is not that. The bug finding and bug fixing process in most software, particularly production software, ◊em{is} pretty dumb.
+Debugging isn't really ◊em{useless}, but it does depend on what you're talking about when you talk about debugging. I would argue that, while many people hold an idealized view of debugging that is actually quite useful and integral to the software development process, most real-world debugging is not that. The bug finding and bug fixing process in most software, particularly production software, ◊em{is} (in my view) pretty meaningless.
 
 The problem isn't with the idea of debugging. The problem is that we need to make real-world debugging better.
 
@@ -23,7 +23,7 @@ But most debugging in the real world, in my experience, is not like this. Many m
   ◊item{does not actually fix the problem and results in more bugs and increasing cruft down the line or}
   ◊item{is a result of a misaligned abstraction further down the stack, due to some unprincipled or ad hoc design decision in the system (that might be a bug fix for another, earlier, bug or just an arbitrary, best-guess choice by the system developers).}
 }
-Both these things suck. This kind of debugging is dumb and uninteresting. I want my solutions to solve the entire problem, from the bottom up. I want my solutions to last. And I want the source of the bug to be something foundational, something fundamental that I misunderstood. I don't want to deal with arbitrary hacks based on unsound, best-effort assumptions.
+Both these things suck. This kind of debugging is stupid and uninteresting. I want my solutions to solve the entire problem, from the bottom up. I want my solutions to last. And I want the source of the bug to be something foundational, something fundamental that I misunderstood. I don't want to deal with arbitrary hacks based on unsound, best-effort assumptions.
 
 But how do we make this all better?
 
@@ -63,7 +63,7 @@ I'm personally very interested in mathematical approaches to these things. I rea
 I just generally like proofs, rigor, and elegance (and yes, I do think those things go together). Maybe that makes me a bad engineer. Maybe that makes me naive and impractical. I don't know. Honestly, I don't really care. I guess it does makes sense that I'm so drawn to research, particularly in programming languages and verification. It's probably a good thing that that's the direction I'm currently moving in.
 
 ◊post-section{Fin.}
-One way to sum up is this: debugging is a crucial part of writing software, but it needs to be much more effective. Developing simpler, more fitting abstractions at a systemic level, being able to more easily get formal proofs about our software, and surfacing more errors sooner in the development cycle (preferably at the time of construction) are important pieces of making debugging a more productive and useful endeavor.
+One way to sum up is this: debugging is a crucial part of writing software, but it needs to be much more effective. We need a more tasteful debugging experience. Developing simpler, more fitting abstractions at a systemic level, being able to more easily get formal proofs about our software, and surfacing more errors sooner in the development cycle (preferably at the time of construction) are important pieces of making debugging a more productive and useful endeavor.
 
 Generally, we need far fewer lines of code and far stronger guarantees, particularly about correctness and security, from our software. We're simply not going to get that from hacking at things with currently conventional tools.
 
