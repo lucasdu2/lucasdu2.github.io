@@ -13,7 +13,7 @@
 ◊(define h1-ratio 2.5)
 ◊(define h2-ratio 1.5)
 ◊(define footer-ratio 0.7)
-◊(define nav-ratio 0.8)
+◊(define nav-ratio 0.7)
 ◊(define multiplier 1.3)
 
 @font-face {
@@ -152,8 +152,9 @@ header nav a {
   color: ◊|bgcolor|;
   text-decoration: none;
   font-weight: 600;
+  font-family: "JetBrainsMono", monospace;
   font-size: ◊|nav-ratio|em;
-  padding: 0.1em 0.4em;
+  padding: 0.1em 0.5em;
   background-color: ◊|bordercolor|;
 }
 
