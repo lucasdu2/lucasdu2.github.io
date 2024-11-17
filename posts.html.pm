@@ -4,14 +4,10 @@
 ◊(require racket/symbol)
 
 ◊(define (node-link node)
-   (define node-string (symbol->immutable-string node))
-   (define link-name
-     (let* ([name (car (select-from-doc 'h1 (get-doc node-string)))])
-       name))
-   (define link-date
-     (let* ([date (car (select-from-doc 'post-date (get-doc node-string)))])
-       date))
-   ◊post-item[link-date node-string]{◊link-name})
+   (let* ([node-string (symbol->immutable-string node)]
+          [link-name (car (select-from-doc 'h1 (get-doc node-string)))]
+          [link-date (car (select-from-doc 'post-date (get-doc node-string)))])
+     ◊post-item[link-date node-string]{◊link-name}))
 
 ◊(define posts-list (children 'posts.html (get-pagetree "index.ptree")))
 ◊(define (construct-posts-toc plist)
