@@ -10,7 +10,7 @@ I'm currently doing a batch at the ◊link["https://www.recurse.com/"]{Recurse C
 
 ◊fndef[1]{Jobs that are, admittedly, usually very well-paid. There are certainly worse things.}
 
-There's a lot of ink that could be spilled about this state of affairs, but for now, it suffices to say that even if you really love programming or computer science, or perhaps even ◊em{because} of that love, it's hard to not get burnt out by the industry grind. Software is a often enormous mess, both technically and socially. There are a lot of things that conspire against a desire to ◊strong{just create cool stuff that works well}◊fn[2].
+There's a lot of ink that could be spilled about this state of affairs, but for now, it suffices to say that even if you really love programming or computer science, or perhaps even ◊em{because} of that love, it's hard to not get burnt out by the industry grind. Software is often an enormous mess, both technically and socially. There are a lot of things that conspire against a desire to ◊strong{just create cool stuff that works well}◊fn[2].
 
 ◊fndef[2]{For one, working in industry will open your eyes to the fact that most things are 1) not very cool and 2) not working very well. That's my opinion, at least.}
 
