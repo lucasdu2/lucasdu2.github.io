@@ -3,7 +3,7 @@
 ◊post-title{Halfway through the halfway house}
 ◊post-date{Saturday November 16, 2024}
 
-I'm currently doing a batch at the ◊link["https://www.recurse.com/"]{Recurse Center} in Brooklyn. I'm just a little over the halfway point and it feels like a good point to write down some brief thoughts on how things are going and how I'm feeling.
+I'm currently doing a batch at the ◊link["https://www.recurse.com/"]{Recurse Center} in Brooklyn. I'm just a little over the halfway point and it feels like a good time to write down some brief thoughts on how things are going and how I'm feeling.
 
 ◊section{The halfway house}
  In a tongue-in-cheek sort of way, Recurse is like programmer rehab. Or a halfway house, I guess. The reality of industry software development is, at least in my view, quite bleak---a lot of people feel trapped (or imprisoned, to continue with the analogy) in industry jobs◊fn[1] that slowly sap away their passion and love for the craft. It's been said by ◊link["https://www.youtube.com/watch?v=4GZdeWWraTs&pp=ygUcdHNvZGluZyBpbmR1c3RyeSBwcm9ncmFtbWluZw%3D%3D"]{people} far more experienced than I, but I think that most paid software development work isn't really ◊em{programming}. It certainly doesn't involve ◊em{computer science}.
