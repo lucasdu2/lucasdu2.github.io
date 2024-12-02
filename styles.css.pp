@@ -4,6 +4,7 @@
 ◊(define edge (* inner 2))
 ◊(define fontsize 18)
 ◊(define bgcolor "#FCD299")
+◊(define bgcolor2 "#fcba99")
 ◊(define highlightcolor "#A7FCEF")
 ◊(define linkcolor "#8b0000")
 ◊(define hovercolor "#E90017")
@@ -12,7 +13,7 @@
 ◊(define bodywidth 42)
 ◊(define h1-ratio 2.5)
 ◊(define h2-ratio 1.5)
-◊(define footer-ratio 0.7)
+◊(define footer-ratio 0.5)
 ◊(define nav-ratio 0.7)
 ◊(define multiplier 1.3)
 
@@ -54,9 +55,17 @@
 @font-face {
   font-family: "Handjet";
   src: url('fonts/Handjet/Handjet-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Handjet";
+  src: url('fonts/Handjet/Handjet-Bold.ttf');
   font-weight: bold;
   font-style: normal;
 }
+
 
 @font-face {
   font-family: "Handjet";
@@ -72,12 +81,28 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url('fonts/JetBrainsMono-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url('fonts/JetBrainsMono-Medium.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
 html {
   font-size: ◊|fontsize|px;
   font-family: "CrimsonPro", serif;
   display: table;
   margin: auto;
-  background: ◊|bgcolor|;
+  background: linear-gradient(◊|bgcolor|, ◊|bgcolor2|);
+  height: 100%
 }
 
 mark {
@@ -107,8 +132,7 @@ a:hover {
 }
 
 .post-item {
-  font-size: 0.8em;
-  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
 }
 
 aside {
@@ -164,7 +188,7 @@ header nav a:hover {
 }
 
 .portrait {
-  width: 7em;
+  width: 6.5em;
   float: left;
   margin-right: 1.5em;
   border: 1px solid ◊|bordercolor|;
@@ -173,7 +197,7 @@ header nav a:hover {
 body {
   width: ◊|bodywidth|em;
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   margin: ◊|edge|em;
   padding: ◊|inner|em;
   font-size: 1em;
@@ -183,6 +207,7 @@ body {
 h1 {
   font-size: ◊|h1-ratio|em;
   font-family: "Handjet", "CrimsonPro", serif;
+  font-weight: 900;
   margin: 0em;
 }
 
@@ -190,7 +215,7 @@ h2 {
   font-size: ◊|h2-ratio|em;
   padding: 0.1em;
   font-family: "Handjet", "CrimsonPro", serif;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 hr {
@@ -199,8 +224,10 @@ hr {
 }
 
 footer {
-  padding-top: 0.5em;
+  padding-top: 1em;
   border-top: 2px solid ◊|bordercolor|;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
   font-size: ◊|footer-ratio|em;
 }
 
