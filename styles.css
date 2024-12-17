@@ -1,3 +1,11 @@
+ ::-moz-selection {
+  background: #99c3fc;
+}
+
+::selection {
+  background: #99c3fc;
+}
+
 @font-face {
   font-family: "CrimsonPro";
   src: url('fonts/CrimsonPro/CrimsonPro-Regular.ttf');
@@ -82,12 +90,12 @@ html {
   font-family: "CrimsonPro", serif;
   display: table;
   margin: auto;
-  background: linear-gradient(#FCD299, #fcba99);
-  height: 100%
+  background: #FCD299;
+  height: 100%;
 }
 
 mark {
-  background-color: #A7FCEF;
+  background-color: #fca199;
 }
 
 .highlight {
@@ -109,27 +117,51 @@ a:hover {
 }
 
 .post-table {
+  margin-top: 1em;
+  border-collapse: collapse;
   width: 100%;
 }
 
 .post-item {
+  font-size: 0.8em;
   font-weight: 600;
+  font-family: "JetBrains Mono";
+}
+
+.post-item a {
+  text-decoration: none;
+}
+
+.post-item td {
+  padding: 0.1em;
+}
+
+.post-item td:nth-of-type(2) {
+  text-align: right;
+}
+
+.post-item td {
+  border-bottom: 1px dotted #222021;
+}
+
+code {
+  font-family: "JetBrains Mono";
+  font-size: 0.9em;
 }
 
 aside {
   padding: 1em;
   font-size: 0.9em;
-  border: 1px solid #5A61B0;
-  border-left: 5px solid #5A61B0;
+  border-left: 8px solid #fab14f;
   background: #FCC981;
 }
 
 .callout {
   padding: 1em;
-  font-size: 0.9em;
-  border: 1px solid #E2522F;
-  border-left: 5px solid #E2522F;
-  background: #FEE68E;
+  text-align: center;
+  font-weight: 600;
+  border-top: 8px solid #fb7367;
+  background: #fca199;
 }
 
 section.footnotes {
@@ -206,9 +238,9 @@ hr {
 
 footer {
   padding-top: 1em;
-  border-top: 2px solid #222021;
+  text-align: center;
+  border-top: 1px dotted #222021;
   font-family: "JetBrains Mono", monospace;
-  font-weight: 600;
   font-size: 0.5em;
 }
 

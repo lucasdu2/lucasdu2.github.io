@@ -4,8 +4,7 @@
 ◊(define edge (* inner 2))
 ◊(define fontsize 18)
 ◊(define bgcolor "#FCD299")
-◊(define bgcolor2 "#fcba99")
-◊(define highlightcolor "#A7FCEF")
+◊(define highlightcolor "#fca199")
 ◊(define linkcolor "#8b0000")
 ◊(define hovercolor "#E90017")
 ◊(define bordercolor "#222021")
@@ -16,6 +15,14 @@
 ◊(define footer-ratio 0.5)
 ◊(define nav-ratio 0.7)
 ◊(define multiplier 1.3)
+
+ ::-moz-selection {
+  background: #99c3fc;
+}
+
+::selection {
+  background: #99c3fc;
+}
 
 @font-face {
   font-family: "CrimsonPro";
@@ -101,8 +108,8 @@ html {
   font-family: "CrimsonPro", serif;
   display: table;
   margin: auto;
-  background: linear-gradient(◊|bgcolor|, ◊|bgcolor2|);
-  height: 100%
+  background: ◊|bgcolor|;
+  height: 100%;
 }
 
 mark {
@@ -128,27 +135,51 @@ a:hover {
 }
 
 .post-table {
+  margin-top: 1em;
+  border-collapse: collapse;
   width: 100%;
 }
 
 .post-item {
+  font-size: 0.8em;
   font-weight: 600;
+  font-family: "JetBrains Mono";
+}
+
+.post-item a {
+  text-decoration: none;
+}
+
+.post-item td {
+  padding: 0.1em;
+}
+
+.post-item td:nth-of-type(2) {
+  text-align: right;
+}
+
+.post-item td {
+  border-bottom: 1px dotted ◊|bordercolor|;
+}
+
+code {
+  font-family: "JetBrains Mono";
+  font-size: 0.9em;
 }
 
 aside {
   padding: 1em;
   font-size: 0.9em;
-  border: 1px solid #5A61B0;
-  border-left: 5px solid #5A61B0;
+  border-left: 8px solid #fab14f;
   background: #FCC981;
 }
 
 .callout {
   padding: 1em;
-  font-size: 0.9em;
-  border: 1px solid #E2522F;
-  border-left: 5px solid #E2522F;
-  background: #FEE68E;
+  text-align: center;
+  font-weight: 600;
+  border-top: 8px solid #fb7367;
+  background: ◊|highlightcolor|;
 }
 
 section.footnotes {
@@ -225,9 +256,9 @@ hr {
 
 footer {
   padding-top: 1em;
-  border-top: 2px solid ◊|bordercolor|;
+  text-align: center;
+  border-top: 1px dotted ◊|bordercolor|;
   font-family: "JetBrains Mono", monospace;
-  font-weight: 600;
   font-size: ◊|footer-ratio|em;
 }
 

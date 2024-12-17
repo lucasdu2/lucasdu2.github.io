@@ -11,17 +11,21 @@
 ;; footnotes ref: https://thenotepad.org/posts/pollen-footnotes-approach.html
 (define (root . elements)
   `(,@(txexpr `root
-            empty
-            (decode-elements
-            elements
-            #:txexpr-elements-proc decode-paragraphs
-            #:string-proc (compose1 smart-quotes smart-dashes)))
-         ,(footnote-block)))
+              empty
+              (decode-elements
+               elements
+               ;; NOTE: This is the location of the problem that was causing
+               ;; indentation issues in code highlight blocks. There is
+               ;; currently a small patch to fix it in my local Pollen package.
+               #:txexpr-elements-proc decode-paragraphs
+               #:string-proc (compose1 smart-quotes smart-dashes)))
+    ,(footnote-block)))
 
 ;; tags for primary page
 (define title (default-tag-function 'h1))
 (define section (default-tag-function 'h2))
 (define subsection (default-tag-function 'h3))
+(define (image source alt-text ht) `(img ((src ,source)(alt ,alt-text)(height ,ht))))
 (define (portrait source alt-text) `(img ((src ,source)(alt ,alt-text)(class "portrait"))))
 (define link-block (default-tag-function 'div #:class "link-block"))
 

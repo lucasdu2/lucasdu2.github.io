@@ -6,4 +6,5 @@ I'm interested in ◊strong{programming languages} and ◊strong{formal methods}
 
 ◊footer{made with robotic indifference by yours truly, with help from ◊link["https://docs.racket-lang.org/pollen/index.html"]{pollen}
 lzdu ∊ ucdavis / ◊link["https://github.com/lucasdu2"]{GitHub} / ◊link["https://linkedin.com/in/lucaszdu"]{LinkedIn}
-}
+
+◊link["https://www.recurse.com/scout/click?t=ff3a1c13d455733bc31c3dd5ec3d1cf4"]{◊image["assets/rc-icon.png" "Recurse Center logo" "20em"]}}

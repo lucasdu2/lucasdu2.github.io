@@ -9,5 +9,6 @@
 </head>
 <body>
     <header><h1>λucas δu</h1><nav><a href="index.html">Home</a><a href="posts.html">Posts</a></nav></header>
-  ◊(->html doc #:splice? #t)</body>
+    ◊(->html doc #:splice? #t)
+</body>
 </html>

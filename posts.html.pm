@@ -15,5 +15,4 @@
        (apply post-list (map node-link plist))
        ""))
 
-A chronologically ordered set of (somewhat) publishable thoughts, focused generally on the programming∧computer science∧research part of me.
 ◊(construct-posts-toc posts-list)
