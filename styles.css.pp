@@ -138,12 +138,12 @@ a:hover {
   margin-top: 1em;
   border-collapse: collapse;
   width: 100%;
+  font-family: "JetBrainsMono", monospace;
 }
 
 .post-item {
   font-size: 0.8em;
   font-weight: 600;
-  font-family: "JetBrains Mono";
 }
 
 .post-item a {
@@ -258,7 +258,7 @@ footer {
   padding-top: 1em;
   text-align: center;
   border-top: 1px dotted ◊|bordercolor|;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "JetBrainsMono", monospace;
   font-size: ◊|footer-ratio|em;
 }
 
