@@ -157,7 +157,7 @@ We won't go over the details of the encoding here (an exercise for the reader!),
 ◊ul{
   ◊li{We must respect the initial configuration (the clues) of the board.}
   ◊li{Each cell must have ◊em{at least one} number.}
-  ◊li{In each row/column/square (in a 9 by 9 board, squares are the smaller 3 by 3 sub-boards), a number can occur at most once.}
+  ◊li{In each row/column/square (in a 9 by 9 board, squares are the smaller 3 by 3 sub-boards), a number can occur ◊em{at most once}.}
 }
 
 As a hint for the ◊em{at most once} constraint, think about ◊em{pairwise comparisons}. For example, let $A_i$ be a Boolean variable representing the statement "The number $1$ is placed in (row $0$, column $i$) of the Sudoku board." To encode the fact that the number $1$ can appear ◊em{at most once} in row $0$, we can represent it as a conjunction of disjunctions of all possible pairs in the row:

@@ -163,7 +163,7 @@ a:hover {
 }
 
 code {
-  font-family: "JetBrains Mono";
+  font-family: "JetBrainsMono";
   font-size: 0.9em;
 }
 
