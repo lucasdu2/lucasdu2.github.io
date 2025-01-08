@@ -12,6 +12,7 @@
 ◊(define bodywidth 42)
 ◊(define h1-ratio 2.5)
 ◊(define h2-ratio 1.5)
+◊(define h3-ratio 1.3)
 ◊(define footer-ratio 0.5)
 ◊(define nav-ratio 0.7)
 ◊(define multiplier 1.3)
@@ -244,6 +245,13 @@ h1 {
 
 h2 {
   font-size: ◊|h2-ratio|em;
+  padding: 0.1em;
+  font-family: "Handjet", "CrimsonPro", serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: ◊|h3-ratio|em;
   padding: 0.1em;
   font-family: "Handjet", "CrimsonPro", serif;
   font-weight: bold;

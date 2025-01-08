@@ -34,6 +34,11 @@ h2 {
   background: none;
 }
 
+h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
 .post-date {
   margin: 0;
   font-style: italic;
