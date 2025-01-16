@@ -18,10 +18,10 @@ This kind of debugging is usually helpful---it's part of the mistake-feedback-le
 
 ◊aside{There is a blog post by Allison Kaptur titled ◊link["https://akaptur.com/blog/2017/11/12/love-your-bugs/"]{"Love Your Bugs"} that I read a while back and that kicked off some thoughts on this general topic. I found the title of the post a little too saccharine (this probably says something about me). After reading it, I actually did agree with some of what was said, particularly about how bugs can help you learn. That is true, in the ideal (and, I would argue, uncommon) case. I still have issues with the general sentiment of the post---that you ◊em{should} love bugs, otherwise you aren't going to grow or be a good engineer. Bugs are often incredibly silly, wasteful, and lead to no tangible personal or intellectual growth (except maybe an increasing sense of resignation, which you could spin as "patience"). We don't have to love them. We should try to look for something better.}
 
-But most debugging in the real world, in my experience, is not like this. Many misunderstandings that lead to bugs are ◊em{not} about things that are essential, fundamental, or inevitable. Instead, they are results of historical accident. Debugging in real life either:
+But most debugging in the real world, in my experience, is not like this. Many misunderstandings that lead to bugs are ◊em{not} about things that are essential, fundamental, or inevitable. Instead, they are results of historical accident. Debugging in real life often either:
 ◊items{
-  ◊item{does not actually fix the problem and results in more bugs and increasing cruft down the line or}
-  ◊item{is a result of a misaligned abstraction further down the stack, due to some unprincipled or ad hoc design decision in the system (that might be a bug fix for another, earlier, bug or just an arbitrary, best-guess choice by the system developers).}
+  ◊item{fixes the immediate problem, but results in more bugs and increasing cruft down the line or}
+  ◊item{can't fully fix the bug because the bug is a result of a misaligned abstraction further down the stack, due to some unprincipled or ad hoc design decision in the system (that might be a bug fix for another, earlier, bug or just an arbitrary, best-guess choice by the system developers).}
 }
 Both these things suck. This kind of debugging is stupid and uninteresting. I want my solutions to solve the entire problem, from the bottom up. I want my solutions to last. And I want the source of the bug to be something foundational, something fundamental that I misunderstood. I don't want to deal with arbitrary hacks based on unsound, best-effort assumptions.
 
