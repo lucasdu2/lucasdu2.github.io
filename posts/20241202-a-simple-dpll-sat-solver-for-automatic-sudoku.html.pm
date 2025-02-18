@@ -22,17 +22,17 @@ This is pretty exciting --- it means that we can solve the satisfiability proble
 
 ◊aside{SAT solvers form the basis of some more powerful, practical tools called SMT solvers (where SMT stands for satisfiability modulo theories). SMT solvers extend SAT solvers with ◊em{decidable theories} of first-order logic --- at a high level, this basically means that they can automatically solve logical formulae that include more advanced and more realistic things, i.e. integers, rational numbers, arrays, strings, and so on. We won't go into more detail about SMT solvers here.}
 
-SAT solvers, in this sense, just implement some algorithm that decides the satisfiability of a propositional logic formula. The algorithm that most (if not all) modern SAT solvers are built on is named ◊strong{DPLL}, after its cited inventors: Martin Davis, Hilary Putnam, George Logemann, and Donald Loveland. DPLL operates only on propositional logic formula in ◊em{conjunctive normal form} (CNF).
+SAT solvers, in this sense, just implement some algorithm that decides the satisfiability of a propositional logic formula. The algorithm that most (if not all) modern SAT solvers are built on is named ◊strong{DPLL}, after its cited inventors: Martin Davis, Hilary Putnam, George Logemann, and Donald Loveland. DPLL operates only on propositional logic formulae in ◊em{conjunctive normal form} (CNF).
 
 Conjunctive normal form is a conjunction of ◊em{clauses}, each of which are a series of disjunctions. To make it a bit more concrete, here's the structure of a formula in CNF:
 $$(A_1 \lor A_2 \lor \ldots) \land (B_1 \lor B_2 \lor \ldots) \land (C_1 \lor C_2 \lor \ldots) \land \ldots$$
 
-DPLL is a fairly simple algorithm at heart --- we'll try and give a taste of it, in naive form.
+DPLL is a fairly simple algorithm at heart --- we'll try and give a taste of it.
 
 ◊aside{There are a large number of extensions and optimizations to classic, naive DPLL. We won't really cover them here. The most important one though, at least from a contemporary standpoint, is something called ◊strong{conflict-driven clause-learning (CDCL)}. The gist of CDCL is that, whenever we hit a ◊em{conflict} in DPLL (i.e. when we make an assignment that results in the formula being ◊strong{false}), we add a clause to the formula that ◊em{encodes the "why" behind the conflict}, so that we don't go down that path again. The specifics are too much for now.}
 
 ◊section{DPLL at its simplest}
-DPLL is a ◊em{backtracking} search algorithm --- at its core, it guesses an assignment, propagates that assignment throughout the formula, guesses another assignment, and so on. If it ever hits a conflict, it ◊em{backtracks} to a previous stage before the conflict. Then it will make another best effort guess, and continue as before.
+DPLL is a ◊em{backtracking search} algorithm --- at its core, it guesses an assignment, propagates that assignment throughout the formula, guesses another assignment, and so on, searching through possible options. If it ever hits a conflict, it ◊em{backtracks} to a previous stage before the conflict. Then it will make another best effort guess and continue as before.
 
 That said, DPLL has a bit of cleverness up its sleeve in the form of something called ◊strong{boolean constraint propagation (BCP)}, which is based on ◊strong{unit resolution}. The idea behind unit resolution is simple: if there is a ◊em{unit clause} --- a clause that ◊em{only has one literal in it} --- then we ◊em{must} assign the Boolean value that makes the literal in the unit clause true. This is called an ◊strong{implied assignment}.
 
