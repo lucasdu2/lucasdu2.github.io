@@ -51,7 +51,7 @@ I certainly find it difficult. I think I have a good deal of ego. I often have (
 
 For me, at the moment, it's important to remember that I can't do everything that interests me. I simply don't have the time or the ability. If I want to make progress and do something that meaningfully pushes things forward, I need to accept my limitations and focus on a few things that are most important and most interesting to me right now.
 
-I'm not a genius. I'm not a particularly good programmer (in my opinion). I'm not exceptionally strong at math. But there are things I find incredibly interesting and incredibly important that I ◊em{can} do good work on, if I'm able to push at them long enough and hard enough.
+I'm not a genius. I'm not a particularly good programmer (as far as I can tell...). I'm not exceptionally strong at math. But there are things I find incredibly interesting and incredibly important that I ◊em{can} do good work on, if I'm able to push at them long enough and hard enough.
 
 I also think it's important for me to try and ◊link["https://www.recurse.com/self-directives"]{learn generously}. In a highly competitive space like academic research (or startups, or even just the software job market right now), it can be tempting to withold knowledge or get somewhere and ◊link["https://www.youtube.com/watch?v=xNeBit7CSps&list=LL&index=2&pp=gAQBiAQB"]{pull up the ladder behind yourself}. I think this is extremely damaging, particularly in research, and it's important to actively push against it. Research isn't a zero-sum game and we shouldn't act like it (we also shouldn't set up systems that encourage that view). The goal is to do good, meaningful work to the best of your ability. That's it.
 

@@ -30,7 +30,9 @@ h2 {
 
 h3 {
   text-align: center;
-  text-decoration: underline;
+  font-size: 1.0em;
+  color: #FCD299;
+  background-color: #222021;
 }
 
 .post-date {
