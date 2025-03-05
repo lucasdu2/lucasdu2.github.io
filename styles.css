@@ -90,7 +90,7 @@ html {
   font-family: "CrimsonPro", serif;
   display: table;
   margin: auto;
-  background: #ecebbd;
+  background: #FCD299;
   height: 100%;
 }
 
@@ -186,7 +186,7 @@ header nav {
 }
 
 header nav a {
-  color: #ecebbd;
+  color: #FCD299;
   text-decoration: none;
   font-weight: 600;
   font-family: "JetBrainsMono", monospace;
@@ -196,7 +196,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #ecebbd;
+  color: #FCD299;
   text-decoration: underline;
 }
 

@@ -3,7 +3,7 @@
 ◊(define inner 2)
 ◊(define edge (* inner 2))
 ◊(define fontsize 18)
-◊(define bgcolor "#ecebbd")
+◊(define bgcolor "#FCD299")
 ◊(define highlightcolor "#fca199")
 ◊(define linkcolor "#8b0000")
 ◊(define hovercolor "#E90017")
