@@ -1,10 +1,9 @@
 #lang pollen
 
-◊(define bgcolor "#FCD299")
 ◊(define bordercolor "#222021")
 ◊(define titleratio 2.0)
 ◊(define sectionratio 1.5)
-◊(define subsectionratio 1.0)
+◊(define subsectionratio 1.2)
 
 header {
   display: flex;
@@ -37,10 +36,8 @@ h2 {
 }
 
 h3 {
-  text-align: center;
   font-size: ◊|subsectionratio|em;
-  color: ◊|bgcolor|;
-  background-color: ◊|bordercolor|;
+  border-bottom: 1px dotted ◊|bordercolor|;
 }
 
 .post-date {

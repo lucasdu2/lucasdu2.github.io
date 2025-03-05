@@ -3,7 +3,7 @@
 ◊(define inner 2)
 ◊(define edge (* inner 2))
 ◊(define fontsize 18)
-◊(define bgcolor "#FCD299")
+◊(define bgcolor "#ecebbd")
 ◊(define highlightcolor "#fca199")
 ◊(define linkcolor "#8b0000")
 ◊(define hovercolor "#E90017")
@@ -15,7 +15,7 @@
 ◊(define h3-ratio 1.3)
 ◊(define footer-ratio 0.5)
 ◊(define nav-ratio 0.7)
-◊(define multiplier 1.3)
+◊(define multiplier 1.4)
 
  ::-moz-selection {
   background: #99c3fc;
@@ -220,7 +220,7 @@ header nav a:hover {
 }
 
 .portrait {
-  width: 6.5em;
+  width: 6.9em;
   float: left;
   margin-right: 1.5em;
   border: 1px solid ◊|bordercolor|;

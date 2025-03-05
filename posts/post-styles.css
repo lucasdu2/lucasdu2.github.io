@@ -29,10 +29,8 @@ h2 {
 }
 
 h3 {
-  text-align: center;
-  font-size: 1.0em;
-  color: #FCD299;
-  background-color: #222021;
+  font-size: 1.2em;
+  border-bottom: 1px dotted #222021;
 }
 
 .post-date {
