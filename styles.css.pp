@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define inner 2)
+◊(define inner 1)
 ◊(define edge (* inner 2))
 ◊(define fontsize 18)
 ◊(define bgcolor "#F2F0EF")
@@ -212,6 +212,8 @@ body {
   display: table-cell;
   vertical-align: top;
   margin: ◊|edge|em;
+  padding-left: ◊|inner|em;
+  padding-right: ◊|inner|em;
   font-size: 1em;
   line-height: ◊|multiplier|;
 }

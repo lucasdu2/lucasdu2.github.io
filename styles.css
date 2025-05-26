@@ -192,7 +192,9 @@ body {
   width: 42em;
   display: table-cell;
   vertical-align: top;
-  margin: 4em;
+  margin: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 1em;
   line-height: 1.4;
 }
