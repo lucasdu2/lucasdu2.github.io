@@ -37,7 +37,8 @@ In hindsight, there were some really, really positive things about taking some t
 ◊items{
   ◊item{Saying "no" is a delicate art, but an important one. There are simply too many things that I possibly want to do and too little time/personal ability to do it all. That's OK! It's really important to do the things you can realistically do and say no to the things that you can't realistically do. It's hard to remain sane otherwise.}
   ◊item{It's OK (and actually pretty critical) to have some kind of balance. When I was working, any time I could spend reading papers, books, or doing research-y things was purely for fun. If I could sneak any of it at all, I was pretty happy. But now that I've started back at school (and left my job and a steady income), it feels like I need to do all of it, all the time, to make it "worth it" in some warped way. This has definitely...not been healthy.}
-  ◊item{I guess the most important thing is to remember that the ◊em{whole point} is to have fun and enjoy things. That's why I quit my job. That's why I'm doing this whole academia thing. I think it's more fun and more fulfilling. I really don't want to lose sight of that. Try to remain humble and curious. Try to enjoy it as much as you can!}
+  ◊item{I guess the most important thing is to remember that the ◊em{whole point} is to have fun and enjoy things. That's why I quit my job. That's why I'm doing this whole going back to school thing. I think it's more fun and more fulfilling. Whether academia is actually more fun and/or fulfilling is...certainly up for debate, but I don't want to lose sight of the core reasons I have for getting into all this.}
+  ◊item{Try to remain humble and curious, no matter what happens. Try to enjoy it as much as you can!}
 }
 
 ◊post-section{Minor asides}
