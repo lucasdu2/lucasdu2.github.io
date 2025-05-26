@@ -3,14 +3,14 @@
 ◊(define inner 2)
 ◊(define edge (* inner 2))
 ◊(define fontsize 18)
-◊(define bgcolor "#FCD299")
+◊(define bgcolor "#F2F0EF")
 ◊(define highlightcolor "#fca199")
-◊(define linkcolor "#8b0000")
-◊(define hovercolor "#E90017")
+◊(define linkcolor "#A2574F")
+◊(define hovercolor "#ED2100")
 ◊(define bordercolor "#222021")
 ◊(define accentcolor "#E2522F")
 ◊(define bodywidth 42)
-◊(define h1-ratio 2.5)
+◊(define h1-ratio 2.0)
 ◊(define h2-ratio 1.5)
 ◊(define h3-ratio 1.3)
 ◊(define footer-ratio 0.5)
@@ -48,36 +48,14 @@
 
 @font-face {
   font-family: "CrimsonPro";
-  src: url('fonts/CrimsonPro/CrimsonPro-SemiBold.ttf');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "CrimsonPro";
-  src: url('fonts/CrimsonPro/CrimsonPro-BlackItalic.ttf');
+  src: url('fonts/CrimsonPro/CrimsonPro-BoldItalic.ttf');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Handjet";
-  src: url('fonts/Handjet/Handjet-Black.ttf');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Handjet";
-  src: url('fonts/Handjet/Handjet-Bold.ttf');
-  font-weight: bold;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "Handjet";
-  src: url('fonts/Handjet/Handjet-SemiBold.ttf');
+  font-family: "CrimsonPro";
+  src: url('fonts/CrimsonPro/CrimsonPro-SemiBold.ttf');
   font-weight: 600;
   font-style: normal;
 }
@@ -139,12 +117,12 @@ a:hover {
   margin-top: 1em;
   border-collapse: collapse;
   width: 100%;
-  font-family: "JetBrainsMono", monospace;
+  font-family: "CrimsonPro", monospace;
 }
 
 .post-item {
-  font-size: 0.8em;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 .post-item a {
@@ -155,12 +133,15 @@ a:hover {
   padding: 0.1em;
 }
 
+
+
 .post-item td:nth-of-type(2) {
-  text-align: right;
+  font-family: "JetBrainsMono", monospace;
+  font-size: 0.8em;
+  font-weight: normal;
 }
 
 .post-item td {
-  border-bottom: 1px dotted ◊|bordercolor|;
 }
 
 code {
@@ -171,8 +152,8 @@ code {
 aside {
   padding: 1em;
   font-size: 0.9em;
-  border-left: 8px solid #fab14f;
-  background: #FCC981;
+  border-left: 8px solid #949392;
+  background: #C9C8C7;
 }
 
 .callout {
@@ -189,38 +170,38 @@ section.footnotes {
 }
 
 header {
+  background-color: #C9C8C7;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   gap: 10%;
-  border-bottom: 4px solid ◊|bordercolor|;
+  border: 1px solid #949392;
+  border-top: 20px solid #000080;
 }
 
 header nav {
-  display: flex;
-  align-items: end;
   font-size: 1em;
-  gap: 0.5em;
-  margin-right: 0.5em;
 }
 
 header nav a {
-  color: ◊|bgcolor|;
+  color: ◊|bordercolor|;
   text-decoration: none;
   font-weight: 600;
-  font-family: "JetBrainsMono", monospace;
+  font-family: "JetBrainsMono", serif;
   font-size: ◊|nav-ratio|em;
   padding: 0.1em 0.5em;
-  background-color: ◊|bordercolor|;
+  background-color: #949392;
+  border: 1px solid #66615E;
+  box-shadow: 5px 5px;
+  margin-right: 1em;
 }
 
 header nav a:hover {
-  color: ◊|bgcolor|;
-  text-decoration: underline;
+  color: #000080;
 }
 
 .portrait {
-  width: 6.9em;
+  width: 8em;
   float: left;
   margin-right: 1.5em;
   border: 1px solid ◊|bordercolor|;
@@ -231,30 +212,30 @@ body {
   display: table-cell;
   vertical-align: top;
   margin: ◊|edge|em;
-  padding: ◊|inner|em;
   font-size: 1em;
   line-height: ◊|multiplier|;
 }
 
 h1 {
   font-size: ◊|h1-ratio|em;
-  font-family: "Handjet", "CrimsonPro", serif;
-  font-weight: 900;
+  font-family: "CrimsonPro", sans-serif;
+  font-weight: bold;
   margin: 0em;
+  padding-left: 0.2em;
 }
 
 h2 {
   font-size: ◊|h2-ratio|em;
   padding: 0.1em;
-  font-family: "Handjet", "CrimsonPro", serif;
-  font-weight: bold;
+  font-family: "CrimsonPro", sans-serif;
+  font-weight: 600;
 }
 
 h3 {
   font-size: ◊|h3-ratio|em;
   padding: 0.1em;
-  font-family: "Handjet", "CrimsonPro", serif;
-  font-weight: bold;
+  font-family: "CrimsonPro", sans-serif;
+  font-weight: 600;
 }
 
 hr {
@@ -264,10 +245,11 @@ hr {
 
 footer {
   padding-top: 1em;
-  text-align: center;
+  text-align: left;
   border-top: 1px dotted ◊|bordercolor|;
   font-family: "JetBrainsMono", monospace;
   font-size: ◊|footer-ratio|em;
+  line-height: 1.2;
 }
 
 /* --- narrow layout adjustments --- */

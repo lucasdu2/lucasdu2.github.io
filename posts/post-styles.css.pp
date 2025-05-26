@@ -8,10 +8,11 @@
 header {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  border: none;
   background: none;
-  border-top: none;
-  border-bottom: 3px solid ◊|bordercolor|;
+  border-top: 12px solid #000080;
+  padding-top: 0.4em;
+  justify-content: center;
   gap: 10%;
 }
 
@@ -19,11 +20,13 @@ footer {
   border-top: none;
   text-align: center;
   font-size: 1em;
+  margin-bottom: 2em;
 }
 
 h1 {
+  padding-top: 0.3em;
   font-size: ◊|titleratio|em;
-  padding: 0.1em 0;
+  text-align: center;
 }
 
 h2 {
@@ -31,8 +34,9 @@ h2 {
   padding-left: 0;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
-  border-bottom: 2px solid ◊|bordercolor|;
+  border-bottom: 1px solid ◊|bordercolor|;
   background: none;
+  text-align: center;
 }
 
 h3 {
@@ -43,4 +47,5 @@ h3 {
 .post-date {
   margin: 0;
   font-style: italic;
+  text-align: center;
 }
