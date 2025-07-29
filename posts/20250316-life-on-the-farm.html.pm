@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title "Tasteful debugging")
+◊(define-meta title "Life on the farm")
 ◊(define-meta date "Sunday March 16, 2025")
 
 ◊post-title{◊(select-from-metas 'title metas)}
