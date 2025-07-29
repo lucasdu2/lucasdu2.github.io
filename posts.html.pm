@@ -5,14 +5,15 @@
 
 ◊(define (node-link node)
    (let* ([node-string (symbol->immutable-string node)]
-          [link-name (car (select-from-doc 'h1 (get-doc node-string)))]
-          [link-date (car (select-from-doc 'post-date (get-doc node-string)))])
-     ◊post-item[link-date node-string]{◊link-name}))
-
-◊(define posts-list (children 'posts.html (get-pagetree "index.ptree")))
+          [link-name (select-from-metas 'title node)]
+          [link-date (select-from-metas 'date node)])
+     (if node
+         ◊post-item[link-date node-string]{◊link-name}
+         "")))
 ◊(define (construct-posts-toc plist)
    (if plist
        (apply post-list (map node-link plist))
        ""))
 
+◊(define posts-list (children 'posts.html (get-pagetree "index.ptree")))
 ◊(construct-posts-toc posts-list)

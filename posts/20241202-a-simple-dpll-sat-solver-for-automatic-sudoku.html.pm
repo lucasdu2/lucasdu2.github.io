@@ -1,13 +1,16 @@
 #lang pollen
 
-◊post-title{A simple DPLL SAT solver for automatic Sudoku}
-◊post-date{Monday December 2, 2024}
+◊(define-meta title "A simple DPLL SAT solver for automatic Sudoku")
+◊(define-meta date "Monday December 2, 2024")
+
+◊post-title{◊(select-from-metas 'title metas)}
+◊post-date{◊(select-from-metas 'date metas)}
 
 As part of my work at ◊link["https://www.recurse.com/"]{Recurse Center} recently, I wrote an extremely naive DPLL SAT solver in ◊link["https://racket-lang.org/"]{Racket} and used it to encode an automatic Sudoku solver. Using that code as a guide, here's an attempt at some longer-form exposition on the very basics of ◊strong{propositional logic} and ◊strong{automated logical reasoning}.
 
 ◊aside{By the way: Racket is a cool language, and you --- yes, you! --- should give it a try. It's a direct descendant of Scheme---in some ways, it is ◊em{just} Scheme with some extensions---and it has lots of parentheses. Don't be scared! You might like it! I think it is quite well designed and has good beginner support, along with a host of more advanced/interesting features.}
 
-◊section{What is a SAT solver?}
+◊post-section{What is a SAT solver?}
 A SAT solver, or a ◊strong{satisfiability solver}, is a program that automatically solves for the ◊em{satisfiability} of a ◊em{formula} in ◊em{propositional logic}. Let's go over the definitions of these terms, starting from the last one and moving backwards.
 
 ◊em{Propositional logic} is a logic that consists only of logical statements built up from ◊em{boolean variables} and your standard logical connectives: conjunction (and), disjunction (or), implication (implies), biconditional (if and only if), and negation (not). A boolean variable can either be ◊strong{true} or ◊strong{false}. There are certainly more technical definitions, but this should serve our purposes here.
@@ -31,7 +34,7 @@ DPLL is a fairly simple algorithm at heart --- we'll try and give a taste of it.
 
 ◊aside{There are a large number of extensions and optimizations to classic, naive DPLL. We won't really cover them here. The most important one though, at least from a contemporary standpoint, is something called ◊strong{conflict-driven clause-learning (CDCL)}. The gist of CDCL is that, whenever we hit a ◊em{conflict} in DPLL (i.e. when we make an assignment that results in the formula being ◊strong{false}), we add a clause to the formula that ◊em{encodes the "why" behind the conflict}, so that we don't go down that path again. The specifics are too much for now.}
 
-◊section{DPLL at its simplest}
+◊post-section{DPLL at its simplest}
 DPLL is a ◊em{backtracking search} algorithm --- at its core, it guesses an assignment, propagates that assignment throughout the formula, guesses another assignment, and so on, searching through possible options. If it ever hits a conflict, it ◊em{backtracks} to a previous stage before the conflict. Then it will make another best effort guess and continue as before.
 
 That said, DPLL has a bit of cleverness up its sleeve in the form of something called ◊strong{boolean constraint propagation (BCP)}, which is based on ◊strong{unit resolution}. The idea behind unit resolution is simple: if there is a ◊em{unit clause} --- a clause that ◊em{only has one literal in it} --- then we ◊em{must} assign the Boolean value that makes the literal in the unit clause true. This is called an ◊strong{implied assignment}.
@@ -41,7 +44,7 @@ That said, DPLL has a bit of cleverness up its sleeve in the form of something c
 ◊aside{Here is an example of applying BCP to the formula: $(\lnot A) \land (A \lor \lnot B)$. The first clause is unit, implying the assignment "$A$ is ◊strong{false}." This produces $(\lnot B)$, which is also a unit clause implying the assigmnent "$B$ is ◊strong{false}." Thus, we have a satisfying assignment, where $A$ and $B$ are both ◊strong{false}.}
 
 Besides BCP, DPLL is basically just a brute-force search algorithm. Whenever we can't apply BCP, we take some free variable in the formula, assign it an arbitrary Boolean value, and then see what happens (backtracking when we hit a conflict). Here is the algorithm, at a high level, in ML-like pseudocode:
-◊highlight['ocaml #:python-executable "python3"]{
+◊highlight['ocaml #:python-executable "python3" #:line-numbers? #f]{
 let rec DPLL F =
   let F' = BCP F in
   if F' = SAT then true
@@ -51,7 +54,7 @@ let rec DPLL F =
     (DPLL (F' where P is true)) || (DPLL (F' where P is false))
 }
 
-◊section{Some implementation details}
+◊post-section{Some implementation details}
 There are a couple quick rules we can use to propagate an assignment (regardless of whether it's ◊em{implied} --- meaning that it results from unit resolution --- or ◊em{decided} --- meaning that it is a best-effort guess). They are:
 ◊ol{
   ◊li{If an assignment makes a literal in a clause ◊strong{true}, we can remove the entire clause from the formula without changing its satisfiability.}
@@ -66,7 +69,7 @@ There are two corresponding rules for determining if the end result of DPLL, imp
 
 Take a bit to think about why all these rules are true and how the first two relate to the second two. Also, here is some Racket code that implements the UNSAT/SAT determination described.
 
-◊highlight['racket #:python-executable "python3"]{
+◊highlight['racket #:python-executable "python3" #:line-numbers? #f]{
 ;; If all clauses have been removed, we have SAT
 (define (sat? f)
   (equal? f '()))
@@ -76,7 +79,7 @@ Take a bit to think about why all these rules are true and how the first two rel
 }
 
 Now, here's a bit of Racket code that implements both the propagation logic and the overall BCP step of DPLL. Note that there are some differences from the pseudocode given earlier, primarily because we want to ◊strong{save our assignments}. It's nice to get a constructive satisfying assignment when a formula is satisfiable --- for example, it will let us get an actual solution to a Sudoku puzzle (as opposed to simply saying whether the puzzle can be solved).
-◊highlight['racket #:python-executable "python3"]{
+◊highlight['racket #:python-executable "python3" #:line-numbers? #f]{
 ;; NOTE: sign must be a boolean (#t or #f). #f means negation. var should be
 ;; represented by an arbitrary positive integer.
 (struct lit (sign var) #:transparent)
@@ -121,7 +124,7 @@ Now, here's a bit of Racket code that implements both the propagation logic and 
 
 The last piece we need is a way to choose a free variable to ◊em{decide} an assignment for, when we finish using BCP. This corresponds to the ◊code{CHOOSE_FREE_VAR} function in our ML-like pseudocode earlier. The simplest way to do this is just to choose the first free variable in the first clause of our formula. There are more elaborate and efficient ways to make this choice --- in fact, making smart choices here can lead to big speedups in SAT solving! --- but this simple choice will do for now.
 
-◊highlight['racket #:python-executable "python3"]{
+◊highlight['racket #:python-executable "python3" #:line-numbers? #f]{
 ;; choose-unassigned-var naively takes the first variable in the CNF.
 (define (choose-unassigned cnf)
   (lit-var (first (first cnf))))
@@ -129,7 +132,7 @@ The last piece we need is a way to choose a free variable to ◊em{decide} an as
 
 Now, we can put it all together! Here's the Racket code for the DPLL function, using all the functions we've built up so far:
 
-◊highlight['racket #:python-executable "python3"]{
+◊highlight['racket #:python-executable "python3" #:line-numbers? #f]{
 (define (dpll cnf)
   (define (dpll-assignments cnf assignments)
     (let* ([res (bcp cnf '())]
@@ -148,7 +151,7 @@ Now, we can put it all together! Here's the Racket code for the DPLL function, u
                               (cons (cons p #f) new-ass))))])))
   (dpll-assignments cnf '()))
 }
-◊section{Encoding the rules of Sudoku}
+◊post-section{Encoding the rules of Sudoku}
 Something relatively simple and cool we can do with a SAT solver is use it automatically solve Sudoku puzzles. Is this particularly useful in practice? Not necessarily. But it's definitely fun to see the solver in action! At least I think so.
 
 ◊aside{There are ◊em{a lot} of practically useful applications of SMT solving (and SAT solving, by implication), particularly in the domains of programming languages and formal methods. ◊strong{It turns out that many problems in computational systems can be represented as satisfiability problems over some carefully crafted logical formulae!} SMT solvers can be leveraged in program verification tools (a la Dafny, Verus, etc.), program synthesis (i.e. VeriEQL, various applications of Rosette, etc.), distributed systems verification (a la lineage-driven fault injection), refinement-type checking (a la dsolve and Liquid Haskell), and so on. They are a powerful way to get ◊em{automatic} and ◊em{verifiably correct} answers to complex problems.}
@@ -165,7 +168,7 @@ $$(\lnot A_1 \lor \lnot A_2) \land (\lnot A_1 \lor \lnot A_3) \land (\lnot A_1 \
 
 Another potential difficulty is figuring out how to map logical statements like "the number $1$ is placed in (row $0$, column $5$) of the Sudoku board" to variables in our SAT solver, given that our variables are currently just represented by positive integers. There are various approaches to this (one might be to just have some hashmap that we maintain), but here's a clever-ish way to use arithmetic to get an encoding between specific guesses (logical statements) and variables (in our case, positive integers).
 
-◊highlight['racket #:python-executable "python3"]{
+◊highlight['racket #:python-executable "python3" #:line-numbers? #f]{
 (struct coord (row col) #:transparent)
 (struct guess (row col num) #:transparent)
 
@@ -185,7 +188,7 @@ Another potential difficulty is figuring out how to map logical statements like 
   (encode-guess-as-var (guess (coord-row c) (coord-col c) num) n))
 }
 
-◊section{Further references}
+◊post-section{Further references}
 For further reading, there are a couple books that often get recommended (at least at the time of writing). Go crazy! Read them! They are:
 ◊ul{
   ◊li{The Calculus of Computation (Bradley and Manna, 2007)}

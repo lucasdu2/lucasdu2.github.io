@@ -2,7 +2,10 @@
 
 ◊portrait["assets/myface.jpg" "a picture of my face"] I am a computer science MS student at ◊link["https://cs.ucdavis.edu/graduate/graduate-group"]{UC Davis}, advised by ◊link["https://web.cs.ucdavis.edu/~cdstanford/"]{Caleb Stanford}. Previously, I worked on cloud storage at ◊link["https://innovation.ebayinc.com/tech/engineering/"]{eBay}. Even before that, I was an undergraduate at ◊link["https://cs.uchicago.edu/"]{UChicago}.
 
-I'm interested in ◊strong{programming languages} and ◊strong{formal methods}, with an eye to increasing the ◊em{correctness, security, privacy, and simplicity} of realistic software systems in ◊em{provable and foundational} ways. I also have a particular interest in concurrent and distributed systems. More broadly, I want to help move software ◊em{away from heuristics and hacks} and ◊em{onto more solid, elegant, and principled ground}.
+I like ◊strong{programming languages}, ◊strong{formal methods}, and applications of techniques from these areas to (concurrency ∪ distribution) and (security ∪ privacy). I aim to develop mathematically principled, language-oriented tools and abstractions for building ◊em{correct}, ◊em{efficient}, ◊em{flexible}, and ◊em{simple} software, preferably ◊em{by-construction}, on solid theoretical foundations.
+
+◊section{Research interests}
+I am currently interested in (a) ◊underline{type systems, semantics, and language runtimes} for verified and efficient ◊em{distributed stream processing}; and (b) ◊underline{principled automated testing and foundational verification} of ◊em{linear-time regex engines}.
 
 ◊footer{made with robotic indifference -_- (with help from ◊link["https://docs.racket-lang.org/pollen/index.html"]{pollen})
 lzdu ∊ ucdavis / ◊link["https://github.com/lucasdu2"]{GitHub} / ◊link["https://linkedin.com/in/lucaszdu"]{LinkedIn}

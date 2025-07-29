@@ -1,7 +1,10 @@
 #lang pollen
 
-◊post-title{Focus, ambition, or whatever}
-◊post-date{Wednesday August 7, 2024}
+◊(define-meta title "Focus, ambition, or whatever")
+◊(define-meta date "Wednesday August 7, 2024")
+
+◊post-title{◊(select-from-metas 'title metas)}
+◊post-date{◊(select-from-metas 'date metas)}
 
 It's been about a month since I quit my programming job to be a full-time unemployed bum. I wanted to have some time to myself where I could step off the corporate hamster wheel --- a wheel that I've found increasingly little value in --- and just do things that I wanted to do. I wanted to have more time to work on research and more time to have fun with my friends. Working full time just wasn't conducive to doing both those things.
 

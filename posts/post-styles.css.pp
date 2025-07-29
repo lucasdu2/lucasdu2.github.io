@@ -14,6 +14,7 @@ header {
   padding-top: 0.4em;
   justify-content: center;
   gap: 10%;
+  background-color: #e6e5e5;
 }
 
 footer {
@@ -24,6 +25,7 @@ footer {
 }
 
 h1 {
+  background-color: #e6e5e5;
   padding-top: 0.3em;
   font-size: ◊|titleratio|em;
   text-align: center;
@@ -46,6 +48,16 @@ h3 {
 
 .post-date {
   margin: 0;
-  font-style: italic;
+  font-family: "JetBrainsMono", monospace;
+  font-size: 0.8em;
   text-align: center;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #949392;
+  background-color: #e6e5e5;
+}
+
+section.footnotes {
+  border-top: 1px dotted ◊|bordercolor|;
+  font-size: 0.8em;
+  padding-right: 2em;
 }

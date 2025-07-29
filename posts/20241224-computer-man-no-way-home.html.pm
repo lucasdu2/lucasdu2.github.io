@@ -1,7 +1,10 @@
 #lang pollen
 
-◊post-title{Computer-Man: No Way Home}
-◊post-date{Tuesday December 24, 2024}
+◊(define-meta title "Computer-Man: No Way Home")
+◊(define-meta date "Tuesday December 24, 2024")
+
+◊post-title{◊(select-from-metas 'title metas)}
+◊post-date{◊(select-from-metas 'date metas)}
 
 It's the end of a lot of things in my life recently --- the end of Recurse Center, the end of my year in New York City, the end of my time hanging around with the folks at NYU ACSys, and the end of my 25th year (and the end of parental health insurance!). It's the beginning of a lot of exciting things too.
 

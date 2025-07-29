@@ -1,7 +1,10 @@
 #lang pollen
 
-◊post-title{Life on the farm}
-◊post-date{Sunday March 16, 2025}
+◊(define-meta title "Tasteful debugging")
+◊(define-meta date "Sunday March 16, 2025")
+
+◊post-title{◊(select-from-metas 'title metas)}
+◊post-date{◊(select-from-metas 'date metas)}
 
 It's been three months and the quarter is basically over, so here are some entirely unsolicited thoughts on being back at school for the first time in several years! It's definitely been an adjustment. But life is pretty good overall. I certainly can't complain.
 

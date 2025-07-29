@@ -1,7 +1,10 @@
 #lang pollen
 
-◊post-title{Tasteful debugging}
-◊post-date{Wednesday August 21, 2024}
+◊(define-meta title "Tasteful debugging")
+◊(define-meta date "Wednesday August 21, 2024")
+
+◊post-title{◊(select-from-metas 'title metas)}
+◊post-date{◊(select-from-metas 'date metas)}
 
 Let's put off doing more meaningful work and write down some quick thoughts I have about debugging, since they happen to be on my mind. All of this is just what I feel right now (and is subject to change)! But it's also something I feel strongly about and is a big part of what I want to do with my time at the moment.
 
@@ -32,10 +35,9 @@ But how do we make this all better?
 ◊aside{There is a blog post by Allison Kaptur titled ◊link["https://akaptur.com/blog/2017/11/12/love-your-bugs/"]{"Love Your Bugs"} that I read a while back and that kicked off some thoughts on this general topic. I found the title of the post a little too saccharine (this probably says something about me that might...not be too great). After reading it, I actually did agree with some of what was said, particularly about how bugs can help you learn. That is certainly true, in the ideal (and, I would argue, uncommon) case. I still have issues with the general sentiment of the post---that you ◊em{should} love bugs, otherwise you aren't going to grow or be a good engineer. Bugs are often incredibly silly, wasteful, and lead to no tangible personal or intellectual growth (except maybe an increasing sense of resignation, which you could spin as "patience"). We don't have to love them. We often should (and could!) try to do better.}
 
 ◊post-section{A brief note on assumptions}
+There are a number of assumptions in software engineering that I think a lot of practitioners, especially more experienced ones, hold. Some of these assumptions are, to me, a little frustrating. They constrict what people think is possible. They limit what people demand of their tools and their software. It's important, at least to me, to not conflate current reality with basic inevitability.
 
 ◊callout{Bugs are ◊em{not} a natural, fundamental reality of software.}
-
-There are a number of assumptions in software engineering that I think a lot of practitioners, especially more experienced ones, hold. Some of these assumptions are, to me, a little frustrating. They constrict what people think is possible. They limit what people demand of their tools and their software. It's important, at least to me, to not conflate current reality with basic inevitability.
 
 One assumption I wish we would abolish is that bugs are some kind of inevitable, natural law of software artifacts. I think the industry is far too accomodating of bugs---or mistakes, really---especially when it is simultaneously trying to push software into more important parts of our lives◊fn[2]. Software is, essentially, pure logic. There are no physical realities mandating the presence of bugs. Software by itself can, in theory, be a perfect, perpetual motion machine. That's part of its appeal.
 
@@ -75,8 +77,4 @@ Generally, we need far fewer lines of code and far stronger guarantees, particul
 
 Some more food for thought on software quality and verification can be found in Hoare's ◊link["https://6826.csail.mit.edu/2020/papers/noproof.pdf"]{"How Did Software Get So Reliable Without Proof?"} and in some of Dijkstra's writing and lectures, particularly ◊link["https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html"]{"The Humble Programmer."}
 
-◊aside{The Dijkstra lecture mentioned above---"The Humble Programmer"---uses "debugging" in a different sense than I do here, which lends weight to my point that there's no clear and common definition of debugging (making it difficult to discuss properly). I interpret Dijkstra's use of debugging to indicate post-facto bug fixing, i.e. fixing bugs in existing systems which have already been deployed in production. I've instead used debugging in the general sense of fixing errors in a program. In this sense, even programs that are ostensibly correct-by-construction involve debugging during construction, i.e. figuring out why a machine-checked proof is failing.}
-
-
-Alright, I've already spent far, far too long on this wall of text. Time to get back to work.
-
+◊aside{The Dijkstra lecture mentioned above---"The Humble Programmer"---uses "debugging" in a different sense than I do here, which lends weight to my point that there's no clear and common definition of debugging (making it difficult to discuss properly). I interpret Dijkstra's use of "debugging" to indicate post-facto bug fixing, i.e. fixing bugs in existing systems which have already been deployed in production. I've instead used debugging in the general sense of fixing errors in a program. In this sense, even programs that are ostensibly correct-by-construction involve debugging during construction, i.e. figuring out why a machine-checked proof is failing.}

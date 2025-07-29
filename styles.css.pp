@@ -95,6 +95,10 @@ mark {
   background-color: ◊|highlightcolor|;
 }
 
+underline {
+  text-decoration: underline;
+}
+
 .highlight {
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -103,6 +107,7 @@ mark {
 .highlight pre {
   font-size: 0.8em;
   font-family: "JetBrainsMono", monospace;
+  padding-left: 0.8em;
 }
 
 a {
@@ -146,7 +151,7 @@ a:hover {
 
 code {
   font-family: "JetBrainsMono";
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 aside {
@@ -162,11 +167,6 @@ aside {
   font-weight: 600;
   border-top: 8px solid #fb7367;
   background: ◊|highlightcolor|;
-}
-
-section.footnotes {
-  font-size: 0.8em;
-  padding-right: 2em;
 }
 
 header {
@@ -201,7 +201,7 @@ header nav a:hover {
 }
 
 .portrait {
-  width: 8em;
+  width: 7.7em;
   float: left;
   margin-right: 1.5em;
   border: 1px solid ◊|bordercolor|;
@@ -229,8 +229,12 @@ h1 {
 h2 {
   font-size: ◊|h2-ratio|em;
   padding: 0.1em;
+  margin-bottom: 0em;
   font-family: "CrimsonPro", sans-serif;
   font-weight: 600;
+  border-bottom: 1px solid #949392;
+  background: #e6e5e5;
+  text-align: center;
 }
 
 h3 {

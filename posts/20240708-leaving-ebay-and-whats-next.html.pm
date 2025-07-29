@@ -1,7 +1,10 @@
 #lang pollen
 
-◊post-title{Leaving eBay (and what's next)}
-◊post-date{Monday July 8, 2024}
+◊(define-meta title "Leaving eBay (and what's next)")
+◊(define-meta date "Monday July 8, 2024")
+
+◊post-title{◊(select-from-metas 'title metas)}
+◊post-date{◊(select-from-metas 'date metas)}
 
 I officially left my full-time job at eBay last Friday! I'll be starting an MS program at UC Davis, probably at the beginning of 2025. It's a weird and exciting time.
 
