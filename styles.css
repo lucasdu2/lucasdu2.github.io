@@ -80,6 +80,10 @@ underline {
   text-decoration: underline;
 }
 
+alt-text-color {
+  color: #400080;
+}
+
 .highlight {
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -119,15 +123,25 @@ a:hover {
   padding: 0.1em;
 }
 
-
-
 .post-item td:nth-of-type(2) {
   font-family: "JetBrainsMono", monospace;
   font-size: 0.8em;
   font-weight: normal;
 }
 
-.post-item td {
+.id-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+.id-table td {
+  vertical-align:top;
+}
+
+.id-table table tr:nth-of-type(2) td {
+  border-left: 1px dotted #000080;
+  padding-left: 1em;
+  font-size: 0.9em;
 }
 
 code {
@@ -219,10 +233,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   padding: 0.1em;
   font-family: "CrimsonPro", sans-serif;
   font-weight: 600;
+  text-align: center;
+  border-bottom: 1px dotted #222021;
+  background: #e6e5e5;
 }
 
 hr {

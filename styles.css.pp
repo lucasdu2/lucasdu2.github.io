@@ -12,7 +12,7 @@
 ◊(define bodywidth 42)
 ◊(define h1-ratio 2.0)
 ◊(define h2-ratio 1.5)
-◊(define h3-ratio 1.3)
+◊(define h3-ratio 1.2)
 ◊(define footer-ratio 0.5)
 ◊(define nav-ratio 0.7)
 ◊(define multiplier 1.4)
@@ -99,6 +99,10 @@ underline {
   text-decoration: underline;
 }
 
+alt-text-color {
+  color: #400080;
+}
+
 .highlight {
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -138,15 +142,25 @@ a:hover {
   padding: 0.1em;
 }
 
-
-
 .post-item td:nth-of-type(2) {
   font-family: "JetBrainsMono", monospace;
   font-size: 0.8em;
   font-weight: normal;
 }
 
-.post-item td {
+.id-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+.id-table td {
+  vertical-align:top;
+}
+
+.id-table table tr:nth-of-type(2) td {
+  border-left: 1px dotted #000080;
+  padding-left: 1em;
+  font-size: 0.9em;
 }
 
 code {
@@ -242,6 +256,9 @@ h3 {
   padding: 0.1em;
   font-family: "CrimsonPro", sans-serif;
   font-weight: 600;
+  text-align: center;
+  border-bottom: 1px dotted ◊|bordercolor|;
+  background: #e6e5e5;
 }
 
 hr {

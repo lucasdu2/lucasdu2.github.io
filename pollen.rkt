@@ -23,14 +23,18 @@
 ;; tags for primary page
 (define title (default-tag-function 'h1))
 (define section (default-tag-function 'h2))
-(define subsection (default-tag-function 'h3))
+(define small-section (default-tag-function 'h3))
 (define (image source alt-text ht) `(img ((src ,source)(alt ,alt-text)(height ,ht))))
 (define (portrait source alt-text) `(img ((src ,source)(alt ,alt-text)(class "portrait"))))
 (define link-block (default-tag-function 'div #:class "link-block"))
 
-;; ;; tags for post index page
+;; tags for post index page
 (define (post-item p-date url text) `(tr ((class "post-item")) (td (a ((href ,url)(class "post-link")) ,text)) (td ,p-date)))
 (define post-list (default-tag-function 'table #:class "post-table"))
+
+;; tags for generic item-description tables
+(define id-table (default-tag-function 'table #:class "id-table"))
+(define (item-description item description) `(tr (td (table (tr (td ,item)) (tr (td ,description))))))
 
 ;; general tags and functions
 (define items (default-tag-function 'ul))
