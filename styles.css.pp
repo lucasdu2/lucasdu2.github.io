@@ -91,7 +91,7 @@ underline {
 }
 
 .highlight pre {
-  font-size: 0.8em;
+  font-size: 1em;
   font-family: "Iosevka", monospace;
   padding-left: 1em;
 }
