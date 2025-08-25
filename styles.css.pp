@@ -13,8 +13,8 @@
 ◊(define h1-ratio 2.0)
 ◊(define h2-ratio 1.5)
 ◊(define h3-ratio 1.2)
-◊(define footer-ratio 0.5)
-◊(define nav-ratio 0.7)
+◊(define footer-ratio 0.6)
+◊(define nav-ratio 0.8)
 ◊(define multiplier 1.4)
 
  ::-moz-selection {
@@ -26,65 +26,51 @@
 }
 
 @font-face {
-  font-family: "CrimsonPro";
-  src: url('fonts/CrimsonPro/CrimsonPro-Regular.ttf');
+  font-family: "Roboto";
+  src: url('fonts/RobotoTTF/Roboto-Regular.ttf')
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "CrimsonPro";
-  src: url('fonts/CrimsonPro/CrimsonPro-Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "CrimsonPro";
-  src: url('fonts/CrimsonPro/CrimsonPro-Bold.ttf');
+  font-family: "Roboto";
+  src: url('fonts/RobotoTTF/Roboto-Bold.ttf')
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "CrimsonPro";
-  src: url('fonts/CrimsonPro/CrimsonPro-BoldItalic.ttf');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "CrimsonPro";
-  src: url('fonts/CrimsonPro/CrimsonPro-SemiBold.ttf');
+  font-family: "Roboto";
+  src: url('fonts/RobotoTTF/Roboto-Medium.ttf')
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "JetBrainsMono";
-  src: url('fonts/JetBrainsMono-Light.ttf');
+  font-family: "Roboto";
+  src: url('fonts/RobotoTTF/Roboto-Italic.ttf')
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url('fonts/RobotoTTF/Roboto-Thin.ttf')
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Iosevka";
+  src: url('fonts/Iosevka-Regular.woff2');
   font-weight: normal;
   font-style: normal;
 }
-
-@font-face {
-  font-family: "JetBrainsMono";
-  src: url('fonts/JetBrainsMono-Bold.ttf');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "JetBrainsMono";
-  src: url('fonts/JetBrainsMono-Medium.ttf');
-  font-weight: 600;
-  font-style: normal;
-}
-
 
 html {
   font-size: ◊|fontsize|px;
-  font-family: "CrimsonPro", serif;
+  font-family: "Roboto", serif;
   display: table;
   margin: auto;
   background: ◊|bgcolor|;
@@ -99,10 +85,6 @@ underline {
   text-decoration: underline;
 }
 
-alt-text-color {
-  color: #400080;
-}
-
 .highlight {
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -110,8 +92,8 @@ alt-text-color {
 
 .highlight pre {
   font-size: 0.8em;
-  font-family: "JetBrainsMono", monospace;
-  padding-left: 0.8em;
+  font-family: "Iosevka", monospace;
+  padding-left: 1em;
 }
 
 a {
@@ -126,7 +108,7 @@ a:hover {
   margin-top: 1em;
   border-collapse: collapse;
   width: 100%;
-  font-family: "CrimsonPro", monospace;
+  font-family: "Roboto", monospace;
 }
 
 .post-item {
@@ -143,8 +125,8 @@ a:hover {
 }
 
 .post-item td:nth-of-type(2) {
-  font-family: "JetBrainsMono", monospace;
-  font-size: 0.8em;
+  font-family: "Iosevka", monospace;
+  font-size: 1em;
   font-weight: normal;
 }
 
@@ -160,11 +142,12 @@ a:hover {
 .id-table table tr:nth-of-type(2) td {
   border-left: 1px dotted #000080;
   padding-left: 1em;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  color: #66615E;
 }
 
 code {
-  font-family: "JetBrainsMono";
+  font-family: "Iosevka";
   font-size: 0.8em;
 }
 
@@ -200,13 +183,12 @@ header nav {
 header nav a {
   color: ◊|bordercolor|;
   text-decoration: none;
-  font-weight: 600;
-  font-family: "JetBrainsMono", serif;
+  font-family: "Iosevka", serif;
   font-size: ◊|nav-ratio|em;
   padding: 0.1em 0.5em;
   background-color: #949392;
   border: 1px solid #66615E;
-  box-shadow: 5px 5px;
+  box-shadow: 3px 3px;
   margin-right: 1em;
 }
 
@@ -234,7 +216,7 @@ body {
 
 h1 {
   font-size: ◊|h1-ratio|em;
-  font-family: "CrimsonPro", sans-serif;
+  font-family: "Roboto", serif;
   font-weight: bold;
   margin: 0em;
   padding-left: 0.2em;
@@ -244,7 +226,7 @@ h2 {
   font-size: ◊|h2-ratio|em;
   padding: 0.1em;
   margin-bottom: 0em;
-  font-family: "CrimsonPro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   border-bottom: 1px solid #949392;
   background: #e6e5e5;
@@ -253,8 +235,8 @@ h2 {
 
 h3 {
   font-size: ◊|h3-ratio|em;
-  padding: 0.1em;
-  font-family: "CrimsonPro", sans-serif;
+  padding: 0.2em;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   text-align: center;
   border-bottom: 1px dotted ◊|bordercolor|;
@@ -268,9 +250,9 @@ hr {
 
 footer {
   padding-top: 1em;
-  text-align: left;
+  text-align: center;
   border-top: 1px dotted ◊|bordercolor|;
-  font-family: "JetBrainsMono", monospace;
+  font-family: "Iosevka", monospace;
   font-size: ◊|footer-ratio|em;
   line-height: 1.2;
 }

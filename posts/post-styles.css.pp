@@ -48,8 +48,8 @@ h3 {
 
 .post-date {
   margin: 0;
-  font-family: "JetBrainsMono", monospace;
-  font-size: 0.8em;
+  font-family: "Iosevka", monospace;
+  font-size: 1em;
   text-align: center;
   padding-bottom: 1em;
   border-bottom: 1px solid #949392;
