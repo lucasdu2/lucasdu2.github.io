@@ -20,6 +20,7 @@
                #:string-proc (compose1 smart-quotes smart-dashes)))
     ,(footnote-block)))
 
+(define email "lzdu ∊ ucdavis [dot] edu")
 
 ;; some post-specific tags
 (define post-title (default-tag-function 'h1))

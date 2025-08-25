@@ -24,5 +24,5 @@ MathJax = {
 </head>
 <body>
   <header><nav><a href="../index.html">Home</a><a href="../posts.html">Posts</a></nav></header>
-  ◊(->html doc #:splice? #t)<footer>♦♦♦</footer></body>
+  ◊(->html doc #:splice? #t)<footer>Questions? Comments? Corrections? Email me at ◊|email|!</footer></body>
 </html>

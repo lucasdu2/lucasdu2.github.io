@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="styles.css" />
 </head>
 <body>
-    <header><h1>Lucas Du</h1><nav><a href="index.html">Home</a><a href="posts.html">Posts</a></nav></header>
+    <header><h1>Lucas Du ☺</h1><nav><a href="index.html">Home</a><a href="posts.html">Posts</a></nav></header>
     ◊(->html doc #:splice? #t)
 </body>
 </html>
