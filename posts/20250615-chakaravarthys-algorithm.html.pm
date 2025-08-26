@@ -145,12 +145,12 @@ For the 1-CCP problem, we can reduce it to a problem of reachability in directed
 
 For the 2-CCP problem, here's a sketch of the algorithmic solution, which takes the form of iterative transitive closure based on a set of rules:
 ◊ol{
-  ◊li{We start with $\lambda = \{\{$ ◊code{<X,x>,<Y,y>}$\}\ |\ $ ◊code{X != Y} and ◊code{X := x}, ◊code{Y := y} are statements in $S\}$}
-  ◊li{Then we simply iterate over our set of statements $S$, adding more elements to $\lambda$ until we reach a fixpoint. Our rules for adding elements are as follows. For each element $\{$◊code{<X,x>,<Y,y>}$\}$ in $\lambda$:
+  ◊li{We start with $\lambda = \{$ ◊code{{<X,x>,<Y,y>}}$\ |\ $ ◊code{X != Y} and ◊code{X := x}, ◊code{Y := y} are statements in $S\}$}
+  ◊li{Then we simply iterate over our set of statements $S$, adding more elements to $\lambda$ until we reach a fixpoint. Our rules for adding elements are as follows. For each element in $\lambda$, ◊code{{<X,x>,<Y,y>}}:
     ◊ul{
-      ◊li{for a statement of the form ◊code{Z := z}, where ◊code{Z != X}, add $\{$◊code{<X,x>,<Z,z>}$\}$ to $\lambda$}
-      ◊li{for a statement of the form ◊code{Z := X}, where ◊code{Z != X}, add $\{$◊code{<X,x>,<Z,x>}$\}$ to $\lambda$}
-      ◊li{for a statement of the form ◊code{Z := X}, where ◊code{Z != Y}, add $\{$◊code{<Z,x>,<Y,y>}$\}$ to $\lambda$}
+      ◊li{for a statement of the form ◊code{Z := z}, where ◊code{Z != X}, add ◊code{{<X,x>,<Z,z>}} to $\lambda$}
+      ◊li{for a statement of the form ◊code{Z := X}, where ◊code{Z != X}, add ◊code{{<X,x>,<Z,x>}} to $\lambda$}
+      ◊li{for a statement of the form ◊code{Z := X}, where ◊code{Z != Y}, add ◊code{{<Z,x>,<Y,y>}} to $\lambda$}
     }
   }
 }
@@ -184,7 +184,7 @@ For ◊underline{edge computation}, note that the previous two stages have given
 }
 Each pair ◊code{<Xq,az>} in the solution to the 1-CCP problem as defined here corresponds to an edge ◊code{<q,z>} in the graph.
 
-For ◊underline{forbidden pair computation}, the correspondence of pointers in the realizability graph and pairs identified by the ◊underline{direct assignments} and ◊underline{copying statements} stages to $V$, $C$, and $S$ in the CCP problem is the same. Each element $\{$◊code{<X(q1),c(z1)>,<X(q2),c(z2)>}$\}$ in the solution to the 2-CCP problem defined this way means that the pair of edges ◊code{<q1,z1>,<q2,z2>} ◊em{can be realized simultaneously}—every other pair of realizable edges in layer $l$ (as computed in ◊underline{edge computation}) is thus a ◊strong{forbidden pair}.
+For ◊underline{forbidden pair computation}, the correspondence of pointers in the realizability graph and pairs identified by the ◊underline{direct assignments} and ◊underline{copying statements} stages to $V$, $C$, and $S$ in the CCP problem is the same. Each element ◊code{{<X(q1), c(z1)>, <X(q2), c(z2)>}} in the solution to the 2-CCP problem defined this way means that the pair of edges ◊code{<q1,z1>,<q2,z2>} ◊em{can be realized simultaneously}—every other pair of realizable edges in layer $l$ (as computed in ◊underline{edge computation}) is thus a ◊strong{forbidden pair}.
 
 ◊aside{At this point, all the pieces should be in place for an actual implementation of the algorithm, given a set of well-formed input statements!}
 
