@@ -147,8 +147,12 @@ a:hover {
 }
 
 code {
-  font-family: "Iosevka";
+  font-family: "Iosevka", monospace;
   font-size: 1em;
+}
+
+alt-color-text {
+  color: #AA22FF;
 }
 
 aside {
@@ -183,7 +187,7 @@ header nav {
 header nav a {
   color: ◊|bordercolor|;
   text-decoration: none;
-  font-family: "Iosevka", serif;
+  font-family: "Iosevka", monospace;
   font-size: ◊|nav-ratio|em;
   padding: 0.1em 0.5em;
   background-color: #949392;
