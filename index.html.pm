@@ -1,6 +1,6 @@
 #lang pollen
 
-◊portrait["assets/myface.jpg" "a picture of my face"] I am a computer science MS student at ◊link["https://cs.ucdavis.edu/graduate/graduate-group"]{UC Davis}, advised by ◊link["https://web.cs.ucdavis.edu/~cdstanford/"]{Caleb Stanford}. Previously, I worked on cloud storage at ◊link["https://innovation.ebayinc.com/tech/engineering/"]{eBay}. Even before that, I was an undergraduate at ◊link["https://cs.uchicago.edu/"]{UChicago}.
+◊portrait["assets/myface.jpg" "a picture of my face"] I am a computer science MS student at ◊link["https://cs.ucdavis.edu/graduate/graduate-group"]{UC Davis}, advised by ◊link["https://web.cs.ucdavis.edu/~cdstanford/"]{Caleb Stanford}. Previously, I worked on cloud storage at ◊link["https://innovation.ebayinc.com/tech/engineering/"]{eBay}. Even before that, I was an undergraduate at ◊link["https://cs.uchicago.edu/"]{UChicago}. I will start as a PhD student at ◊link["https://pl.cs.cornell.edu/"]{Cornell University} in Fall 2026.
 
 I like ◊strong{programming languages}, ◊strong{formal methods}, and applications of techniques from these areas to (concurrency ∪ distribution) and (security ∪ privacy). I aim to develop mathematically principled, language-oriented tools and abstractions for building ◊em{provably correct}, ◊em{efficient}, ◊em{flexible}, and ◊em{simple} software, preferably ◊em{by-construction}.
 
