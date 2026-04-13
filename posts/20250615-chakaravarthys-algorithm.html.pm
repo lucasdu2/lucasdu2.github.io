@@ -109,7 +109,7 @@ Importantly, each of these stages can be modelled as a certain sub-problem with 
 }
 
 ◊strong{Graph reachability} is relatively well-known (and can be implemented fairly simply, if naively, with some kind of bread-first or depth-first search), so we elide deeper discussion of the problem. It's also known to be solvable in at least ◊em{linear time}.◊fn[4] However, we will outline the ◊strong{disjoint paths with forbidden pairs} and ◊strong{CCP} problems below, along with informal arguments that they can be solved in polynomial time.
-◊fndef[4]{Since BFS is technically linear time, for example, or more specifically $\mathcal{O}(V+E)$ for some graph $G = (V, E)$. Or an appeal to Wikipedia citations ◊link["https://en.wikipedia.org/wiki/Reachability#cite_note-4"]{here}.}
+◊fndef[4]{Since BFS is technically linear time, for example, or more specifically $\mathcal{O}(|V|+|E|)$ for some graph $G = (V, E)$. Or an appeal to Wikipedia citations ◊link["https://en.wikipedia.org/wiki/Reachability#cite_note-4"]{here}.}
 
 ◊post-subsection{Disjoint paths with forbidden pairs}
 While the usual disjoint paths problem (i.e. where the graph is not necessarily layered and there are no forbidden pairs) is $\mathcal{NP}$-complete, there exists an algorithm for our particular case—where we have a layered graph and each forbidden pair of edges is in the same layer—that is polynomial time. In particular, we are able to reduce the problem to ◊strong{reachability in directed graphs}, using a ◊em{polynomial time} reduction.

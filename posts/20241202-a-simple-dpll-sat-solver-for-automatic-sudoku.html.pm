@@ -43,7 +43,7 @@ That said, DPLL has a bit of cleverness up its sleeve in the form of something c
 
 ◊aside{Here is an example of applying BCP to the formula: $(\lnot A) \land (A \lor \lnot B)$. The first clause is unit, implying the assignment "$A$ is ◊strong{false}." This produces $(\lnot B)$, which is also a unit clause implying the assigmnent "$B$ is ◊strong{false}." Thus, we have a satisfying assignment, where $A$ and $B$ are both ◊strong{false}.}
 
-Besides BCP, DPLL is basically just a brute-force search algorithm. Whenever we can't apply BCP, we take some free variable in the formula, assign it an arbitrary Boolean value, and then see what happens (backtracking when we hit a conflict). Here is the algorithm, at a high level, in ML-like pseudocode:
+Besides BCP, DPLL is basically just a brute-force search algorithm.◊fn[0] Whenever we can't apply BCP, we take some free variable in the formula, assign it an arbitrary Boolean value, and then see what happens (backtracking when we hit a conflict). Here is the algorithm, at a high level, in ML-like pseudocode:
 ◊highlight['ocaml #:python-executable "python3" #:line-numbers? #f]{
 let rec DPLL F =
   let F' = BCP F in
@@ -53,6 +53,8 @@ let rec DPLL F =
     let P = CHOOSE_FREE_VAR F' in
     (DPLL (F' where P is true)) || (DPLL (F' where P is false))
 }
+
+◊fndef[0]{OK, this is actually not entirely true. The other core part of DPLL is technically called ◊em{pure literal elimination}, which you can read more about on the ◊link["https://en.wikipedia.org/wiki/DPLL_algorithm"]{DPLL Wikipedia page}. This is just another optimization that prunes the search space a bit: basically, a "pure" literal is one where all instances of the associated variable in the entire BNF formula have the same ◊em{polarity} (i.e. all are negated, or all are not negated), and there is thus an assignment to the variable of this literal that will immediately make all clauses the literal is part of true.}
 
 ◊post-section{Some implementation details}
 There are a couple quick rules we can use to propagate an assignment (regardless of whether it's ◊em{implied} --- meaning that it results from unit resolution --- or ◊em{decided} --- meaning that it is a best-effort guess). They are:
