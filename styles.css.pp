@@ -106,6 +106,7 @@ a:hover {
 
 .post-table {
   margin-top: 1em;
+  margin-bottom: 1em;
   border-collapse: collapse;
   width: 100%;
   font-family: "Roboto", sans-serif;
