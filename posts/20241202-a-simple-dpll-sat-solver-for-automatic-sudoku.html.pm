@@ -44,7 +44,7 @@ That said, DPLL has a bit of cleverness up its sleeve in the form of something c
 ◊aside{Here is an example of applying BCP to the formula: $(\lnot A) \land (A \lor \lnot B)$. The first clause is unit, implying the assignment "$A$ is ◊strong{false}." This produces $(\lnot B)$, which is also a unit clause implying the assigmnent "$B$ is ◊strong{false}." Thus, we have a satisfying assignment, where $A$ and $B$ are both ◊strong{false}.}
 
 Besides BCP, DPLL is basically just a brute-force search algorithm.◊fn[0] Whenever we can't apply BCP, we take some free variable in the formula, assign it an arbitrary Boolean value, and then see what happens (backtracking when we hit a conflict). Here is the algorithm, at a high level, in ML-like pseudocode:
-◊highlight['ocaml #:python-executable "python3" #:line-numbers? #f]{
+◊highlight['ocaml #:python-executable "python3" #:line-numbers? #t]{
 let rec DPLL F =
   let F' = BCP F in
   if F' = SAT then true
@@ -71,7 +71,7 @@ There are two corresponding rules for determining if the end result of DPLL, imp
 
 Take a bit to think about why all these rules are true and how the first two relate to the second two. Also, here is some Racket code that implements the UNSAT/SAT determination described.
 
-◊highlight['racket #:python-executable "python3" #:line-numbers? #f]{
+◊highlight['racket #:python-executable "python3" #:line-numbers? #t]{
 ;; If all clauses have been removed, we have SAT
 (define (sat? f)
   (equal? f '()))
@@ -81,7 +81,7 @@ Take a bit to think about why all these rules are true and how the first two rel
 }
 
 Now, here's a bit of Racket code that implements both the propagation logic and the overall BCP step of DPLL. Note that there are some differences from the pseudocode given earlier, primarily because we want to ◊strong{save our assignments}. It's nice to get a constructive satisfying assignment when a formula is satisfiable --- for example, it will let us get an actual solution to a Sudoku puzzle (as opposed to simply saying whether the puzzle can be solved).
-◊highlight['racket #:python-executable "python3" #:line-numbers? #f]{
+◊highlight['racket #:python-executable "python3" #:line-numbers? #t]{
 ;; NOTE: sign must be a boolean (#t or #f). #f means negation. var should be
 ;; represented by an arbitrary positive integer.
 (struct lit (sign var) #:transparent)
@@ -126,7 +126,7 @@ Now, here's a bit of Racket code that implements both the propagation logic and 
 
 The last piece we need is a way to choose a free variable to ◊em{decide} an assignment for, when we finish using BCP. This corresponds to the ◊code{CHOOSE_FREE_VAR} function in our ML-like pseudocode earlier. The simplest way to do this is just to choose the first free variable in the first clause of our formula. There are more elaborate and efficient ways to make this choice --- in fact, making smart choices here can lead to big speedups in SAT solving! --- but this simple choice will do for now.
 
-◊highlight['racket #:python-executable "python3" #:line-numbers? #f]{
+◊highlight['racket #:python-executable "python3" #:line-numbers? #t]{
 ;; choose-unassigned-var naively takes the first variable in the CNF.
 (define (choose-unassigned cnf)
   (lit-var (first (first cnf))))
@@ -134,7 +134,7 @@ The last piece we need is a way to choose a free variable to ◊em{decide} an as
 
 Now, we can put it all together! Here's the Racket code for the DPLL function, using all the functions we've built up so far:
 
-◊highlight['racket #:python-executable "python3" #:line-numbers? #f]{
+◊highlight['racket #:python-executable "python3" #:line-numbers? #t]{
 (define (dpll cnf)
   (define (dpll-assignments cnf assignments)
     (let* ([res (bcp cnf '())]
@@ -170,7 +170,7 @@ $$(\lnot A_1 \lor \lnot A_2) \land (\lnot A_1 \lor \lnot A_3) \land (\lnot A_1 \
 
 Another potential difficulty is figuring out how to map logical statements like "the number $1$ is placed in (row $0$, column $5$) of the Sudoku board" to variables in our SAT solver, given that our variables are currently just represented by positive integers. There are various approaches to this (one might be to just have some hashmap that we maintain), but here's a clever-ish way to use arithmetic to get an encoding between specific guesses (logical statements) and variables (in our case, positive integers).
 
-◊highlight['racket #:python-executable "python3" #:line-numbers? #f]{
+◊highlight['racket #:python-executable "python3" #:line-numbers? #t]{
 (struct coord (row col) #:transparent)
 (struct guess (row col num) #:transparent)
 

@@ -17,6 +17,10 @@
                ;; indentation issues in code highlight blocks. There is
                ;; currently a small patch to fix it in my local Pollen package.
                #:txexpr-elements-proc decode-paragraphs
+               ;; NOTE: Never mind, this is the actual flag that fixes the
+               ;; problem. We basically just need to avoid applying any of this
+               ;; decoder to code blocks, which have class "highlight."
+               #:exclude-attrs '((class "highlight"))
                #:string-proc (compose1 smart-quotes smart-dashes)))
     ,(footnote-block)))
 
